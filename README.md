@@ -47,12 +47,28 @@ users is listed as follows:
 For this project, stick to the recommended Jetpack Components as much as possible. The idea is to give knowledge of these tools
 and your certification will be on them. You can read about them [here](https://developer.android.com/jetpack/getting-started)
 
+#### Libraries:
+- Dagger Hilt
+- Retrofit
+- ViewModel
+- LiveData
+- Coroutines
+- Navigation Components
+- etc.
+##### MVVM Architecture is highly recommended
+
 # How to use this repo
 
 To use and contribute to the project, do the following:
-1. For it to your GitHub account
-2. Open a feature branch. Make sure the name is descriptive for your branch but not too long. Lead with what the the branch is doing
-eg new feature or bug but follow this pattern `type/branch-description` eg `feature/add-login-functionality`
-3. Open a pull request against the develop branch and request a review from others.
-4. Merge the PR to develop and proceed
+1. Fork it to your GitHub account.
+2. Clone the repo with the command git clone to your local mechine.
+3. Open a feature branch from the 'develop' branch. 
+4. Make sure the name is descriptive for your branch but not too long. Lead with what the the branch is doing
+eg new feature or bug but follow this pattern `type/branch-description` eg `feature/add-login-functionality`.
+5. Ensure your branch is up to date with latest changes before pushing.
+6. Reference the issue you worked on in your PRReference the issue you worked on in your PR.
+7. Open a pull request against the develop branch and request a review from your Team Lead.
 
+#### Design
+- The design can be find [here](https://www.figma.com/file/JNZKj3lachPypSOMBOhC1e/MMS-ALC-Mobile-Project?node-id=0%3A1) 
+- Work on your Team assigned task eg. Team 1, Team 2 etc. 
