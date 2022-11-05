@@ -86,4 +86,4 @@ eg new feature or bug but follow this pattern `type/branch-description` eg `feat
 
 # Creating issue for your Teams
 - Your Issues should take this simple pattern for easy identification by your team members: feature or bug name-mmm-team-9
-- https://github.com/ALCOpenSource/alc-MMSystem-mentor/issues/4 
+- Find a sample [here](https://github.com/ALCOpenSource/alc-MMSystem-mentor/issues/4) 
