@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">alc-MMSystem-mentor</string>
+    <string name="all">All</string>
+    <string name="assigned">Assigned</string>
+    <string name="completed">Completed</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="assign_task">Assign Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="write_article">Room library article write article</string>
+    <string name="request_to_be_assigned">Request to be assigned</string>
+    <string name="start">Start</string>
+    <string name="back_button">back button</string>
+    <string name="room_library_article_writing">Room library article writing</string>
+    <string name="_3_days">3 days from now</string>
+    <string name="a_calendar">An image of a calendar</string>
+    <string name="an_image">An image</string>
+    <string name="image_search">Image for Search Action</string>
+    <string name="task_details">Task Details</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</string>
 </resources>
