@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">alc-MMSystem-mentor</string>
+    <string name="app_name">MMS Mentor</string>
+    <string name="splash_screen_app_name">Mentor Management System</string>
+    <string name="splash_screen_logo_desc">Brand Logo</string>
 </resources>
