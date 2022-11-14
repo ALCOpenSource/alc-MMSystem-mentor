@@ -1,7 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MainHomeFragmentDrawerLayoutBinding
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.BtmSearchFragmentListAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.MainHomeFragmentDrawerItemsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData

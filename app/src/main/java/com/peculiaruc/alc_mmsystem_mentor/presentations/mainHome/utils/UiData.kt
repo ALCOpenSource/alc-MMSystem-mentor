@@ -2,6 +2,8 @@ package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.DrawerItem
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
+import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
 
 object UiData {
 
@@ -16,6 +18,39 @@ object UiData {
         DrawerItem(R.drawable.ic_messages, R.string.messages_fragment_label),
         DrawerItem(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label),
         DrawerItem(R.drawable.ic_logout_bckward, R.string.logout),
+    )
+
+
+    val searchItems = mutableListOf(
+        SearchItem(
+            R.drawable.ic_launcher_background,
+            title = "Google Africa Scholarship",
+            sourceLocation = SearchType.Programs,
+        ),
+        SearchItem(
+            R.drawable.ic_launcher_background,
+            title = "Google Africa Scholarship",
+            sourceLocation = SearchType.Programs,
+        ),
+        SearchItem(
+            null,
+            title = "Google Africa Scholarship Report",
+            reportAuthor = "Ibrahim Kabira",
+            reportFinishedDate = "19th - 25th Oct 22",
+            sourceLocation = SearchType.Reports,
+        ),
+        SearchItem(
+            R.drawable.ic_task_list,
+            title = "Room library article written",
+            taskDueDate = "3 days from now",
+            sourceLocation = SearchType.Tasks,
+        ),
+        SearchItem(
+            R.drawable.cert_ph,
+            title = "Gads Cloud 2022 - Completion",
+            taskDueDate = "3 days from now",
+            sourceLocation = SearchType.Certificates,
+        ),
     )
 
 }
