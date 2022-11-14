@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AlcMMSystemmentor"
         tools:targetApi="31">
         <activity
-            android:name=".presentations.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

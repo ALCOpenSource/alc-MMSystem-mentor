@@ -1,23 +1,3 @@
 <resources>
     <string name="app_name">alc-MMSystem-mentor</string>
-    <string name="home_fragment_label">Home</string>
-    <string name="search_fragment_label">Search</string>
-    <string name="programs_fragment_label">Programs</string>
-    <string name="messages_fragment_label">Messages</string>
-    <string name="profile_fragment_label">Profile</string>
-    <string name="settings_fragment_label">Settings</string>
-    <string name="certificate_fragment_label">Certificate</string>
-    <string name="discussion_forum_fragment_label">Discussion Forum</string>
-    <string name="reports_fragment_label">Reports</string>
-    <string name="tasks_fragment_label">Tasks</string>
-    <string name="my_managers_fragment_label">My Managers</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="ui_ph_accout_type">Mentor</string>
-    <string name="ui_ph_account_username">Peculiah C. Umeh</string>
-
-    <string name="profile_image_description">User Profile Image</string>
-    <string name="draweer_item_ph">Drawer Item</string>
-    <string name="logout">Logout</string>
 </resources>
