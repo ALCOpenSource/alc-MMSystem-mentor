@@ -1,13 +1,11 @@
-package com.peculiaruc.alc_mmsystem_mentor.presentations
+package com.peculiaruc.alc_mmsystem_mentor
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.peculiaruc.alc_mmsystem_mentor.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        Setup ViewBinding if further view manipulation(s) is need
-        setContentView(R.layout.main_activity)
+        setContentView(R.layout.activity_main)
     }
 }
