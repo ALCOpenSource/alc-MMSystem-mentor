@@ -70,10 +70,12 @@
                 app:layout_constraintTop_toBottomOf="@id/divider">
 
                 <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flowHandler"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     app:constraint_referenced_ids="btn_search_type_all,btn_search_type_cert,btn_search_type_mentManagers,btn_search_type_ments,btn_search_type_reports,,btn_search_type_tasks,btn_search_type_progams"
                     app:flow_horizontalAlign="start"
+                    android:visibility="gone"
                     app:flow_wrapMode="aligned"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

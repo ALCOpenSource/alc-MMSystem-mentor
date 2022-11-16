@@ -1,10 +1,13 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.btmNavScreens
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchFragmentLayoutBinding
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.BtmSearchFragmentListAdapter
@@ -28,11 +31,32 @@ class SearchFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adapter = BtmSearchFragmentListAdapter(view.context) { searchItem ->
-            Toast.makeText(view.context, searchItem?.title, Toast.LENGTH_SHORT).show()
-        }
+        initUi()
+    }
 
+    private fun initUi() {
+        context?.let { _context ->
+            adapter = BtmSearchFragmentListAdapter(_context) { searchItem ->
+                Toast.makeText(context, searchItem?.title, Toast.LENGTH_SHORT).show()
+            }
+        }
+        binding.searchFilterView.apply {
+            setOnClickListener {
+                toggleFilterItems()
+            }
+        }
+        initFilterItems()
         initRecyclerView()
+    }
+
+    private fun toggleFilterItems() {
+        binding.flowHandler.apply {
+            visibility = if (isVisible) View.GONE else View.VISIBLE
+        }
+    }
+
+    private fun initFilterItems() {
+
     }
 
     private fun initRecyclerView() {
