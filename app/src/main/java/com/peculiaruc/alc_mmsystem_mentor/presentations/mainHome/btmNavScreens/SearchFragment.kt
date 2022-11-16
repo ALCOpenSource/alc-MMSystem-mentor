@@ -1,8 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.btmNavScreens
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,8 +48,9 @@ class SearchFragment : Fragment() {
     }
 
     private fun toggleFilterItems() {
-        binding.flowHandler.apply {
+        binding.btnSearchOptionsHandler.apply {
             visibility = if (isVisible) View.GONE else View.VISIBLE
+            binding.searchFilterView.isChecked = isVisible
         }
     }
 
