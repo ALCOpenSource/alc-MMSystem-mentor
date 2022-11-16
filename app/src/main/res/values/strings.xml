@@ -34,4 +34,23 @@
     <string name="log_out">Logout</string>
     <string name="delete_icon">delete_icon</string>
     <string name="navigate_up">navigate_up</string>
+    <string name="francess_roseline">Francess Roseline</string>
+    <string name="mentor">Mentor</string>
+    <string name="bio">Bio</string>
+    <string name="bio_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.</string>
+    <string name="technical_proficiency">Technical Proficiency</string>
+    <string name="proficiency_description">Java Script, Django, Mysql, Android</string>
+    <string name="previous_programs">Previous Programs</string>
+    <string name="previous_programs_description">GADS 2022, Google I/O Extended 2021</string>
+    <string name="previous_roles_held">Previous Roles Held:</string>
+    <string name="previous_roles_held_description">Learner, Mentor, Program Assistant, Program Assistant Lead</string>
+    <string name="program_of_interest">Program of interest:</string>
+    <string name="program_of_interest_desc">Google Africa Scholarship Program</string>
+    <string name="been_a_mentor_before">Been a Mentor Before?</string>
+    <string name="yes">Yes</string>
+    <string name="years_of_technical_experience">Years of Technical Experience:</string>
+    <string name="_3_years">3 years</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="documents">Documents</string>
+    <string name="peculiar_umeh">\@peculiar.umeh</string>
 </resources>
