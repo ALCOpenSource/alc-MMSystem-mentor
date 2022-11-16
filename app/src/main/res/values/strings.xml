@@ -20,4 +20,8 @@
     <string name="profile_image_description">User Profile Image</string>
     <string name="draweer_item_ph">Drawer Item</string>
     <string name="logout">Logout</string>
+    <string name="in_certificates">in Certificates</string>
+    <string name="in_programs">in Programs</string>
+    <string name="in_reports">in Reports</string>
+    <string name="in_tasks">in Tasks</string>
 </resources>

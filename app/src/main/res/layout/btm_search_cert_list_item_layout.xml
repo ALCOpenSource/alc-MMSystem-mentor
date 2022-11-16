@@ -53,7 +53,7 @@
             app:layout_constraintBottom_toBottomOf="@id/search_list_item_img"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/search_list_item_title"
-            tools:text="in Certificates" />
+            android:text="@string/in_certificates" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

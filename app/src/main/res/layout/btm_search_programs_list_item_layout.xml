@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            tools:text="in Programs"
+            android:text="@string/in_programs"
             android:textColor="?colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="10dp"
