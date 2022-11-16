@@ -1,14 +1,10 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
-import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.databinding.MainActivityBinding
-import com.peculiaruc.alc_mmsystem_mentor.presentations.MainActivity
 
 /**
  * mmBtmController
