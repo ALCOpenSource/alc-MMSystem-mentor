@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RadioButton
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -11,11 +12,12 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchFragmentLayoutBin
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.BtmSearchFragmentListAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 
-class SearchFragment : Fragment() {
+class SearchFragment : Fragment(), View.OnClickListener {
     private var _binding: BtmSearchFragmentLayoutBinding? = null
     private val binding
         get() = _binding!!
     private lateinit var adapter: BtmSearchFragmentListAdapter
+    private val searchOptionViews: MutableList<View> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,13 +51,40 @@ class SearchFragment : Fragment() {
 
     private fun toggleFilterItems() {
         binding.btnSearchOptionsHandler.apply {
-            visibility = if (isVisible) View.GONE else View.VISIBLE
+            if (isVisible) {
+                visibility = View.GONE
+                clearSearchFilterOptions()
+            } else {
+                visibility = View.VISIBLE
+            }
             binding.searchFilterView.isChecked = isVisible
         }
     }
 
-    private fun initFilterItems() {
+    private fun clearSearchFilterOptions() {
+        searchOptionViews.forEach {
+            (it as RadioButton).isChecked = false
+        }
+        (searchOptionViews.last() as RadioButton).isChecked = true
+    }
 
+    private fun initFilterItems() {
+        binding.apply {
+            searchOptionViews.addAll(
+                mutableListOf(
+                    btnSearchTypeAll,
+                    btnSearchTypeCert,
+                    btnSearchTypeMentManagers,
+                    btnSearchTypeMents,
+                    btnSearchTypeReports,
+                    btnSearchTypeTasks,
+                    btnSearchTypeProgams
+                )
+            )
+            searchOptionViews.forEach {
+                it.setOnClickListener(this@SearchFragment)
+            }
+        }
     }
 
     private fun initRecyclerView() {
@@ -71,5 +100,13 @@ class SearchFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onClick(view: View?) {
+        view?.let { _view ->
+            searchOptionViews.forEach { searchOption ->
+                (searchOption as RadioButton).isChecked = _view.id == searchOption.id
+            }
+        }
     }
 }

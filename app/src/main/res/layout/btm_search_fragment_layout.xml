@@ -45,6 +45,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/searchFilterView"
                 style="@style/MMIconBtn"
+                android:checkable="true"
                 app:icon="@drawable/ic_filter_alt"
                 app:iconTint="@color/mm_default_grey"
                 app:layout_constraintBottom_toBottomOf="@id/searchBackBtnView"
@@ -73,9 +74,9 @@
                     android:id="@+id/btn_search_options_handler"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:visibility="gone"
                     app:constraint_referenced_ids="btn_search_type_all,btn_search_type_cert,btn_search_type_mentManagers,btn_search_type_ments,btn_search_type_reports,,btn_search_type_tasks,btn_search_type_progams"
                     app:flow_horizontalAlign="start"
-                    android:visibility="gone"
                     app:flow_wrapMode="aligned"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="All"
+                    android:checked="true"
                     app:useMaterialThemeColors="true" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
