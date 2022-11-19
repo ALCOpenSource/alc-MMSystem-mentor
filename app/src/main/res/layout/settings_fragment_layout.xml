@@ -7,6 +7,7 @@
     tools:context=".presentations.mainHome.otherScreens.SettingsFragment">
 
 
+
     <!-- TODO: Update blank fragment layout -->
 
 
@@ -192,6 +193,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_settings_nine" />
+
 
     <TextView
         android:id="@+id/tv_settings_ten"
