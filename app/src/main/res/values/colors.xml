@@ -9,33 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_white">#9A5C5B5B</color>
     <color name="red">#E91E63</color>
-    <color name="text_color">#808080</color>
 
 
     <color name="teal900">#FF035D63</color>
-
-
-    <color name="mms_black_1">#141414</color>
-    <color name="mms_black_2">#333333</color>
-    <color name="mms_black_3">#4D4D4D</color>
-    <color name="mms_black_4">#666666</color>
-    <color name="mms_black_5">#808080</color>
-    <color name="mms_black_6">#999999</color>
-    <color name="mms_black_7">#B3B3B3</color>
-    <color name="mms_black_8">#CCCCCC</color>
-    <color name="mms_black_9">#E6E6E6</color>
-    <color name="mms_black_10">#F2F2F2</color>
-
-
-    <color name="mms_pry_1">#023C40</color>
-    <color name="mms_pry_2">#035D63</color>
-    <color name="mms_pry_3">#058B94</color>
-    <color name="mms_pry_4">#06B9C6</color>
-    <color name="mms_pry_5">#08E8F7</color>
-    <color name="mms_pry_6">#39ECF9</color>
-    <color name="mms_pry_7">#6BF1FA</color>
-    <color name="mms_pry_8">#9CF6FC</color>
-    <color name="mms_pry_9">#CEFAFD</color>
-    <color name="mms_pry_10">#E6FDFE</color>
-    <color name="mms_pry_11">#F7FEFF</color>
 </resources>
