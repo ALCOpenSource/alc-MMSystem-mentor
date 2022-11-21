@@ -1,36 +1,31 @@
-package com.peculiaruc.alc_mmsystem_mentor
+package com.peculiaruc.alc_mmsystem_mentor.ui
 
 import android.os.Bundle
-import android.view.*
+import android.view.Menu
+import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.fragment.app.Fragment
+import androidx.appcompat.widget.Toolbar
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.adapter.FragmentStateAdapter
-import androidx.viewpager2.widget.ViewPager2
-import com.google.android.material.tabs.TabLayoutMediator
+import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.model.MentorTasks
-import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentTaskBinding
-import com.peculiaruc.alc_mmsystem_mentor.ui.TaskActivity
-import com.peculiaruc.alc_mmsystem_mentor.ui.TaskObjectFragment
+import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityTaskBinding
 import com.peculiaruc.alc_mmsystem_mentor.ui.adapter.TaskListAdapter
 import java.util.*
 
+class TaskActivity : AppCompatActivity() {
 
-private const val KEY_ITEM_TEXT = "androidx.viewpager2.integration.testapp.KEY_ITEM_TEXT"
+    private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var binding: ActivityTaskBinding
 
-/**
- * Task Fragment Class
- */
-
-class TaskFragment : Fragment() {
-
-    private lateinit var taskAdapter: TaskAdapter
-    private lateinit var viewPager: ViewPager2
-    private var _binding: FragmentTaskBinding? = null
-    private val binding get() = _binding!!
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: TaskListAdapter
+    var searchView: SearchView? = null
 
     var tasks: ArrayList<MentorTasks> = arrayListOf()
 
@@ -137,51 +132,50 @@ class TaskFragment : Fragment() {
     )
 
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        _binding = FragmentTaskBinding.inflate(inflater, container, false)
-        return binding.root
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val toolbar = findViewById<Toolbar>(R.id.toolbar2)
+        setSupportActionBar(toolbar)
+
+        binding = ActivityTaskBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val navController = findNavController(R.id.nav_host_fragment_content_task)
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        taskAdapter = TaskAdapter(this)
-        viewPager = binding.pager
-        viewPager.adapter = taskAdapter
-
-        val tabLayout = binding.tabLayout
-        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
-            when (position) {
-                0 -> tab.text = "All"
-                1 -> tab.text = "Assigned"
-                2 -> tab.text = "Complete"
-                3 -> tab.text = "My Tasks"
-            }
-        }.attach()
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment_content_task)
+        return navController.navigateUp(appBarConfiguration)
+                || super.onSupportNavigateUp()
     }
 
     // calling on create option menu
     // layout to inflate our menu file.
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // below line is to get our inflater
+        val inflater = menuInflater
 
         // inside inflater we are inflating our menu file.
         inflater.inflate(R.menu.search_menu, menu)
 
-        val searchView =
-            ((context as TaskActivity).supportActionBar?.themedContext ?: context)?.let {
-                SearchView(
-                    it
-                )
-            }
-        menu.findItem(R.id.actionSearch).apply {
-            setShowAsAction(MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW or MenuItem.SHOW_AS_ACTION_IF_ROOM)
-            actionView = searchView
+        // below line is to get our menu item.
+        val searchItem = menu.findItem(R.id.actionSearch)
+
+        // getting search view of our item.
+        val searchView: SearchView = searchItem.actionView as SearchView
+
+        searchView.setOnClickListener {
+            val backButton = findViewById<ImageView?>(R.id.imageView)
+            backButton.visibility = View.GONE
+            val title: ImageView = findViewById<ImageView?>(R.id.imageView2)
+            title.visibility = View.GONE
+            backButton.visibility = View.GONE
         }
 
         // below line is to call set on query text listener method.
-        searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
                 return false
             }
@@ -193,12 +187,14 @@ class TaskFragment : Fragment() {
                 return false
             }
         })
+        return true
     }
 
     private fun filter(text: String) {
         // creating a new array list to filter our data.
         val filteredlist = ArrayList<MentorTasks>()
 
+        adapter.submitList(tasks)
         // running a for loop to compare elements.
         for (item in tasks) {
             // checking if the entered string matched with any item of our recycler view.
@@ -211,28 +207,11 @@ class TaskFragment : Fragment() {
         if (filteredlist.isEmpty()) {
             // if no item is added in filtered list we are
             // displaying a toast message as no data found.
-            Toast.makeText(requireContext(), "No Data Found..", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show()
         } else {
             // at last we are passing that filtered
             // list to our adapter class.
             adapter.filterList(filteredlist)
         }
     }
-}
-
-private const val ARG_OBJECT = "object"
-
-class TaskAdapter(taskFragment: TaskFragment) : FragmentStateAdapter(taskFragment) {
-    override fun getItemCount(): Int = 4
-
-    override fun createFragment(position: Int): TaskObjectFragment {
-        var fragment = TaskObjectFragment(position)
-        fragment.arguments = Bundle().apply {
-            // Our object is just an integer :-P
-            putInt(ARG_OBJECT, position)
-        }
-        return fragment
-    }
-
-
 }
