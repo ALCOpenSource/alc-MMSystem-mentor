@@ -5,6 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.peculiaruc.alc_mmsystem_mentor.adapters.DocumentsRecyclerAdapter
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmProfileFragmentLayoutBinding
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
@@ -29,6 +32,17 @@ class ProfileFragment : Fragment() {
             )
         }
 
+        val docsAdapter = DocumentsRecyclerAdapter(
+            arrayListOf(
+                "My resume.doc",
+                "Birth Cert.doc",
+                "Java Lead.doc"
+            )
+        )
+
+        binding.rvProfileDocs.layoutManager = StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL)
+
+        binding.rvProfileDocs.adapter = docsAdapter
         return binding.root
     }
 
