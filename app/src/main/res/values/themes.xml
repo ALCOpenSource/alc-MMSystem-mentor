@@ -37,4 +37,16 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_selector</item>
+        <item name="chipStrokeColor">@color/chip_stroke_selector</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipMinHeight">32dp</item>
+        <item name="chipMinTouchTargetSize">0dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/chip_text_selector</item>
+        <item name="chipCornerRadius">5dp</item>
+    </style>
+
 </resources>
