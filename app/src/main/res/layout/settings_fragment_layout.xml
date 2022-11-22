@@ -160,7 +160,6 @@
         app:tint="@color/red"
         android:contentDescription="@string/delete_icon" />
 
-
     <View
         android:id="@+id/divider4"
         android:layout_width="409dp"
@@ -200,7 +199,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/version_1_0_35"
-        android:textColor="@color/teal900"
+        android:textColor="@color/mm_teal_900"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
