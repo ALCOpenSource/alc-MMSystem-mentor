@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mentortasks_ui.MentorReportDetailsFragment">
+
+    <TextView
+        android:id="@+id/mrd_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/google_africa_scholarship"
+        android:textSize="@dimen/text_18"
+        android:fontFamily="@font/mukta_bold"
+        android:textColor="@color/MMS_black_2"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginStart="@dimen/margin_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/mrd_txt2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/program_report"
+        android:textSize="@dimen/text_18"
+        android:fontFamily="@font/mukta_bold"
+        android:textColor="@color/MMS_black_2"
+        android:layout_marginStart="@dimen/margin_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mrd_txt"/>
+
+    <ImageView
+        android:id="@+id/action_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:contentDescription="@string/go_back"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mrd_txt"
+        app:layout_constraintBottom_toBottomOf="@id/mrd_txt2"
+        app:tint="@color/MMS_black_2" />
+
+    <TextView
+        android:id="@+id/reporter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/by_name"
+        android:textSize="@dimen/margin_12"
+        android:textColor="@color/MMS_black_5"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintStart_toStartOf="@id/mrd_txt2"
+        app:layout_constraintTop_toBottomOf="@+id/mrd_txt2" />
+
+    <TextView
+        android:id="@+id/textDash"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/dash"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintBottom_toBottomOf="@id/reporter"
+        app:layout_constraintStart_toEndOf="@id/reporter"
+        app:layout_constraintTop_toTopOf="@+id/reporter" />
+
+    <TextView
+        android:id="@+id/reportDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/date"
+        android:textSize="@dimen/margin_12"
+        android:textColor="@color/MMS_black_5"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintBottom_toBottomOf="@id/reporter"
+        app:layout_constraintStart_toEndOf="@id/textDash"
+        app:layout_constraintTop_toTopOf="@+id/reporter" />
+
+    <TextView
+        android:id="@+id/msg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/major_achievement"
+        android:fontFamily="@font/mukta_semibold"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textColor="@color/MMS_black_2"
+        app:layout_constraintTop_toBottomOf="@id/reporter"
+        app:layout_constraintStart_toStartOf="@id/reporter"
+        />
+
+    <TextView
+        android:id="@+id/message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/lorep_ipsum"
+        android:paddingStart="@dimen/margin_16"
+        android:paddingEnd="@dimen/margin_16"
+        android:textSize="13sp"
+        android:textColor="@color/MMS_black_4"
+        app:layout_constraintTop_toBottomOf="@id/msg_txt"
+        app:layout_constraintStart_toStartOf="@id/msg_txt"
+        app:layout_constraintEnd_toEndOf="@id/action_back"
+        />
+
+    <TextView
+        android:id="@+id/msg_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/major_blocker"
+        android:fontFamily="@font/mukta_semibold"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textColor="@color/MMS_black_2"
+        app:layout_constraintTop_toBottomOf="@id/message_body"
+        app:layout_constraintStart_toStartOf="@id/reporter"
+        />
+
+    <TextView
+        android:id="@+id/message_body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/lorep_ipsum"
+        android:paddingStart="@dimen/margin_16"
+        android:paddingEnd="@dimen/margin_16"
+        android:textSize="13sp"
+        android:textColor="@color/MMS_black_4"
+        app:layout_constraintTop_toBottomOf="@id/msg_txt2"
+        app:layout_constraintStart_toStartOf="@id/msg_txt2"
+        app:layout_constraintEnd_toEndOf="@id/action_back"
+        />
+
+    <TextView
+        android:id="@+id/msg_txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/major_blocker"
+        android:fontFamily="@font/mukta_semibold"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:textColor="@color/MMS_black_2"
+        app:layout_constraintTop_toBottomOf="@id/message_body2"
+        app:layout_constraintStart_toStartOf="@id/reporter"
+        />
+
+    <TextView
+        android:id="@+id/message_body3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/lorep_ipsum"
+        android:paddingStart="@dimen/margin_16"
+        android:paddingEnd="@dimen/margin_16"
+        android:textSize="13sp"
+        android:textColor="@color/MMS_black_4"
+        app:layout_constraintTop_toBottomOf="@id/msg_txt3"
+        app:layout_constraintStart_toStartOf="@id/msg_txt3"
+        app:layout_constraintEnd_toEndOf="@id/action_back"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_share_field"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginStart="@dimen/margin_16"
+        android:fontFamily="@font/montserrat_regular"
+        app:fontFamily="@font/montserrat_semibold"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="10dp"
+        android:textColor="#035D63"
+        tools:text="Share"
+        android:textAllCaps="false"
+        app:strokeColor="#035D63"
+        app:strokeWidth="@dimen/_1sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message_body3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_download_field"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:fontFamily="@font/montserrat_regular"
+        app:fontFamily="@font/montserrat_semibold"
+        app:backgroundTint="#035D63"
+        app:cornerRadius="10dp"
+        android:textColor="@android:color/white"
+        tools:text="Download"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message_body3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

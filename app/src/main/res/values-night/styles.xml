@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_bold">
+        <item name="fontWeight">700</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="ContainedTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/title_grey_color</item>
+        <item name="boxStrokeWidth">0.5dp</item>
+    </style>
+
+    <style name="TextInputAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="fontStyle">normal</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textColor">
+            @color/MMS_black_2
+        </item>
+        <item name="android:textColorHint">@color/title_grey_color</item>
+        <item name="colorControlNormal">@color/textcolorPrimary</item>
+        <item name="colorControlActivated">@color/textcolorPrimary</item>
+        <item name="colorControlHighlight">@color/textcolorPrimary</item>
+    </style>
+
+</resources>

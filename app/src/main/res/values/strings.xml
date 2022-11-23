@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">alc-MMSystem-mentor</string>
-    <string name="all">All</string>
-    <string name="assigned">Assigned</string>
-    <string name="completed">Completed</string>
     <string name="my_tasks">My Tasks</string>
     <string name="assign_task">Assign Task</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -28,4 +25,56 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="search">Search</string>
+
+
+
+    <string name="submitted">Submitted</string>
+    <string name="google_africa_scholarship_report">Google Africa Scholarship Report</string>
+    <string name="by_name">By Ibrahim Kabir</string>
+    <string name="dash">-</string>
+    <string name="date">19th - 25th Oct 22</string>
+    <string name="download_icon">download icon</string>
+    <string name="go_back">go back</string>
+    <string name="report">Reports</string>
+    <string name="maximum">Maximum</string>
+    <string name="sort">Sort</string>
+    <string name="program_reports">Program Reports</string>
+    <string name="all">All</string>
+    <string name="google_icon">Google Icon</string>
+    <string name="gads_program_2022">GADS Program 2022</string>
+    <string name="gads_program_underline">GADS Program 2022…</string>
+    <string name="isp_date">Dec 12, 2022</string>
+    <string name="assigned">Assigned</string>
+    <string name="completed">Completed</string>
+    <string name="compose_report">Compose Report</string>
+    <string name="choose_report">Choose Report Type</string>
+    <string name="task">Task</string>
+    <string name="report_title">Report Title</string>
+    <string name="major_achievement">Major Achievement</string>
+    <string name="major_blocker">Major Blocker</string>
+    <string name="google_africa_scholarship">Google Africa Scholarship</string>
+    <string name="program_report">Program Report</string>
+    <string name="you_are_seeing_this_indicator">You are seeing this indicator because we are setting up your store and downloading data for offline, as a result, some functionalities might be limited or inoperative till download and setup is complete. Also, your data computation might be incorrect till setup is done</string>
+    <string name="room_article">Room library article write article</string>
+    <string name="lorep_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. </string>
+    <string name="complete">Complete</string>
+
+
+    <string name="report_submitted">Report Submitted Successfully!</string>
+    <string name="share_report">Share report via email</string>
+    <string name="report_downloaded">Report Downloaded Successfully!</string>
+    <string name="days_from_now">3 days from now</string>
+    <string name="room_course">Room library article write...</string>
+    <string name="all_reports">All Reports</string>
+    <string name="program">Program</string>
+    <string name="success_image">Success image</string>
+    <string name="kid_with_kite">Kid with kite</string>
+    <string name="share">Share</string>
+    <string name="download">Download</string>
+    <string name="open_email_app">Open Email App</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_task">Select Task</string>
+    <string name="submit_report">Submit Report</string>
+    <string name="select_program">Select Program</string>
+    <string name="done">Done</string>
 </resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".mentortasks_ui.SelectProgramFragment">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/sps_case"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:background="@color/MMS_pry_2"
+        android:paddingStart="@dimen/_12ssp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/program_txt_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/MMS_pry_2"
+            android:gravity="center"
+            android:background="@drawable/all_bg"
+            android:layout_weight="0.5"
+            android:text="@string/all"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_assigned"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:text="@string/assigned"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_completed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:text="@string/completed"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pListItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sps_case"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/item_select_program" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

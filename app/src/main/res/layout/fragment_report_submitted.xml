@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".mentortasks_ui.ReportSubmittedFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_30"
+        android:outlineAmbientShadowColor="@color/shadow_color"
+        android:outlineSpotShadowColor="@color/shadow_color"
+        app:cardCornerRadius="@dimen/margin_16"
+        app:cardElevation="@dimen/_14sdp"
+        app:contentPadding="@dimen/margin_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PrivateResource"
+        tools:targetApi="p">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/text_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_16"
+                android:fontFamily="@font/mukta_semibold"
+                android:gravity="center"
+                android:text="@string/report_submitted"
+                android:textColor="@color/MMS_black_2"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/iv_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_8"
+                android:src="@drawable/ic_success_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                android:contentDescription="Success image" />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_submitted_field"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:fontFamily="@font/montserrat_regular"
+                app:fontFamily="@font/montserrat_semibold"
+                app:backgroundTint="#035D63"
+                app:cornerRadius="10dp"
+                android:textColor="@android:color/white"
+                tools:text="Done"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/iv_success"
+                app:layout_constraintStart_toStartOf="@+id/iv_success"
+                app:layout_constraintTop_toBottomOf="@id/iv_success" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.appcompat.widget.LinearLayoutCompat>
