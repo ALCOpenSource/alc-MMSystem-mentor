@@ -1,7 +1,6 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.NavItems
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
 

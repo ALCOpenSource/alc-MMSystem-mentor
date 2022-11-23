@@ -6,12 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 import androidx.core.content.res.ResourcesCompat
-import androidx.navigation.NavDirections
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MainHomeFragmentDrawerListItemBinding
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.NavItems
 
 class MainHomeFragmentDrawerItemsAdapter(context: Context, val onItemClick: (NavItems?) -> Unit) :
     ArrayAdapter<NavItems>(context, 0) {
@@ -54,10 +52,3 @@ class MainHomeFragmentDrawerItemsAdapter(context: Context, val onItemClick: (Nav
 }
 
 
-data class NavItems(
-    @DrawableRes
-    val icon: Int,
-    @StringRes
-    val label: Int,
-    val routes: NavDirections? = null,
-)
