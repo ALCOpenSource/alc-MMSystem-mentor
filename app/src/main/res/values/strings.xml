@@ -59,4 +59,6 @@
     <string name="peculiar_umeh">\@peculiar.umeh</string>
     <string name="mms_view">View</string>
     <string name="mms_quick_actions">Quick Actions</string>
+    <string name="mms_tasks_in_progress">Tasks In-progress</string>
+    <string name="mms_chat_mentor_manager">Chat Mentor Manager</string>
 </resources>

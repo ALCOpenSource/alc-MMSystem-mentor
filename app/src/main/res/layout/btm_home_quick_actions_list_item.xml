@@ -18,11 +18,12 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:id="@+id/quickActionsIcon"
             app:tint="@color/mms_pry_2"
             tools:srcCompat="@drawable/ic_task" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/home_activity_overview_count"
+            android:id="@+id/quickActionsLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
