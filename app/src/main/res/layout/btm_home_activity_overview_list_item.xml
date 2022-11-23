@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Material3.CardView.Filled"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/mms_pry_2"
+    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/home_activity_overview_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.Material3.DisplayMedium"
+            android:textColor="@color/mms_pry_11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="20" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/home_activity_overview_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="@color/mms_pry_11"
+            app:layout_constraintBottom_toBottomOf="@id/home_activity_overview_count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/home_activity_overview_count"
+            app:layout_constraintTop_toTopOf="@id/home_activity_overview_count"
+            tools:text="Mentors" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/MMButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:insetTop="5dp"
+            android:insetBottom="5dp"
+            android:paddingVertical="0dp"
+            android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+            android:text="@string/mms_view"
+            android:textColor="@color/mms_pry_2"
+            app:backgroundTint="@color/mms_pry_10"
+            app:layout_constraintEnd_toEndOf="@id/home_activity_overview_label"
+            app:layout_constraintTop_toBottomOf="@id/home_activity_overview_count"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

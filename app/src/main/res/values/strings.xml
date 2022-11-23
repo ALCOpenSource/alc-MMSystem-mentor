@@ -57,4 +57,6 @@
     <string name="_3_years">3 years</string>
     <string name="documents">Documents</string>
     <string name="peculiar_umeh">\@peculiar.umeh</string>
+    <string name="mms_view">View</string>
+    <string name="mms_quick_actions">Quick Actions</string>
 </resources>
