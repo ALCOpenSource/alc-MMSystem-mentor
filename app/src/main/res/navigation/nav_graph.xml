@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/taskFragment">
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.TaskFragment"
+        android:label="fragment_task"
+        tools:layout="@layout/fragment_task" >
+        <action
+            android:id="@+id/action_taskFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskAssignedFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.TaskAssignedFragment"
+        android:label="fragment_task_assigned"
+        tools:layout="@layout/fragment_task_assigned" >
+        <action
+            android:id="@+id/action_taskAssignedFragment_to_taskFragment"
+            app:destination="@id/taskFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.TaskDetailFragment"
+        android:label="fragment_task_detail"
+        tools:layout="@layout/fragment_task_detail" >
+        <action
+            android:id="@+id/action_taskDetailFragment_to_taskAssignedFragment"
+            app:destination="@id/taskAssignedFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
