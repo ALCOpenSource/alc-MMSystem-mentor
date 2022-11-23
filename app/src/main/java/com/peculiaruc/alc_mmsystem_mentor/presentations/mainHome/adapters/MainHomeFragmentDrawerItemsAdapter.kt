@@ -13,8 +13,8 @@ import androidx.navigation.NavDirections
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MainHomeFragmentDrawerListItemBinding
 
-class MainHomeFragmentDrawerItemsAdapter(context: Context, val onItemClick: (DrawerItem?) -> Unit) :
-    ArrayAdapter<DrawerItem>(context, 0) {
+class MainHomeFragmentDrawerItemsAdapter(context: Context, val onItemClick: (NavItems?) -> Unit) :
+    ArrayAdapter<NavItems>(context, 0) {
 
     @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
@@ -34,7 +34,7 @@ class MainHomeFragmentDrawerItemsAdapter(context: Context, val onItemClick: (Dra
     internal class DrawerListViewHolder(private val binding: MainHomeFragmentDrawerListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(context: Context, _drawerItem: DrawerItem?): View {
+        fun bind(context: Context, _drawerItem: NavItems?): View {
             _drawerItem?.let { drawerItem ->
                 binding.apply {
                     mainHomeFragmentDrawerItemIcon.setImageDrawable(
@@ -54,7 +54,7 @@ class MainHomeFragmentDrawerItemsAdapter(context: Context, val onItemClick: (Dra
 }
 
 
-data class DrawerItem(
+data class NavItems(
     @DrawableRes
     val icon: Int,
     @StringRes
