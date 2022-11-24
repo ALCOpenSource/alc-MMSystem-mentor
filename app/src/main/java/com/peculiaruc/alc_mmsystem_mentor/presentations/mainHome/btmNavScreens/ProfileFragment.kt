@@ -4,17 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.peculiaruc.alc_mmsystem_mentor.adapters.DocumentsRecyclerAdapter
+import com.google.android.material.tabs.TabLayoutMediator
+import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmProfileFragmentLayoutBinding
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.ProfileViewPagerAdapter
 
 class ProfileFragment : Fragment() {
-    private var _binding: BtmProfileFragmentLayoutBinding? = null
+    private lateinit var _binding: BtmProfileFragmentLayoutBinding
+    private lateinit var adapter : ProfileViewPagerAdapter
+    private var tabTitles = arrayListOf("About", "Programs", "Tasks", "Reports", " Certificates")
+
     private val binding
         get() = _binding!!
 
@@ -23,31 +24,25 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         BtmProfileFragmentLayoutBinding.inflate(inflater).let { _binding = it }
-
-
-        binding.editProfile.setOnClickListener {
-            Navigator.navigate(
-                mmController,
-                MainHomeFragmentDirections.actionMainHomeFragmentToEditProfileFragment()
-            )
-        }
-
-        val docsAdapter = DocumentsRecyclerAdapter(
-            arrayListOf(
-                "My resume.doc",
-                "Birth Cert.doc",
-                "Java Lead.doc"
-            )
-        )
-
-        binding.rvProfileDocs.layoutManager = StaggeredGridLayoutManager(3, LinearLayoutManager.VERTICAL)
-
-        binding.rvProfileDocs.adapter = docsAdapter
+        setUpTabLayoutWithViewPager()
         return binding.root
+    }
+
+    private fun setUpTabLayoutWithViewPager() {
+        _binding.viewpager.adapter = ProfileViewPagerAdapter(this)
+        TabLayoutMediator(_binding.tabLayout, _binding.viewpager){ tab, position ->
+            tab.text = tabTitles[position]
+        }.attach()
+
+        for (i in 0..4){
+            val textView = LayoutInflater.from(requireContext()).inflate(R.layout.tab_title, null)
+            as TextView
+            _binding.tabLayout.getTabAt(i)?.customView = textView
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+        _binding
     }
 }

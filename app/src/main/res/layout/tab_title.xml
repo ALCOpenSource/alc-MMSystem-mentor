@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<com.google.android.material.chip.Chip-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:background="@drawable/tab_background_selector"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:text=""/>-->
+
+
+<!--&lt;!&ndash;<com.google.android.material.chip.Chip layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;    layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;    xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:background="@drawable/tab_background_selector" />&ndash;&gt;-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab_background_selector"
+    android:gravity="center"
+    android:paddingStart="24dp"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:paddingEnd="24dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:textSize="15sp"
+    android:textColor="@color/tab_text_color"
+    tools:text="Tab" />
