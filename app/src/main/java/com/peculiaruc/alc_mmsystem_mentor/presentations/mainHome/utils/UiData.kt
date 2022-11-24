@@ -1,6 +1,7 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
+import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.DrawerItem
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
@@ -50,6 +51,59 @@ object UiData {
             title = "Gads Cloud 2022 - Completion",
             taskDueDate = "3 days from now",
             sourceLocation = SearchType.Certificates,
+        ),
+    )
+
+    val programItems = mutableListOf(
+        ProgramItem(
+            id = 1,
+            date = "Dec 12 2022",
+            programImage = R.drawable.google_logo,
+            onDoneDrawable = R.drawable.ic_baseline_check_24,
+        ),
+        ProgramItem(
+            id = 2,
+            date = "Dec 12 2022",
+            programImage = R.drawable.google_logo,
+            onDoneDrawable = R.drawable.ic_baseline_done_all_24,
+        ),
+        ProgramItem(
+            id = 3,
+            date = "Dec 12 2022",
+            programImage = R.drawable.google_logo,
+            onDoneDrawable = R.drawable.ic_baseline_check_24,
+
+        ),
+        ProgramItem(
+            id = 4,
+            date = "Dec 12 2022",
+            programImage = R.drawable.google_logo,
+            onDoneDrawable = R.drawable.ic_baseline_check_24,
+
+        ),
+        ProgramItem(
+            id = 5,
+            date = "Dec 12 2022",
+            programImage = R.drawable.google_logo,
+            onDoneDrawable = R.drawable.ic_baseline_done_all_24,
+        ),
+        ProgramItem(
+            id = 6,
+            date = "Dec 12 2022",
+            programImage = R.drawable.google_logo,
+            onDoneDrawable = R.drawable.ic_baseline_check_24,
+        ),
+        ProgramItem(
+            id = 7,
+            date = "Dec 12 2022",
+            programImage = R.drawable.google_logo,
+            onDoneDrawable = R.drawable.ic_baseline_done_all_24,
+        ),
+        ProgramItem(
+            id = 8,
+            date = "Dec 12 2022",
+            programImage = R.drawable.google_logo,
+            onDoneDrawable = R.drawable.ic_baseline_check_24,
         ),
     )
 
