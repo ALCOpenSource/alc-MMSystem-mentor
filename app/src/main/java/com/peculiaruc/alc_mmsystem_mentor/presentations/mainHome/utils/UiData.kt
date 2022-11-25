@@ -2,6 +2,7 @@ package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
+import com.peculiaruc.alc_mmsystem_mentor.domain.TaskItem
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.DrawerItem
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
@@ -124,6 +125,65 @@ object UiData {
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
+        ),
+    )
+
+    val taskItems = listOf(
+        TaskItem(
+            id = 1,
+            title = "Room library write article write",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            progress = "Assigned",
+            onComplete = true,
+            time = "2 days ago from now"
+        ),
+        TaskItem(
+            id = 2,
+            title = "Debugging in Vs Code",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            progress = "Completed",
+            onStart = false,
+            time = "2 days ago from now"
+        ),
+        TaskItem(
+            id = 3,
+            title = "Room library write article write",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            progress = "Assigned",
+            onComplete = true,
+            time = "3 days ago from now"
+        ),
+        TaskItem(
+            id = 4,
+            title = "Room library write article write",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            progress = "In progress",
+            onComplete = true,
+            time = "3 days ago from now"
+        ),
+        TaskItem(
+            id = 5,
+            title = "Debugging in Vs Code",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            progress = "Assigned",
+            onComplete = true,
+            time = "2 days ago from now"
+        ),
+        TaskItem(
+            id = 6,
+            title = "Debugging in Vs Code",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            progress = "Completed",
+            onStart = true,
+            time = "2 days ago from now"
+        ),
+        TaskItem(
+            id = 7,
+            title = "Debugging in Vs Code",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            progress = "Completed",
+            onStart = true,
+            time = "2 days ago from now"
         ),
     )
 
