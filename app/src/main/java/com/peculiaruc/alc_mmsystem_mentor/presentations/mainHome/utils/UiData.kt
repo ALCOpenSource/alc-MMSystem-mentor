@@ -54,21 +54,28 @@ object UiData {
         ),
     )
 
-    val programItems = mutableListOf(
+    val programItems = listOf(
         ProgramItem(
             id = 1,
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            title = "GADS Program 2022",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
         ),
         ProgramItem(
             id = 2,
+            title = "GADS Program 2022",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_done_all_24,
         ),
         ProgramItem(
             id = 3,
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+
+            title = "GADS Program 2022",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
@@ -76,6 +83,8 @@ object UiData {
         ),
         ProgramItem(
             id = 4,
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            title = "GADS Program 2022",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
@@ -83,24 +92,35 @@ object UiData {
         ),
         ProgramItem(
             id = 5,
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            title = "GADS Program 2022",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_done_all_24,
         ),
         ProgramItem(
             id = 6,
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+
+            title = "GADS Program 2022",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
         ),
         ProgramItem(
             id = 7,
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+
+            title = "GADS Program 2022",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_done_all_24,
         ),
         ProgramItem(
             id = 8,
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+
+            title = "GADS Program 2022",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
