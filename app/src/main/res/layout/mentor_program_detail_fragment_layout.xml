@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="12dp"
-    tools:context=".presentations.mainHome.otherScreens.SettingsFragment">
+    tools:context=".presentations.mainHome.otherScreens.MentorProgramDetailFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
