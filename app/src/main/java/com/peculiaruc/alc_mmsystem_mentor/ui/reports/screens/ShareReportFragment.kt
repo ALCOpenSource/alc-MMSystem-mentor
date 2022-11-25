@@ -35,15 +35,6 @@ class ShareReportFragment : Fragment() {
         btn_open_field.text = getString(R.string.open_email_app)
         btn_cancel_field.text = getString(R.string.cancel)
 
-        btn_open_field.setOnClickListener {
-            val action = ShareReportFragmentDirections.actionShareReportFragmentToComposeTaskFragment()
-            btn_open_field.findNavController().navigate(action)
-        }
-
-        btn_cancel_field.setOnClickListener {
-            val action = ShareReportFragmentDirections.actionShareReportFragmentToSelectProgramFragment()
-            btn_cancel_field.findNavController().navigate(action)
-        }
     }
 
 

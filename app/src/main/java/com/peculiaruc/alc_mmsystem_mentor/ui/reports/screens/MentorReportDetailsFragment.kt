@@ -36,14 +36,6 @@ class MentorReportDetailsFragment : Fragment() {
         btn_share_field.text = getString(R.string.share)
         btn_download_field.text = getString(R.string.download)
 
-        btn_download_field.setOnClickListener {
-            val action = MentorReportDetailsFragmentDirections.actionMentorReportDetailsFragmentToReportDownloadFragment()
-            btn_download_field.findNavController().navigate(action)
-        }
-        btn_share_field.setOnClickListener {
-            val action = MentorReportDetailsFragmentDirections.actionMentorReportDetailsFragmentToShareReportFragment()
-            btn_share_field.findNavController().navigate(action)
-        }
     }
 
 

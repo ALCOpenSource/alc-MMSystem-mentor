@@ -2,8 +2,9 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
+    android:id="@+id/tasks_nav_graph"
     app:startDestination="@id/taskFragment">
+
     <fragment
         android:id="@+id/taskFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskFragment"
@@ -13,6 +14,7 @@
             android:id="@+id/action_taskFragment_to_taskDetailFragment"
             app:destination="@id/taskDetailFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/taskAssignedFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskAssignedFragment"
@@ -26,6 +28,7 @@
             app:argType="integer"
             android:defaultValue="0" />
     </fragment>
+
     <fragment
         android:id="@+id/taskDetailFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskDetailFragment"
@@ -39,4 +42,5 @@
             app:argType="integer"
             android:defaultValue="0" />
     </fragment>
+
 </navigation>

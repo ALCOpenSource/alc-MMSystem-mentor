@@ -1,9 +1,21 @@
 <resources>
-    <string name="app_name">Mentor App</string>
+    <string name="app_name">Mentor</string>
     <string name="my_tasks">My Tasks</string>
+
     <string name="assign_task">Assign Task</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quick_actions">Quick Actions</string>
+
+    <string name="view_tasks_in_progress">Tasks in Progress</string>
+    <string name="view_chats_with_mentor_managers">Chat</string>
+    <string name="view_reports">Reports</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="programs">Programs</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+
     <string name="write_article">Room library article write article</string>
     <string name="request_to_be_assigned">Request to be assigned</string>
     <string name="start">Start</string>
@@ -24,7 +36,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="search">Search</string>
 
 
 
@@ -64,7 +75,7 @@
     <string name="share_report">Share report via email</string>
     <string name="report_downloaded">Report Downloaded Successfully!</string>
     <string name="days_from_now">3 days from now</string>
-    <string name="room_course">Room library article write...</string>
+    <string name="room_course">Room library article write…</string>
     <string name="all_reports">All Reports</string>
     <string name="program">Program</string>
     <string name="success_image">Success image</string>
@@ -77,4 +88,6 @@
     <string name="submit_report">Submit Report</string>
     <string name="select_program">Select Program</string>
     <string name="done">Done</string>
+
+
 </resources>
