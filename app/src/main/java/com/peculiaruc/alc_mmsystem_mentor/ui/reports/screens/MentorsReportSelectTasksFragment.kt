@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui
+package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.adapters.ItemTasks
-import com.peculiaruc.alc_mmsystem_mentor.adapters.SelectTasksAdapter
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.ReportTask
+import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.SelectTasksAdapter
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorsReportSelectTasksBinding
 import kotlinx.android.synthetic.main.fragment_compose_report_tasks.view.*
 import kotlinx.android.synthetic.main.include_toolbar.*
@@ -39,11 +39,11 @@ class MentorsReportSelectTasksFragment : Fragment() {
 
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        val data = ArrayList<ItemTasks>()
+        val data = ArrayList<ReportTask>()
 
         for (i in 1..20) {
             data.add(
-                ItemTasks(
+                ReportTask(
                 title = getString(R.string.room_course),
                 image = R.drawable.ic_task
                 )

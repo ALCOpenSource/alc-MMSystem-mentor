@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor.adapters
+package com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.peculiaruc.alc_mmsystem_mentor.R
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Program
 
-class SelectProgramAdapter(private val program: List<ItemPrograms>) : RecyclerView.Adapter<SelectProgramAdapter.ViewHolder>() {
+class SelectProgramAdapter(private val program: List<Program>) : RecyclerView.Adapter<SelectProgramAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_select_program, parent, false)

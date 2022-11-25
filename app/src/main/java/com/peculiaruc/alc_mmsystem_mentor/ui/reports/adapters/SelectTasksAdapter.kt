@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor.adapters
+package com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.peculiaruc.alc_mmsystem_mentor.R
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.ReportTask
 
-class SelectTasksAdapter(private val tasks: List<ItemTasks>) : RecyclerView.Adapter<SelectTasksAdapter.ViewHolder>() {
+class SelectTasksAdapter(private val tasks: List<ReportTask>) : RecyclerView.Adapter<SelectTasksAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_mentor_select_tasks, parent, false)

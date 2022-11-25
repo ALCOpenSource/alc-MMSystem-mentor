@@ -7,7 +7,7 @@
     android:background="@color/transparent_white"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".mentortasks_ui.ReportDownloadFragment">
+    tools:context=".ui.reports.screens.ReportDownloadFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"

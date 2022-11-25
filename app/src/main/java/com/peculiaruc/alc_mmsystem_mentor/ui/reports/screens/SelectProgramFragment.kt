@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui
+package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,8 +9,8 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.adapters.ItemPrograms
-import com.peculiaruc.alc_mmsystem_mentor.adapters.SelectProgramAdapter
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Program
+import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.SelectProgramAdapter
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentSelectProgramBinding
 import kotlinx.android.synthetic.main.fragment_compose_report_tasks.view.*
 import kotlinx.android.synthetic.main.fragment_select_program.*
@@ -42,11 +42,11 @@ class SelectProgramFragment : Fragment() {
 
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        val data = ArrayList<ItemPrograms>()
+        val data = ArrayList<Program>()
 
         for (i in 1..20) {
             data.add(
-                ItemPrograms(
+                Program(
                     title = getString(R.string.room_course),
                     image = R.drawable.ic_task
                 )

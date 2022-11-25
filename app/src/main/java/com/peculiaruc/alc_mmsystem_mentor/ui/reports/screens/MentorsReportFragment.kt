@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui
+package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.adapters.CourseInfo
-import com.peculiaruc.alc_mmsystem_mentor.adapters.CourseRecyclerAdapter
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Course
+import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.CourseRecyclerAdapter
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorsReportBinding
 import kotlinx.android.synthetic.main.include_toolbar.*
 import kotlinx.android.synthetic.main.include_toolbar.view.*
@@ -45,11 +45,11 @@ class MentorsReportFragment : Fragment() {
 
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        val data = ArrayList<CourseInfo>()
+        val data = ArrayList<Course>()
 
         for (i in 1..20) {
             data.add(
-                CourseInfo(course = getString(R.string.google_africa_scholarship),
+                Course(course = getString(R.string.google_africa_scholarship),
                 title = getString(R.string.by_name),
                 image = R.drawable.ic_download,
             image2 = R.drawable.ic_share_alt

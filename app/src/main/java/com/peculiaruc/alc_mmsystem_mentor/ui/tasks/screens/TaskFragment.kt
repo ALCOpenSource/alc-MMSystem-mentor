@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor
+package com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens
 
 import android.os.Bundle
 import android.view.*
@@ -9,11 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
-import com.peculiaruc.alc_mmsystem_mentor.data.model.MentorTasks
+import com.peculiaruc.alc_mmsystem_mentor.R
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Task
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentTaskBinding
-import com.peculiaruc.alc_mmsystem_mentor.ui.TaskActivity
-import com.peculiaruc.alc_mmsystem_mentor.ui.TaskObjectFragment
-import com.peculiaruc.alc_mmsystem_mentor.ui.adapter.TaskListAdapter
+import com.peculiaruc.alc_mmsystem_mentor.ui.tasks.adapters.TaskListAdapter
 import java.util.*
 
 
@@ -32,9 +31,9 @@ class TaskFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: TaskListAdapter
 
-    var tasks: ArrayList<MentorTasks> = arrayListOf()
+    var tasks: ArrayList<Task> = arrayListOf()
 
-    private val taskOne = MentorTasks(
+    private val taskOne = Task(
         1,
         "Write Documentation for Auth",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. " +
@@ -45,7 +44,7 @@ class TaskFragment : Fragment() {
         false,
         0
     )
-    private val taskTwo = MentorTasks(
+    private val taskTwo = Task(
         2,
         "Implement Dependency Injection",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. " +
@@ -55,7 +54,7 @@ class TaskFragment : Fragment() {
         false,
         3
     )
-    private val taskThree = MentorTasks(
+    private val taskThree = Task(
         3,
         "Fetch API endpoint for all tasks",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -65,7 +64,7 @@ class TaskFragment : Fragment() {
         true,
         4
     )
-    private val taskFour = MentorTasks(
+    private val taskFour = Task(
         4,
         "Implement local caching",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -75,7 +74,7 @@ class TaskFragment : Fragment() {
         false,
         3
     )
-    private val taskFive = MentorTasks(
+    private val taskFive = Task(
         5,
         "Create Database",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -85,7 +84,7 @@ class TaskFragment : Fragment() {
         false,
         5
     )
-    private val taskSix = MentorTasks(
+    private val taskSix = Task(
         6,
         "Implement Navigation Graph",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -95,7 +94,7 @@ class TaskFragment : Fragment() {
         true,
         5
     )
-    private val taskSeven = MentorTasks(
+    private val taskSeven = Task(
         7,
         "Liaise with Backend on the Settings endpoints",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -105,7 +104,7 @@ class TaskFragment : Fragment() {
         false,
         1
     )
-    private val taskEight = MentorTasks(
+    private val taskEight = Task(
         8,
         "Implement Firestore caching",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -115,7 +114,7 @@ class TaskFragment : Fragment() {
         false,
         3
     )
-    private val taskNine = MentorTasks(
+    private val taskNine = Task(
         9,
         "Implement UI for Chat function",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -125,7 +124,7 @@ class TaskFragment : Fragment() {
         false,
         3
     )
-    private val taskTen = MentorTasks(
+    private val taskTen = Task(
         10,
         "Implement Internationalization",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -197,7 +196,7 @@ class TaskFragment : Fragment() {
 
     private fun filter(text: String) {
         // creating a new array list to filter our data.
-        val filteredlist = ArrayList<MentorTasks>()
+        val filteredlist = ArrayList<Task>()
 
         // running a for loop to compare elements.
         for (item in tasks) {

@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor.ui.adapter
+package com.peculiaruc.alc_mmsystem_mentor.ui.tasks.adapters
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,14 +10,14 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.model.MentorTasks
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Task
 
 class TaskListAdapter :
-    ListAdapter<MentorTasks, TaskListAdapter.TaskViewHolder>(TasksComparator()) {
+    ListAdapter<Task, TaskListAdapter.TaskViewHolder>(TasksComparator()) {
 
-    private lateinit var taskList: ArrayList<MentorTasks>
+    private lateinit var taskList: ArrayList<Task>
 
-    fun filterList(filterList: ArrayList<MentorTasks>) {
+    fun filterList(filterList: ArrayList<Task>) {
         // below line is to add our filtered
         // list in our course array list.
         taskList = filterList
@@ -66,12 +66,12 @@ class TaskListAdapter :
         }
     }
 
-    class TasksComparator : DiffUtil.ItemCallback<MentorTasks>() {
-        override fun areItemsTheSame(oldItem: MentorTasks, newItem: MentorTasks): Boolean {
+    class TasksComparator : DiffUtil.ItemCallback<Task>() {
+        override fun areItemsTheSame(oldItem: Task, newItem: Task): Boolean {
             return oldItem === newItem
         }
 
-        override fun areContentsTheSame(oldItem: MentorTasks, newItem: MentorTasks): Boolean {
+        override fun areContentsTheSame(oldItem: Task, newItem: Task): Boolean {
             return oldItem.id == newItem.id
         }
     }

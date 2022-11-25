@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor
+package com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens
 
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +11,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import com.peculiaruc.alc_mmsystem_mentor.data.model.MentorTasks
+import com.peculiaruc.alc_mmsystem_mentor.R
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Task
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,37 +21,37 @@ private const val ARG_PARAM2 = "param2"
 
 class TaskDetailFragment : Fragment() {
 
-    var tasks: ArrayList<MentorTasks> = arrayListOf()
+    var tasks: ArrayList<Task> = arrayListOf()
 
-    private val taskOne = MentorTasks(1, "Write Documentation for Auth",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. " +
+    private val taskOne = Task(1, "Write Documentation for Auth",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. " +
             "Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. " +
             "Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, " +
             "at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales",false, false,  0)
-    private val taskTwo = MentorTasks(2, "Implement Dependency Injection",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. " +
+    private val taskTwo = Task(2, "Implement Dependency Injection",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. " +
             "Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. " +
             "Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, ", true, false,  3)
-    private val taskThree = MentorTasks(3, "Fetch API endpoint for all tasks",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
+    private val taskThree = Task(3, "Fetch API endpoint for all tasks",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
             "            \"Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. \" +\n" +
             "            \"Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh", false, true,  4)
-    private val taskFour = MentorTasks(4, "Implement local caching",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
+    private val taskFour = Task(4, "Implement local caching",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
             "            \"Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. \" +\n" +
             "            \"Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh", true, false,  3)
-    private val taskFive = MentorTasks(5, "Create Database",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
+    private val taskFive = Task(5, "Create Database",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
             "            \"Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. \" +\n" +
             "            \"Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh", false, false,  5)
-    private val taskSix = MentorTasks(6, "Implement Navigation Graph",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
+    private val taskSix = Task(6, "Implement Navigation Graph",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
             "            \"Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. \" +\n" +
             "            \"Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh", false, true,  5)
-    private val taskSeven = MentorTasks(7, "Liaise with Backend on the Settings endpoints",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
+    private val taskSeven = Task(7, "Liaise with Backend on the Settings endpoints",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
             "            \"Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. \" +\n" +
             "            \"Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh", false, false,  1)
-    private val taskEight = MentorTasks(8, "Implement Firestore caching",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
+    private val taskEight = Task(8, "Implement Firestore caching",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
             "            \"Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. \" +\n" +
             "            \"Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh", true, false,  3)
-    private val taskNine= MentorTasks(9, "Implement UI for Chat function",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
+    private val taskNine= Task(9, "Implement UI for Chat function",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
             "            \"Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. \" +\n" +
             "            \"Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh", true, false,  3)
-    private val taskTen = MentorTasks(10, "Implement Internationalization",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
+    private val taskTen = Task(10, "Implement Internationalization",  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
             "            \"Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. \" +\n" +
             "            \"Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh", false, true,  4)
 

@@ -1,25 +1,24 @@
-package com.peculiaruc.alc_mmsystem_mentor.ui
+package com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.model.MentorTasks
-import com.peculiaruc.alc_mmsystem_mentor.ui.adapter.TaskListAdapter
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Task
 
-class TaskObjectFragment(position: Int) : Fragment() {
+class TaskAssignedFragment : Fragment() {
 
-    val pos: Int = position
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: TaskListAdapter
+    var tasks: ArrayList<Task> = arrayListOf()
 
-    var tasks: ArrayList<MentorTasks> = arrayListOf()
-
-    private val taskOne = MentorTasks(
+    private val taskOne = Task(
         1,
         "Write Documentation for Auth",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. " +
@@ -30,7 +29,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         false,
         0
     )
-    private val taskTwo = MentorTasks(
+    private val taskTwo = Task(
         2,
         "Implement Dependency Injection",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. " +
@@ -40,7 +39,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         false,
         3
     )
-    private val taskThree = MentorTasks(
+    private val taskThree = Task(
         3,
         "Fetch API endpoint for all tasks",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -50,7 +49,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         true,
         4
     )
-    private val taskFour = MentorTasks(
+    private val taskFour = Task(
         4,
         "Implement local caching",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -60,7 +59,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         false,
         3
     )
-    private val taskFive = MentorTasks(
+    private val taskFive = Task(
         5,
         "Create Database",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -70,7 +69,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         false,
         5
     )
-    private val taskSix = MentorTasks(
+    private val taskSix = Task(
         6,
         "Implement Navigation Graph",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -80,7 +79,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         true,
         5
     )
-    private val taskSeven = MentorTasks(
+    private val taskSeven = Task(
         7,
         "Liaise with Backend on the Settings endpoints",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -90,7 +89,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         false,
         1
     )
-    private val taskEight = MentorTasks(
+    private val taskEight = Task(
         8,
         "Implement Firestore caching",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -100,7 +99,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         false,
         3
     )
-    private val taskNine = MentorTasks(
+    private val taskNine = Task(
         9,
         "Implement UI for Chat function",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -110,7 +109,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         false,
         3
     )
-    private val taskTen = MentorTasks(
+    private val taskTen = Task(
         10,
         "Implement Internationalization",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. \" +\n" +
@@ -122,54 +121,38 @@ class TaskObjectFragment(position: Int) : Fragment() {
     )
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        val view = inflater.inflate(R.layout.fragment_task_object, container, false)
-        recyclerView = view.findViewById<RecyclerView>(R.id.recycle)
-        adapter = TaskListAdapter()
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+    ): View? {
+        // Inflate the layout for this fragment
+        var view = inflater.inflate(R.layout.fragment_task_assigned, container, false)
+        val btn = view.findViewById<Button>(R.id.button2)
+
+        btn.setOnClickListener {
+            findNavController().navigate(R.id.action_taskAssignedFragment_to_taskFragment)
+        }
+        val back = view.findViewById<ImageView>(R.id.imageView)
+        back.setOnClickListener {
+            it.findNavController().navigateUp()
+        }
+
         return view
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        when (pos) {
-            0 -> {
-                tasks.add(taskOne)
-                tasks.add(taskTwo)
-                tasks.add(taskThree)
-                tasks.add(taskFour)
-                tasks.add(taskFive)
-                tasks.add(taskSix)
-                tasks.add(taskSeven)
-                tasks.add(taskEight)
-                tasks.add(taskNine)
-                tasks.add(taskTen)
-                adapter.submitList(tasks)
-            }
-            1 -> {
-                tasks.add(taskTwo)
-                tasks.add(taskFour)
-                tasks.add(taskEight)
-                tasks.add(taskNine)
-                adapter.submitList(tasks)
-            }
-            2 -> {
-                tasks.add(taskThree)
-                tasks.add(taskSix)
-                tasks.add(taskSeven)
-                tasks.add(taskEight)
-                tasks.add(taskTen)
-                adapter.submitList(tasks)
-            }
-            3 -> {
-                tasks.add(taskTwo)
-                tasks.add(taskFour)
-                tasks.add(taskEight)
-                tasks.add(taskNine)
-                adapter.submitList(tasks)
+        super.onViewCreated(view, savedInstanceState)
+        val bundle = arguments
+        if (bundle != null) {
+            Log.e("TaskAssignedFragment", "Fragment received information")
+            val args = TaskAssignedFragmentArgs.fromBundle(bundle)
+            val id = args.id
+            for (i in tasks.indices) {
+                if (tasks.get(i).id == id) {
+                    var tv = view.findViewById<TextView>(R.id.textView4)
+                    tv?.text = tasks.get(i).title
+                    view.findViewById<TextView>(R.id.textView5)?.text = tasks.get(i).desc
+                }
             }
         }
     }

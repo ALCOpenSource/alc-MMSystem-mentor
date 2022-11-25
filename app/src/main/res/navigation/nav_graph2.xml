@@ -6,7 +6,7 @@
     app:startDestination="@id/taskFragment">
     <fragment
         android:id="@+id/taskFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.TaskFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskFragment"
         android:label="fragment_task"
         tools:layout="@layout/fragment_task" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/taskAssignedFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.TaskAssignedFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskAssignedFragment"
         android:label="fragment_task_assigned"
         tools:layout="@layout/fragment_task_assigned" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/taskDetailFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.TaskDetailFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskDetailFragment"
         android:label="fragment_task_detail"
         tools:layout="@layout/fragment_task_detail" >
         <action
