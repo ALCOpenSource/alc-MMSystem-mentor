@@ -1,6 +1,7 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
+import com.peculiaruc.alc_mmsystem_mentor.domain.CertificateItem
 import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
 import com.peculiaruc.alc_mmsystem_mentor.domain.ReportItem
 import com.peculiaruc.alc_mmsystem_mentor.domain.TaskItem
@@ -283,4 +284,50 @@ object UiData {
             blocker = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
         )
     )
+
+    val certificateList = listOf(
+        CertificateItem(
+            id = 1,
+            title = "GADS CLOUD 2022 - COMPLETION",
+            time = "Oct 16 2022",
+            certImage = R.drawable.cert_ph
+        ),CertificateItem(
+            id = 2,
+            title = "GADS CLOUD 2022 - COMPLETION",
+            time = "Oct 16 2022",
+            certImage = R.drawable.cert_ph
+        ),CertificateItem(
+            id = 3,
+            title = "GADS CLOUD 2022 - COMPLETION",
+            time = "Oct 16 2022",
+            certImage = R.drawable.cert_ph
+        ),CertificateItem(
+            id = 4,
+            title = "GADS CLOUD 2022 - COMPLETION",
+            time = "Oct 16 2022",
+            certImage = R.drawable.cert_ph
+        ),CertificateItem(
+            id = 5,
+            title = "GADS CLOUD 2022 - COMPLETION",
+            time = "Oct 16 2022",
+            certImage = R.drawable.cert_ph
+        ),CertificateItem(
+            id = 6,
+            title = "GADS CLOUD 2022 - COMPLETION",
+            time = "Oct 16 2022",
+            certImage = R.drawable.cert_ph
+        ),CertificateItem(
+            id = 7,
+            title = "GADS CLOUD 2022 - COMPLETION",
+            time = "Oct 16 2022",
+            certImage = R.drawable.cert_ph
+        ),CertificateItem(
+            id = 8,
+            title = "GADS CLOUD 2022 - COMPLETION",
+            time = "Oct 16 2022",
+            certImage = R.drawable.cert_ph
+        ),
+
+    )
+
 }
