@@ -34,7 +34,6 @@ class ProgramsAdapter(
     override fun onBindViewHolder(holder: ProgramsViewHolder, position: Int) {
         val programs = programsList[position]
         holder.bindItem(programs)
-
     }
 
     override fun getItemCount(): Int {

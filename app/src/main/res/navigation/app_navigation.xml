@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_mainHomeFragment_to_mentorTaskDetailFragment"
             app:destination="@id/mentorTaskDetailFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mentorReportDetailFragment"
+            app:destination="@id/mentorReportDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -46,6 +49,14 @@
         <argument
             android:name="id"
             app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.TaskItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorReportDetailFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorReportDetailFragment"
+        android:label="MentorReportDetailFragment" >
+        <argument
+            android:name="id"
+            app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.ReportItem" />
     </fragment>
 
 </navigation>
