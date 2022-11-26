@@ -3,27 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_navigation"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/home">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/home"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.home.screens.HomeFragment"
         android:label="@string/home"
         tools:layout="@layout/fragment_home" >
+
         <action
-            android:id="@+id/action_homeFragment_to_mentorsReportFragment"
-            app:destination="@id/tasks_navigation"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popEnterAnim="@anim/fade_in"
-            app:popExitAnim="@anim/slide_out_to_right"/>
+            android:id="@+id/action_home_to_certificates"
+            app:destination="@id/certificates" />
         <action
-            android:id="@+id/action_homeFragment_to_taskFragment"
-            app:destination="@id/reports_navigation"
-            app:enterAnim="@anim/fade_in"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popEnterAnim="@anim/fade_in"
-            app:popExitAnim="@anim/slide_out_to_right" />
+            android:id="@+id/action_home_to_messages"
+            app:destination="@id/messages" />
+        <action
+            android:id="@+id/action_home_to_tasks_navigation"
+            app:destination="@id/tasks_navigation" />
+        <action
+            android:id="@+id/action_home_to_reports_navigation"
+            app:destination="@id/reports_navigation" />
     </fragment>
 
 
@@ -36,18 +35,10 @@
             tools:layout="@layout/fragment_task">
             <action
                 android:id="@+id/action_taskFragment_to_taskDetailFragment"
-                app:destination="@id/taskDetailFragment"
-                app:enterAnim="@anim/slide_in_from_right"
-                app:exitAnim="@anim/slide_out_to_left"
-                app:popEnterAnim="@anim/fade_in"
-                app:popExitAnim="@anim/slide_out_to_right"/>
+                app:destination="@id/taskDetailFragment" />
             <action
                 android:id="@+id/action_taskFragment_to_homeFragment"
-                app:destination="@id/homeFragment"
-                app:enterAnim="@anim/fade_in"
-                app:exitAnim="@anim/slide_out_to_left"
-                app:popEnterAnim="@anim/fade_in"
-                app:popExitAnim="@anim/slide_out_to_right"/>
+                app:destination="@id/home" />
         </fragment>
         <fragment
             android:id="@+id/taskDetailFragment"
@@ -56,11 +47,7 @@
             tools:layout="@layout/fragment_task_detail">
             <action
                 android:id="@+id/action_taskDetailFragment_to_taskAssignedFragment"
-                app:destination="@id/taskAssignedFragment"
-                app:enterAnim="@anim/slide_in_from_right"
-                app:exitAnim="@anim/slide_out_to_left"
-                app:popEnterAnim="@anim/fade_in"
-                app:popExitAnim="@anim/slide_out_to_right"/>
+                app:destination="@id/taskAssignedFragment" />
             <argument
                 android:name="id"
                 android:defaultValue="0"
@@ -91,25 +78,13 @@
             tools:layout="@layout/fragment_mentors_report">
             <action
                 android:id="@+id/action_mentorsReportFragment_to_composeReportFragment"
-                app:destination="@id/composeReportFragment"
-                app:enterAnim="@anim/fade_in"
-                app:exitAnim="@anim/fade_out"
-                app:popEnterAnim="@anim/fade_in"
-                app:popExitAnim="@anim/slide_out_to_right"/>
+                app:destination="@id/composeReportFragment" />
             <action
                 android:id="@+id/action_mentorsReportFragment_to_mentorReportDetailsFragment"
-                app:destination="@id/mentorReportDetailsFragment"
-                app:enterAnim="@anim/slide_in_from_right"
-                app:exitAnim="@anim/slide_out_to_left"
-                app:popEnterAnim="@anim/fade_in"
-                app:popExitAnim="@anim/slide_out_to_right"/>
+                app:destination="@id/mentorReportDetailsFragment" />
             <action
                 android:id="@+id/action_mentorsReportFragment_to_homeFragment"
-                app:destination="@id/homeFragment"
-                app:enterAnim="@anim/fade_in"
-                app:exitAnim="@anim/slide_out_to_left"
-                app:popEnterAnim="@anim/fade_in"
-                app:popExitAnim="@anim/slide_out_to_right"/>
+                app:destination="@id/home" />
         </fragment>
         <fragment
             android:id="@+id/mentorReportDetailsFragment"
@@ -123,18 +98,10 @@
             tools:layout="@layout/fragment_compose_report_program">
             <action
                 android:id="@+id/action_composeReportFragment_to_mentorReportSelectTasksFragment"
-                app:destination="@id/mentorReportSelectTasksFragment"
-                app:enterAnim="@anim/slide_in_from_right"
-                app:exitAnim="@anim/slide_out_to_left"
-                app:popEnterAnim="@anim/fade_in"
-                app:popExitAnim="@anim/slide_out_to_right"/>
+                app:destination="@id/mentorReportSelectTasksFragment" />
             <action
                 android:id="@+id/action_composeReportFragment_to_selectProgramFragment"
-                app:destination="@id/selectProgramFragment"
-                app:enterAnim="@anim/slide_in_from_right"
-                app:exitAnim="@anim/slide_out_to_left"
-                app:popEnterAnim="@anim/fade_in"
-                app:popExitAnim="@anim/slide_out_to_right"/>
+                app:destination="@id/selectProgramFragment" />
         </fragment>
         <fragment
             android:id="@+id/mentorReportSelectTasksFragment"
@@ -155,5 +122,27 @@
                 app:destination="@id/composeReportFragment" />
         </fragment>
     </navigation>
+
+    <fragment
+        android:id="@+id/messages"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.messages.screens.MessagesFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.profile.screens.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/certificates"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.certificates.screens.CertificatesFragment"
+        android:label="Certificates"
+        tools:layout="@layout/fragment_certificates" >
+        <action
+            android:id="@+id/action_certificatesFragment_to_homeFragment"
+            app:destination="@id/home" />
+    </fragment>
 
 </navigation>

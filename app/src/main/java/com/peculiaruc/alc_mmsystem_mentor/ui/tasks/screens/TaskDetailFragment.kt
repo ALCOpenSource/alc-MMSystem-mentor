@@ -87,18 +87,18 @@ class TaskDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val bundle = arguments
-        if (bundle != null) {
-            Log.e("TaskDetailFragment", "Fragment received information")
-            val args = TaskDetailFragmentArgs.fromBundle(bundle)
-            val id = args.id
-            for (i in tasks.indices){
-                if (tasks.get(i).id == id) {
-                    var tv = view.findViewById<TextView>(R.id.textView4)
-                    tv.text = tasks.get(i).title
-                    view.findViewById<TextView>(R.id.textView5).text = tasks.get(i).desc
-                }
-            }
-        }
+//        if (bundle != null) {
+//            Log.e("TaskDetailFragment", "Fragment received information")
+//            val args = TaskDetailFragmentArgs.fromBundle(bundle)
+//            val id = args.id
+//            for (i in tasks.indices){
+//                if (tasks.get(i).id == id) {
+//                    var tv = view.findViewById<TextView>(R.id.textView4)
+//                    tv.text = tasks.get(i).title
+//                    view.findViewById<TextView>(R.id.textView5).text = tasks.get(i).desc
+//                }
+//            }
+//        }
     }
 
 }

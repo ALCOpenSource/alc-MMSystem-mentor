@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/received_message"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="start"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="18dp"
+            android:paddingHorizontal="18dp">
+
+            <TextView
+                android:id="@+id/received_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/received_message"
+                android:textAlignment="textStart"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/received_time_sent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time_sent"
+                android:textAlignment="textStart"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sent_message"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="18dp"
+            android:paddingHorizontal="18dp">
+
+            <TextView
+                android:id="@+id/sent_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/sent_message"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sent_time_sent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="128dp"
+                    android:text="@string/time_sent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/single_tick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/sent"
+                        android:contentDescription="@string/sent"/>
+
+                    <ImageView
+                        android:id="@+id/double_tick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/seen"
+                        android:src="@drawable/seen"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

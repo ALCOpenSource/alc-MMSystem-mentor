@@ -15,6 +15,22 @@
     <string name="programs">Programs</string>
     <string name="messages">Messages</string>
     <string name="profile">Profile</string>
+    <string name="certificates">Certificates</string>
+
+
+    <!-- Messages -->
+    <string name="chats">Chats</string>
+    <string name="broadcast_messages">Broadcast Messages</string>
+    <string name="start_new_chat">Start New Chat</string>
+    <string name="chat_name">Aisha Phiri</string>
+    <string name="received_message">Hello Kenny, trust you are well? </string>
+    <string name="sent_message">Hello, Aisha</string>
+    <string name="time_elapsed">30m</string>
+    <string name="number_of_chats">4</string>
+    <string name="time_sent">6:00pm</string>
+    <string name="sent">Message has been sent</string>
+    <string name="seen">Message has been seen</string>
+
 
     <string name="write_article">Room library article write article</string>
     <string name="request_to_be_assigned">Request to be assigned</string>
