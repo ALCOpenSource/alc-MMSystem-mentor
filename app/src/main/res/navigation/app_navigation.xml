@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_mainHomeFragment_to_mentorReportDetailFragment"
             app:destination="@id/mentorReportDetailFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mentorCertDetailFragment"
+            app:destination="@id/mentorCertDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -57,6 +60,14 @@
         <argument
             android:name="id"
             app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.ReportItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorCertDetailFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorCertDetailFragment"
+        android:label="MentorCertDetailFragment" >
+        <argument
+            android:name="id"
+            app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.CertificateItem" />
     </fragment>
 
 </navigation>
