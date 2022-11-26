@@ -26,20 +26,22 @@ class HomeFragment : Fragment() {
             container,
             false
         )
+        reportsCardView = binding.reports
+        tasksCardView = binding.tasksInProgress
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        reportsCardView = binding.reports
         reportsCardView.setOnClickListener {
-            val action = HomeFragmentDirections.actionHomeFragmentToReportsNavGraph()
+            val action = HomeFragmentDirections.actionHomeFragmentToMentorsReportFragment()
             findNavController().navigate(action)
         }
-        tasksCardView = binding.tasksInProgress
+
         tasksCardView.setOnClickListener {
-            val action = HomeFragmentDirections.actionHomeFragmentToTasksNavGraph()
+            val action = HomeFragmentDirections.actionHomeFragmentToTaskFragment()
             findNavController().navigate(action)
         }
 
