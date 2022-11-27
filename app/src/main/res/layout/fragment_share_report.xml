@@ -7,7 +7,7 @@
     android:background="@color/transparent_white"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".mentortasks_ui.ShareReportFragment">
+    tools:context=".ui.reports.screens.ShareReportFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"

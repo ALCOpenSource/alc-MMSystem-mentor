@@ -2,132 +2,147 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/mentorsReportFragment">
+    android:id="@+id/root_navigation"
+    app:startDestination="@id/home">
 
     <fragment
-        android:id="@+id/composeReportFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.ComposeReportFragment"
-        android:label="fragment_compose_repot"
-        tools:layout="@layout/fragment_compose_report_program" >
+        android:id="@+id/home"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.home.screens.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+
         <action
-            android:id="@+id/action_composeReportFragment_to_reportSubmittedFragment"
-            app:destination="@id/reportSubmittedFragment"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popUpToInclusive="true"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right"/>
+            android:id="@+id/action_home_to_certificates"
+            app:destination="@id/certificates" />
+        <action
+            android:id="@+id/action_home_to_messages"
+            app:destination="@id/messages" />
+        <action
+            android:id="@+id/action_home_to_tasks_navigation"
+            app:destination="@id/tasks_navigation" />
+        <action
+            android:id="@+id/action_home_to_reports_navigation"
+            app:destination="@id/reports_navigation" />
     </fragment>
 
+
+    <navigation android:id="@+id/tasks_navigation"
+        app:startDestination="@id/taskFragment">
+        <fragment
+            android:id="@+id/taskFragment"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskFragment"
+            android:label="Tasks"
+            tools:layout="@layout/fragment_task">
+            <action
+                android:id="@+id/action_taskFragment_to_taskDetailFragment"
+                app:destination="@id/taskDetailFragment" />
+            <action
+                android:id="@+id/action_taskFragment_to_homeFragment"
+                app:destination="@id/home" />
+        </fragment>
+        <fragment
+            android:id="@+id/taskDetailFragment"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskDetailFragment"
+            android:label="Task Details"
+            tools:layout="@layout/fragment_task_detail">
+            <action
+                android:id="@+id/action_taskDetailFragment_to_taskAssignedFragment"
+                app:destination="@id/taskAssignedFragment" />
+            <argument
+                android:name="id"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </fragment>
+        <fragment
+            android:id="@+id/taskAssignedFragment"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskAssignedFragment"
+            android:label="Task Details"
+            tools:layout="@layout/fragment_task_assigned">
+            <action
+                android:id="@+id/action_taskAssignedFragment_to_taskFragment"
+                app:destination="@id/taskFragment" />
+            <argument
+                android:name="id"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </fragment>
+    </navigation>
+
+
+    <navigation android:id="@+id/reports_navigation"
+        app:startDestination="@id/mentorsReportFragment">
+        <fragment
+            android:id="@+id/mentorsReportFragment"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.MentorsReportFragment"
+            android:label="Reports"
+            tools:layout="@layout/fragment_mentors_report">
+            <action
+                android:id="@+id/action_mentorsReportFragment_to_composeReportFragment"
+                app:destination="@id/composeReportFragment" />
+            <action
+                android:id="@+id/action_mentorsReportFragment_to_mentorReportDetailsFragment"
+                app:destination="@id/mentorReportDetailsFragment" />
+            <action
+                android:id="@+id/action_mentorsReportFragment_to_homeFragment"
+                app:destination="@id/home" />
+        </fragment>
+        <fragment
+            android:id="@+id/mentorReportDetailsFragment"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.MentorReportDetailsFragment"
+            android:label="report"
+            tools:layout="@layout/fragment_mentor_report_details" />
+        <fragment
+            android:id="@+id/composeReportFragment"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.ComposeReportFragment"
+            android:label="Compose Report"
+            tools:layout="@layout/fragment_compose_report_program">
+            <action
+                android:id="@+id/action_composeReportFragment_to_mentorReportSelectTasksFragment"
+                app:destination="@id/mentorReportSelectTasksFragment" />
+            <action
+                android:id="@+id/action_composeReportFragment_to_selectProgramFragment"
+                app:destination="@id/selectProgramFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/mentorReportSelectTasksFragment"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.MentorsReportSelectTasksFragment"
+            android:label="Select Task"
+            tools:layout="@layout/fragment_mentors_report_select_tasks">
+            <action
+                android:id="@+id/action_mentorReportSelectTasksFragment_to_composeReportFragment"
+                app:destination="@id/composeReportFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/selectProgramFragment"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.SelectProgramFragment"
+            android:label="Select Program"
+            tools:layout="@layout/fragment_select_program">
+            <action
+                android:id="@+id/action_selectProgramFragment_to_composeReportFragment"
+                app:destination="@id/composeReportFragment" />
+        </fragment>
+    </navigation>
+
     <fragment
-        android:id="@+id/mentorReportDetailsFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.MentorReportDetailsFragment"
-        android:label="fragment_mentor_report_details"
-        tools:layout="@layout/fragment_mentor_report_details" >
+        android:id="@+id/messages"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.messages.screens.MessagesFragment"
+        android:label="Messages"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.profile.screens.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/certificates"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.certificates.screens.CertificatesFragment"
+        android:label="Certificates"
+        tools:layout="@layout/fragment_certificates" >
         <action
-            android:id="@+id/action_mentorReportDetailsFragment_to_reportDownloadFragment"
-            app:destination="@id/reportDownloadFragment"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popUpToInclusive="true"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right"/>
-        <action
-            android:id="@+id/action_mentorReportDetailsFragment_to_shareReportFragment"
-            app:destination="@id/shareReportFragment"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popUpToInclusive="true"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right" />
+            android:id="@+id/action_certificatesFragment_to_homeFragment"
+            app:destination="@id/home" />
     </fragment>
-
-    <fragment
-        android:id="@+id/mentorsReportFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.MentorsReportFragment"
-        android:label="fragment_mentors_report"
-        tools:layout="@layout/fragment_mentors_report" >
-
-        <action
-            android:id="@+id/action_mentorsReportFragment_to_mentorReportDetailsFragment"
-            app:destination="@id/mentorReportDetailsFragment"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popUpToInclusive="true"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/selectProgramFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.SelectProgramFragment"
-        android:label="fragment_select_program"
-        tools:layout="@layout/fragment_select_program" >
-        <action
-            android:id="@+id/action_selectProgramFragment_to_composeReportFragment"
-            app:destination="@id/composeReportFragment"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popUpToInclusive="true"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/mentorReportSelectTasksFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.MentorsReportSelectTasksFragment"
-        android:label="fragment_mentors_select_tasks"
-        tools:layout="@layout/fragment_mentors_report_select_tasks" />
-
-    <fragment
-        android:id="@+id/composeTaskFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.ComposeReportTasksFragment"
-        android:label="fragment_compose_report_task"
-        tools:layout="@layout/fragment_compose_report_tasks" >
-        <action
-            android:id="@+id/action_composeTaskFragment_to_mentorReportSelectTasksFragment"
-            app:destination="@id/mentorReportSelectTasksFragment"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popUpToInclusive="true"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/reportDownloadFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.ReportDownloadFragment"
-        android:label="fragment_report_download"
-        tools:layout="@layout/fragment_report_download"/>
-
-    <fragment
-        android:id="@+id/shareReportFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.ShareReportFragment"
-        android:label="fragment_share_report"
-        tools:layout="@layout/fragment_share_report">
-        <action
-            android:id="@+id/action_shareReportFragment_to_selectProgramFragment"
-            app:destination="@id/selectProgramFragment"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popUpToInclusive="true"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right"/>
-        <action
-            android:id="@+id/action_shareReportFragment_to_composeTaskFragment"
-            app:destination="@id/composeTaskFragment"
-            app:enterAnim="@anim/slide_in_from_right"
-            app:exitAnim="@anim/slide_out_to_left"
-            app:popUpToInclusive="true"
-            app:popEnterAnim="@anim/slide_in_from_left"
-            app:popExitAnim="@anim/slide_out_to_right"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/reportSubmittedFragment"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.mentortasks_ui.ReportSubmittedFragment"
-        android:label="fragment_report_submitted"
-        tools:layout="@layout/fragment_report_submitted"/>
 
 </navigation>

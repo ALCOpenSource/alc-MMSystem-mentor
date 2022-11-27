@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".mentortasks_ui.MentorsReportFragment">
+    tools:context=".ui.reports.screens.MentorsReportFragment">
 
     <include layout="@layout/include_toolbar"/>
 
