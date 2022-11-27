@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmHomeFragmentLayoutBinding
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.vms.MainDrawerVM
 
 class HomeFragment : Fragment() {
@@ -22,8 +25,12 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         BtmHomeFragmentLayoutBinding.inflate(inflater).let { _binding = it }
-
-
+        binding.homeNotificationBtnView.setOnClickListener {
+            Navigator.navigate(
+                mmController,
+                MainHomeFragmentDirections.actionMainHomeFragmentToEmptyNotificationFragment()
+            )
+        }
         return binding.root
     }
 

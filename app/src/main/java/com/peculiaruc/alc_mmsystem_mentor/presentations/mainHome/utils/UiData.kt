@@ -1,10 +1,7 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.domain.CertificateItem
-import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
-import com.peculiaruc.alc_mmsystem_mentor.domain.ReportItem
-import com.peculiaruc.alc_mmsystem_mentor.domain.TaskItem
+import com.peculiaruc.alc_mmsystem_mentor.domain.*
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.DrawerItem
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
@@ -327,7 +324,40 @@ object UiData {
             time = "Oct 16 2022",
             certImage = R.drawable.cert_ph
         ),
-
     )
+
+    val notificationsLIst = listOf(
+        NotificationItem(
+            id = 1,
+            title = "Peculiah C. Umeh posted a comment on How to Archive Programs on MMS",
+            time = "Yesterday at 11.52PM"
+        ),
+        NotificationItem(
+            id = 2,
+            title = "Baba C. Mammah has liked your comment in post Ideation: Week 1 GADS 100Days",
+            time = "Yesterday at 11.52PM"
+        ),
+        NotificationItem(
+            id = 3,
+            title = "Alison Debby Davis mentioned you in a comment in the post The New Library for Android JetPack",
+            time = "Yesterday at 9.42AM"
+        ),
+        NotificationItem(
+            id = 4,
+            title = "Alison Debby Davis mentioned you in a comment in the post The New Library for Android JetPack",
+            time = "Yesterday at 9.42AM"
+        ),
+        NotificationItem(
+            id = 5,
+            title = "Kabiru Omo Isaka archived Luke Mathais Mentor Manager's Report",
+            time = "Yesterday at 9.42AM"
+        ),
+        NotificationItem(
+            id = 6,
+            title = "Ferdinand Johnson created All Mentors Daily Task Report For February",
+            time = "Yesterday at 11.52PM"
+        ),
+
+        )
 
 }
