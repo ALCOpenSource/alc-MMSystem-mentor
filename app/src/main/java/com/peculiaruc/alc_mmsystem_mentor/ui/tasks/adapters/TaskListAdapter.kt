@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Task
+import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 
 class TaskListAdapter :
     ListAdapter<Task, TaskListAdapter.TaskViewHolder>(TasksComparator()) {

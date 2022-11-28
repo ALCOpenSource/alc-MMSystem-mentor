@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentComposeReportProgramBinding
-import kotlinx.android.synthetic.main.fragment_compose_report_program.*
-import kotlinx.android.synthetic.main.fragment_compose_report_tasks.view.*
 
 
 class ComposeReportFragment : Fragment() {
@@ -30,21 +28,18 @@ class ComposeReportFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        cps_toolbar.toolbar_create_title.text = getString(R.string.compose_report)
+        binding.toolbarCreateTitle.text = getString(R.string.compose_report)
 
         navListener()
     }
 
     private fun navListener() {
-        cps_choose_txt.text = getString(R.string.choose_report)
-        program_txt.text = getString(R.string.program)
-        task_txt.text = getString(R.string.task)
-        btn_program_field.text = getString(R.string.select_task)
-        btn_compose_field.text = getString(R.string.submit_report)
-
+        binding.cpsChooseTxt.text = getString(R.string.choose_report)
+        binding.programTxt.text = getString(R.string.program)
+        binding.taskTxt.text = getString(R.string.task)
+        binding.btnProgramField.text = getString(R.string.select_task)
+        binding.btnComposeField.text = getString(R.string.submit_report)
     }
-
-
 
     /**
      * Frees the binding object when the Fragment is destroyed.

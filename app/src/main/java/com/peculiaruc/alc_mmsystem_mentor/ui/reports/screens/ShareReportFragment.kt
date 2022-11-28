@@ -1,14 +1,12 @@
 package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
+import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentShareReportBinding
-import kotlinx.android.synthetic.main.fragment_share_report.*
 
 class ShareReportFragment : Fragment() {
     private var _binding: FragmentShareReportBinding? = null
@@ -32,11 +30,9 @@ class ShareReportFragment : Fragment() {
     }
 
     private fun navListener() {
-        btn_open_field.text = getString(R.string.open_email_app)
-        btn_cancel_field.text = getString(R.string.cancel)
-
+        binding.btnOpenField.text = getString(R.string.open_email_app)
+        binding.btnCancelField.text = getString(R.string.cancel)
     }
-
 
     /**
      * Frees the binding object when the Fragment is destroyed.

@@ -9,7 +9,12 @@
     android:orientation="vertical"
     tools:context=".ui.reports.screens.MentorsReportFragment">
 
-    <include layout="@layout/include_toolbar"/>
+    <include
+        android:id="@+id/tool"
+        layout="@layout/include_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/programReport"
@@ -22,7 +27,7 @@
         android:fontFamily="@font/mukta_semibold"
         android:textColor="@color/MMS_black_2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintTop_toBottomOf="@+id/tool"
         app:drawableEndCompat="@drawable/ic_arrow_dropdown" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -49,6 +54,6 @@
         app:srcCompat="@drawable/ic_add_white_24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:contentDescription="fab" />
+        android:contentDescription="@string/fab" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

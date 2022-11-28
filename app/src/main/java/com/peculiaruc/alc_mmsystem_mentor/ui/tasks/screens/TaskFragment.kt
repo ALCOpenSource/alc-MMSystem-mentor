@@ -11,7 +11,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
 import com.peculiaruc.alc_mmsystem_mentor.MainActivity
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Task
+import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentTaskBinding
 import com.peculiaruc.alc_mmsystem_mentor.ui.tasks.adapters.TaskListAdapter
 import java.util.*

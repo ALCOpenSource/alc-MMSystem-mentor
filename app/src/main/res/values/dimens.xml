@@ -18,4 +18,24 @@
     <dimen name="text_18">@dimen/_18ssp</dimen>
     <dimen name="text_14">@dimen/_14ssp</dimen>
     <dimen name="text_16">@dimen/_16ssp</dimen>
+
+    <dimen name="_30sdp">30dp</dimen>
+    <dimen name="_16sdp">16dp</dimen>
+    <dimen name="_12sdp">12dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="_14ssp">14sp</dimen>
+    <dimen name="_8sdp">8dp</dimen>
+    <dimen name="_6sdp">6dp</dimen>
+    <dimen name="_44sdp">44dp</dimen>
+    <dimen name="_40sdp">40dp</dimen>
+    <dimen name="_24sdp">24dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_20ssp">20sp</dimen>
+    <dimen name="_12ssp">12sp</dimen>
+    <dimen name="_18ssp">18sp</dimen>
+    <dimen name="_16ssp">16sp</dimen>
+    <dimen name="_4sdp">4dp</dimen>
+    <dimen name="_8ssp">8sp</dimen>
+    <dimen name="_1sdp">idp</dimen>
+    <dimen name="_360sdp">360dp</dimen>
 </resources>

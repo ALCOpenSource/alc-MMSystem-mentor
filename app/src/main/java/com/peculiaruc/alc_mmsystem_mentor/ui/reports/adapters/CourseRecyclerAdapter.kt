@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Course
+import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Course
 
 class CourseRecyclerAdapter(private val courses: List<Course>) :
     RecyclerView.Adapter<CourseRecyclerAdapter.ViewHolder>() {

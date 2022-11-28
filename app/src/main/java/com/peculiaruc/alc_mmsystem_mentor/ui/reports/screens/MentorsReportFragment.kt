@@ -5,16 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Course
+import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Course
 import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.CourseRecyclerAdapter
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorsReportBinding
-import kotlinx.android.synthetic.main.include_toolbar.*
-import kotlinx.android.synthetic.main.include_toolbar.view.*
 
 class MentorsReportFragment : Fragment() {
 
@@ -31,15 +30,12 @@ class MentorsReportFragment : Fragment() {
         val view = binding.root
 
         return view
-
-
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        toolbar2.toolbar_create_title.text = getString(R.string.report)
+        binding.tool.toolbar2.findViewById<TextView>(R.id.toolbar_create_title).text = getString(R.string.report)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.mListItems)
 
