@@ -36,7 +36,6 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setupNavigation()
         setupActions()
 
@@ -50,26 +49,28 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupActions() {
-
         binding.apply {
-            tasksInProgress.setOnClickListener {
-                val action = HomeFragmentDirections.actionHomeToTasksNavigation()
-                findNavController().navigate(action)
-            }
-            chat.setOnClickListener {
-                val action = HomeFragmentDirections.actionHomeToMessages()
-                findNavController().navigate(action)
-            }
-            reports.setOnClickListener {
-                val action = HomeFragmentDirections.actionHomeToReportsNavigation()
-                findNavController().navigate(action)
-            }
-            certificates.setOnClickListener {
-                val action = HomeFragmentDirections.actionHomeToCertificates()
-                findNavController().navigate(action)
-            }
-        }
 
+            binding.tasksInProgress.setOnClickListener {
+                val action = HomeFragmentDirections.actionHomeFragmentToTasksNavigation()
+                findNavController().navigate(action)
+            }
+
+            binding.myManagers.setOnClickListener {
+                val action = HomeFragmentDirections.actionHomeFragmentToMyManagers()
+                findNavController().navigate(action)
+            }
+
+            binding.reports.setOnClickListener {
+                val action = HomeFragmentDirections.actionHomeFragmentToReportsNavigation()
+                findNavController().navigate(action)
+            }
+            binding.certificates.setOnClickListener {
+                val action = HomeFragmentDirections.actionHomeFragmentToCertificates()
+                findNavController().navigate(action)
+            }
+
+        }
     }
 
 }

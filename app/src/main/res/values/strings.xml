@@ -16,7 +16,14 @@
     <string name="messages">Messages</string>
     <string name="profile">Profile</string>
     <string name="certificates">Certificates</string>
+    <string name="my_managers">My Managers</string>
+    <string name="profile_image">Mentor Manager Image</string>
 
+    <string name="manager_name">Manager Name</string>
+    <string name="manager_title">Manager Title</string>
+    <string name="tag">GADS Mentor</string>
+    <string name="tag_two">Tag Two</string>
+    <string name="message_manager">Message Manager</string>
 
     <!-- Messages -->
     <string name="chats">Chats</string>
