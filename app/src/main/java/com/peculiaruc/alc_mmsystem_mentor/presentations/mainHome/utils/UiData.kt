@@ -357,7 +357,51 @@ object UiData {
             title = "Ferdinand Johnson created All Mentors Daily Task Report For February",
             time = "Yesterday at 11.52PM"
         ),
-
         )
+
+    val discussionList = listOf(
+        DiscussionItem(
+            id = 1,
+            time = "5h ago",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            title = "The New MMS Discussion Forum",
+            owner = "Samuel Kabede"
+            ),
+        DiscussionItem(
+            id = 2,
+            time = "5h ago",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            title = "The New MMS Discussion Forum",
+            owner = "Samuel Kabede"
+        ),
+        DiscussionItem(
+            id = 3,
+            time = "5h ago",
+            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            title = "The New MMS Discussion Forum",
+            owner = "Samuel Kabede"
+        ),
+    )
+
+    val commentsList = listOf(
+        CommentItem(
+            id = 1,
+            owner = "Ibrahim Kuleke",
+            description = "Found this insightful. Please how can I register to be part of the program",
+            time = "just now"
+        ),
+        CommentItem(
+            id = 2,
+            owner = "Sarah Tasha",
+            description = "Found this insightful. Please how can I register to be part of the program",
+            time = "10 mins"
+        ),CommentItem(
+            id = 3,
+            owner = "Sarah Tasha",
+            description = "Found this insightful. Please how can I register to be part of the program",
+            time = "10 mins"
+        ),
+
+    )
 
 }
