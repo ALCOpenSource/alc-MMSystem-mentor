@@ -1,6 +1,5 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-
     <dimen name="margin_30">@dimen/_30sdp</dimen>
     <dimen name="margin_16">@dimen/_16sdp</dimen>
     <dimen name="margin_12">@dimen/_12sdp</dimen>
@@ -18,6 +17,7 @@
     <dimen name="text_18">@dimen/_18ssp</dimen>
     <dimen name="text_14">@dimen/_14ssp</dimen>
     <dimen name="text_16">@dimen/_16ssp</dimen>
+
 
     <dimen name="_30sdp">30dp</dimen>
     <dimen name="_16sdp">16dp</dimen>
