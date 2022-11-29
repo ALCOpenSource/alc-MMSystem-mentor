@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentComposeReportProgramBinding
+import kotlinx.android.synthetic.main.fragment_compose_report_program.*
 
 
 class ComposeReportFragment : Fragment() {
@@ -39,6 +40,11 @@ class ComposeReportFragment : Fragment() {
         binding.taskTxt.text = getString(R.string.task)
         binding.btnProgramField.text = getString(R.string.select_task)
         binding.btnComposeField.text = getString(R.string.submit_report)
+
+        binding.btnComposeField.setOnClickListener {
+            val action = ComposeReportFragmentDirections.actionComposeReportFragmentToReportSubmittedFragment()
+            binding.btnComposeField.findNavController().navigate(action)
+        }
     }
 
     /**

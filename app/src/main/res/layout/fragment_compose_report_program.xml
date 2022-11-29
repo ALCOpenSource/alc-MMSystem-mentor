@@ -97,7 +97,6 @@
         android:textColor="@color/MMS_black_5"
         android:textSize="@dimen/_12ssp"
         app:fontFamily="@font/mukta_light"
-        android:textFontWeight="600"
         app:layout_constraintBottom_toBottomOf="@id/program_indicator"
         app:layout_constraintStart_toEndOf="@id/program_indicator"
         app:layout_constraintTop_toTopOf="@id/program_indicator"
@@ -126,7 +125,6 @@
         android:textColor="@color/MMS_black_5"
         android:textSize="@dimen/_12ssp"
         app:fontFamily="@font/mukta_light"
-        android:textFontWeight="600"
         app:layout_constraintBottom_toBottomOf="@id/task_indicator"
         app:layout_constraintStart_toEndOf="@id/task_indicator"
         app:layout_constraintTop_toTopOf="@id/task_indicator"
@@ -135,17 +133,16 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_program_field"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_height="48dp"
         android:layout_marginTop="14dp"
         android:fontFamily="@font/montserrat_regular"
-        android:textColor="@color/MMS_black_2"
-        android:textSize="@dimen/_8ssp"
         android:paddingHorizontal="@dimen/margin_40"
         android:textAllCaps="false"
+        android:textColor="@color/MMS_black_2"
+        android:textSize="@dimen/_8ssp"
         app:backgroundTint="@android:color/white"
         app:cornerRadius="5dp"
         app:fontFamily="@font/montserrat_semibold"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/cps_choose_txt"
         app:layout_constraintTop_toBottomOf="@id/program_txt"
         app:strokeColor="@color/MMS_black_2"
@@ -163,12 +160,10 @@
         android:textColor="@color/MMS_black_2"
         android:textSize="@dimen/_12ssp"
         app:fontFamily="@font/mukta_regular"
-        android:textFontWeight="600"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_program_field"
-        android:text="@string/gads_program_underline"
-        app:drawableBottomCompat="@drawable/underline" />
+        android:text="@string/gads_program_underline" />
 
     <ImageView
         android:id="@+id/cancel_indicator"
@@ -234,7 +229,7 @@
             android:scrollbarStyle="insideInset"
             android:scrollbars="vertical"
             android:scrollHorizontally="false"
-            android:textColorHint="@color/title_grey_color" />
+            android:textColorHint="#616161" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout

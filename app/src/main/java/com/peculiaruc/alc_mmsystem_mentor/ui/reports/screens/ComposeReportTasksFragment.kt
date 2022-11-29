@@ -41,6 +41,11 @@ class ComposeReportTasksFragment : Fragment() {
         binding.btnTaskField.text = getString(R.string.select_task)
         binding.btnCompTaskField.text = getString(R.string.submit_report)
 
+        binding.btnCompTaskField.setOnClickListener {
+            val action = ComposeReportTasksFragmentDirections.actionComposeReportTasksFragmentToMentorReportSelectTasksFragment()
+            binding.btnCompTaskField.findNavController().navigate(action)
+        }
+
     }
 
 

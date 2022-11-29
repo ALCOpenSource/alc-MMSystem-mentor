@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentShareReportBinding
 
@@ -32,6 +33,16 @@ class ShareReportFragment : Fragment() {
     private fun navListener() {
         binding.btnOpenField.text = getString(R.string.open_email_app)
         binding.btnCancelField.text = getString(R.string.cancel)
+
+        binding.btnOpenField.setOnClickListener {
+            val action = ShareReportFragmentDirections.actionShareReportFragmentToComposeReportTasksFragment()
+            binding.btnOpenField.findNavController().navigate(action)
+        }
+
+        binding.btnCancelField.setOnClickListener {
+            val action = ShareReportFragmentDirections.actionShareReportFragmentToSelectProgramFragment()
+            binding.btnCancelField.findNavController().navigate(action)
+        }
     }
 
     /**

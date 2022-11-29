@@ -15,7 +15,7 @@
 
     <LinearLayout
         android:id="@+id/sps_case"
-        android:layout_width="@dimen/_360sdp"
+        android:layout_width="@dimen/_300sdp"
         android:layout_height="39sp"
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/_4sdp"

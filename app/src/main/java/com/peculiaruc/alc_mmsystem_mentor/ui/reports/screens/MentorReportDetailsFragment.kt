@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorReportDetailsBinding
+import kotlinx.android.synthetic.main.fragment_mentor_report_details.*
 
 class MentorReportDetailsFragment : Fragment() {
 
@@ -34,6 +35,15 @@ class MentorReportDetailsFragment : Fragment() {
     private fun navListener() {
         binding.btnShareField.text = getString(R.string.share)
         binding.btnDownloadField.text = getString(R.string.download)
+
+        binding.btnDownloadField.setOnClickListener {
+            val action = MentorReportDetailsFragmentDirections.actionMentorReportDetailsFragmentToReportDownloadFragment()
+            binding.btnDownloadField.findNavController().navigate(action)
+        }
+        binding.btnShareField.setOnClickListener {
+            val action = MentorReportDetailsFragmentDirections.actionMentorReportDetailsFragmentToShareReportFragment()
+            binding.btnShareField.findNavController().navigate(action)
+        }
     }
 
     /**
