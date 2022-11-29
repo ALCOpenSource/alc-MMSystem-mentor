@@ -39,4 +39,6 @@ object ManagersRepository {
 
     )
 
+    fun getManager(name: String) : Manager? = allManagers.find { manager -> manager.managerName == name }
+
 }

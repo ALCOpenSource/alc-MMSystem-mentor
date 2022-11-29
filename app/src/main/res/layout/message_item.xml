@@ -1,85 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/received_message"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_gravity="start"
-        android:layout_margin="16dp"
-        android:padding="16dp"
-        android:visibility="gone">
+        android:id="@+id/message"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_6sdp"
+        android:padding="@dimen/_16sdp"
+        android:visibility="visible">
 
         <LinearLayout
+            android:id="@+id/message_background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingVertical="18dp"
-            android:paddingHorizontal="18dp">
+            android:paddingHorizontal="18dp"
+            android:background="@color/background_white">
 
             <TextView
-                android:id="@+id/received_body"
+                android:id="@+id/message_body"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/received_message"
                 android:textAlignment="textStart"
+                android:textColor="@color/black"
                 android:layout_marginBottom="16dp"/>
 
-            <TextView
-                android:id="@+id/received_time_sent"
+            <RelativeLayout
+                android:id="@+id/message_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/time_sent"
-                android:textAlignment="textStart"/>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/sent_message"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_gravity="end"
-        android:layout_margin="16dp"
-        android:padding="16dp"
-        android:visibility="gone">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingVertical="18dp"
-            android:paddingHorizontal="18dp">
-
-            <TextView
-                android:id="@+id/sent_body"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="@string/sent_message"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@android:color/transparent">
 
                 <TextView
-                    android:id="@+id/sent_time_sent"
+                    android:id="@+id/time_sent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginEnd="128dp"
-                    android:text="@string/time_sent"/>
+                    android:layout_alignParentStart="true"
+                    android:text="@string/time_sent"
+                    android:textAlignment="textStart"
+                    tools:ignore="RelativeOverlap" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent">
 
                     <ImageView
                         android:id="@+id/single_tick"
@@ -100,10 +75,11 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
+            </RelativeLayout>
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-</LinearLayout>
+
+</FrameLayout>

@@ -5,9 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentor.data.repositories.MessagesRepository
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentChatsBinding
+import com.peculiaruc.alc_mmsystem_mentor.ui.messages.adapters.ChatListAdapter
 
 class ChatsFragment : Fragment() {
 
@@ -24,6 +27,7 @@ class ChatsFragment : Fragment() {
     ): View {
 
         _binding = FragmentChatsBinding.inflate(inflater, container, false)
+        recyclerView = binding.chatsRecyclerview
         return binding.root
 
     }
@@ -31,8 +35,21 @@ class ChatsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        recyclerView = binding.chatsRecyclerview
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        populateChats()
+
+    }
+
+    private fun populateChats() {
+
+        val adapter = ChatListAdapter{
+            val action = MessagesFragmentDirections.actionMessagesToChatFragment(it.chatOwner)
+            findNavController().navigate(action)
+        }
+
+        adapter.submitList(MessagesRepository.allChats)
+
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(this.requireContext())
 
     }
 

@@ -138,7 +138,7 @@
         android:label="Messages"
         tools:layout="@layout/fragment_messages" >
         <action
-            android:id="@+id/action_messages_to_chatFragment2"
+            android:id="@+id/action_messages_to_chatFragment"
             app:destination="@id/chatFragment" />
     </fragment>
 
