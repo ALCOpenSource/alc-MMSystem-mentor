@@ -4,11 +4,22 @@ import android.util.Log
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
 
+/**
+ * Navigator
+ * A navigation util that encapsulates the business logic of app navigation
+ * @author Nwadike Philip
+ */
 object Navigator {
 
     private const val TAG = "NAVIGATOR_TAG"
 
-    //    Navigate to any provided route from the given controller
+    /**
+     * Navigate
+     *
+     * @param controller NavController
+     * @param destination NavDirections
+     * @throws IllegalArgumentException
+     */
     fun navigate(controller: NavController, destination: NavDirections) {
         try {
             controller.navigate(destination)
@@ -18,6 +29,15 @@ object Navigator {
         } catch (e: Exception) {
             Log.e(TAG, "Unknown Navigation Exception: ", e)
         }
+    }
+
+    /**
+     * Navigate up
+     *
+     * @param controller NavController
+     */
+    fun navigateUp(controller: NavController) {
+        controller.navigateUp()
     }
 
 }

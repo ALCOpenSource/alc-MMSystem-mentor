@@ -16,6 +16,7 @@
             layout="@layout/main_home_fragment_content_layout" />
 
         <include
+
             android:id="@+id/mainHomeDrawerContentLayout"
             layout="@layout/main_home_fragment_drawer_content_layout" />
 

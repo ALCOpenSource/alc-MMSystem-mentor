@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".presentations.mainHome.otherScreens.CommentsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_comment_arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_comment_arrowBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toEndOf="@+id/iv_comment_arrowBack"
+        app:layout_constraintTop_toTopOf="@+id/iv_comment_arrowBack"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivProfileView"
+        style="@style/MMCircleProfileView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_comment_arrowBack" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5hours ago"
+        app:layout_constraintBottom_toTopOf="@+id/tv_mentor_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toEndOf="@+id/tv_mentor_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_mentor_name"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_more_horiz_24" />
+
+    <TextView
+        android:id="@+id/tv_mentor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Samuel Kabede"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivProfileView"
+        app:layout_constraintTop_toTopOf="@+id/ivProfileView" />
+
+    <TextView
+        android:id="@+id/tv_mentor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Mentor Manger"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfileView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_mentor_name"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="@+id/tv_mentor_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mentor_name" />
+
+    <TextView
+        android:id="@+id/tv_discussion_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/bio_description"
+        app:layout_constraintEnd_toEndOf="@+id/tv_discussion_title"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="@+id/tv_discussion_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_discussion_title" />
+
+    <TextView
+        android:id="@+id/tv_discussion_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="The New MMS Discussion Forum"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivProfileView"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfileView" />
+
+    <ImageView
+        android:id="@+id/iv_bookmark_discussion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_message_discussion"
+        app:layout_constraintStart_toEndOf="@+id/iv_message_discussion"
+        app:layout_constraintTop_toTopOf="@+id/iv_message_discussion"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_bookmark_border_24" />
+
+    <ImageView
+        android:id="@+id/iv_edit_discussion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_bookmark_discussion"
+        app:layout_constraintStart_toEndOf="@+id/iv_bookmark_discussion"
+        app:layout_constraintTop_toTopOf="@+id/iv_bookmark_discussion"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+    <ImageView
+        android:id="@+id/iv_message_discussion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_discussion_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_discussion_description"
+        app:srcCompat="@drawable/ic_messages" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="216dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:hint="Write a comment"
+        app:layout_constraintEnd_toEndOf="@+id/iv_edit_discussion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_message_discussion"
+        app:layout_constraintTop_toBottomOf="@+id/iv_message_discussion">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:maxLines="2"
+            app:layout_constraintHorizontal_bias="0.024" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/MMButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        app:layout_constraintBottom_toBottomOf="@+id/outlinedTextField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/outlinedTextField"
+        app:layout_constraintTop_toTopOf="@+id/outlinedTextField"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comments_rv"
+        android:layout_width="362dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:listitem="@layout/comments_list_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

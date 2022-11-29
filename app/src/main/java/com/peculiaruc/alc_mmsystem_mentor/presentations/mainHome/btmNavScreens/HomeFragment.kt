@@ -16,6 +16,10 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmHomeFragmentLayoutBindi
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.home.HomeActivitiesOverviewAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.home.HomeQuickActionsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
+
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.vms.MainDrawerVM
 
 class HomeFragment : Fragment() {
@@ -33,6 +37,13 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         BtmHomeFragmentLayoutBinding.inflate(inflater).let { _binding = it }
+        
+        binding.homeNotificationBtnView.setOnClickListener {
+            Navigator.navigate(
+                mmController,
+                MainHomeFragmentDirections.actionMainHomeFragmentToEmptyNotificationFragment()
+            )
+        }
 
         return binding.root
     }
@@ -135,6 +146,5 @@ override fun onDestroyView() {
     super.onDestroyView()
     _binding = null
 }
-
 
 }

@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.peculiaruc.alc_mmsystem_mentor.components.CertificateDownloadDialog
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MentorCertDetailFragmentLayoutBinding
 
 class MentorCertDetailFragment : Fragment() {
@@ -17,7 +19,12 @@ class MentorCertDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         MentorCertDetailFragmentLayoutBinding.inflate(inflater).let { _binding = it }
-
+        binding.ivCertDetailsArrowBack.setOnClickListener {
+            findNavController().navigateUp()
+        }
+        binding.btnCertDownload.setOnClickListener {
+            CertificateDownloadDialog().show(parentFragmentManager,"")
+        }
 
         return binding.root
     }
