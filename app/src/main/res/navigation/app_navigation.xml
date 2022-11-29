@@ -15,6 +15,21 @@
         <action
             android:id="@+id/action_mainHomeFragment_to_editProfileFragment"
             app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mentorProgramDetailFragment"
+            app:destination="@id/mentorProgramDetailFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mentorTaskDetailFragment"
+            app:destination="@id/mentorTaskDetailFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mentorReportDetailFragment"
+            app:destination="@id/mentorReportDetailFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_mentorCertDetailFragment"
+            app:destination="@id/mentorCertDetailFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_emptyNotificationFragment"
+            app:destination="@id/emptyNotificationFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -25,5 +40,50 @@
         android:id="@+id/editProfileFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.EditProfileFragment"
         tools:layout="@layout/edit_profile_fragment_layout" />
+    <fragment
+        android:id="@+id/mentorProgramDetailFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorProgramDetailFragment"
+        android:label="MentorProgramDetailFragment" >
+        <argument
+            android:name="ID"
+            app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorTaskDetailFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorTaskDetailFragment"
+        android:label="MentorTaskDetailFragment" >
+        <argument
+            android:name="id"
+            app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.TaskItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorReportDetailFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorReportDetailFragment"
+        android:label="MentorReportDetailFragment" >
+        <argument
+            android:name="id"
+            app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.ReportItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorCertDetailFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorCertDetailFragment"
+        android:label="MentorCertDetailFragment" >
+        <argument
+            android:name="id"
+            app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.CertificateItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/emptyNotificationFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.EmptyNotificationFragment"
+        android:label="EmptyNotificationFragment" >
+        <action
+            android:id="@+id/action_emptyNotificationFragment_to_notificationsFragment"
+            app:destination="@id/notificationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
 
 </navigation>

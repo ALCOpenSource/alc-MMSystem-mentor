@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="Profile"/>
+
+        <item
+            android:id="@+id/nav_programs"
+            android:title="Programs"
+            android:icon="@drawable/ic_programs"/>
+
+        <item
+            android:id="@+id/nav_my_managers"
+            android:title="My Managers"
+            android:icon="@drawable/ic_mentor_managers"/>
+
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@drawable/ic_task"
+            android:title="Tasks"/>
+
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_reports"
+            android:title="Reports"/>
+
+        <item
+            android:id="@+id/nav_certificate"
+            android:icon="@drawable/ic_certificate"
+            android:title="Certification"/>
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_messages"
+            android:title="Messages"/>
+
+        <item
+            android:id="@+id/nav_discussion_forum"
+            android:icon="@drawable/ic_discussion_forum"
+            android:title="Discussion Forum"/>
+
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_logout_bckward"
+            android:title="Log out"/>
+
+    </group>
+
+</menu>
