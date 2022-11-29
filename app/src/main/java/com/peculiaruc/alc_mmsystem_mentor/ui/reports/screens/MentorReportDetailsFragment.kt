@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorReportDetailsBinding
-import kotlinx.android.synthetic.main.fragment_mentor_report_details.*
 
 class MentorReportDetailsFragment : Fragment() {
 
@@ -33,11 +32,9 @@ class MentorReportDetailsFragment : Fragment() {
     }
 
     private fun navListener() {
-        btn_share_field.text = getString(R.string.share)
-        btn_download_field.text = getString(R.string.download)
-
+        binding.btnShareField.text = getString(R.string.share)
+        binding.btnDownloadField.text = getString(R.string.download)
     }
-
 
     /**
      * Frees the binding object when the Fragment is destroyed.

@@ -1,18 +1,17 @@
 package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.ReportTask
-import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.SelectTasksAdapter
+import com.peculiaruc.alc_mmsystem_mentor.data.local.models.ReportTask
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorsReportSelectTasksBinding
-import kotlinx.android.synthetic.main.fragment_compose_report_tasks.view.*
-import kotlinx.android.synthetic.main.include_toolbar.*
+import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.SelectTasksAdapter
 
 
 class MentorsReportSelectTasksFragment : Fragment() {
@@ -33,7 +32,8 @@ class MentorsReportSelectTasksFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        toolbar2.toolbar_create_title.text = getString(R.string.report)
+        binding.tool1.toolbar2.findViewById<TextView>(R.id.toolbar_create_title)
+            .text = getString(R.string.report)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.tListItems)
 

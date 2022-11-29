@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Program
+import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Program
 
 class SelectProgramAdapter(private val program: List<Program>) : RecyclerView.Adapter<SelectProgramAdapter.ViewHolder>() {
 

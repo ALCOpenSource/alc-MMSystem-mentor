@@ -10,7 +10,12 @@
     android:orientation="vertical"
     tools:context=".ui.reports.screens.SelectProgramFragment">
 
-    <include layout="@layout/include_toolbar" />
+    <include
+        android:id="@+id/tool2"
+        layout="@layout/include_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/sps_case"
@@ -24,7 +29,7 @@
         android:paddingEnd="@dimen/_8sdp"
         android:paddingTop="@dimen/_6sdp"
         android:paddingBottom="@dimen/_6sdp"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintTop_toBottomOf="@+id/tool2"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView

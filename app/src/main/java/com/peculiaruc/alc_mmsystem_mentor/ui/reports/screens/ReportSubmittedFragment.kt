@@ -1,13 +1,12 @@
 package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentReportSubmittedBinding
-import kotlinx.android.synthetic.main.fragment_report_submitted.*
 
 
 class ReportSubmittedFragment : Fragment() {
@@ -29,7 +28,7 @@ class ReportSubmittedFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btn_submitted_field.text = getString(R.string.done)
+        binding.btnSubmittedField.text = getString(R.string.done)
     }
 
 

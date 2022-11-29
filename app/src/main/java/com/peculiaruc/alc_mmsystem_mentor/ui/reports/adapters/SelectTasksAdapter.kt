@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.ReportTask
+import com.peculiaruc.alc_mmsystem_mentor.data.local.models.ReportTask
 
 class SelectTasksAdapter(private val tasks: List<ReportTask>) : RecyclerView.Adapter<SelectTasksAdapter.ViewHolder>() {
 

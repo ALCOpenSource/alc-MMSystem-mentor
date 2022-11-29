@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Task
+import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 import com.peculiaruc.alc_mmsystem_mentor.ui.tasks.adapters.TaskListAdapter
 
 class TaskObjectFragment(position: Int) : Fragment() {

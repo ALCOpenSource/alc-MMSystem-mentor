@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentComposeReportTasksBinding
-import kotlinx.android.synthetic.main.fragment_compose_report_tasks.*
-import kotlinx.android.synthetic.main.fragment_compose_report_tasks.view.*
 
 
 class ComposeReportTasksFragment : Fragment() {
@@ -31,17 +29,17 @@ class ComposeReportTasksFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        crp_toolbar.toolbar_create_title.text = getString(R.string.compose_report)
+        binding.toolbarCreateTitle.text = getString(R.string.compose_report)
 
         navListener()
     }
 
     private fun navListener() {
-        crp_choose_txt.text = getString(R.string.choose_report)
-        crp_txt.text = getString(R.string.program)
-        crp_task.text = getString(R.string.task)
-        btn_task_field.text = getString(R.string.select_task)
-        btn_comp_task_field.text = getString(R.string.submit_report)
+        binding.crpChooseTxt.text = getString(R.string.choose_report)
+        binding.crpTxt.text = getString(R.string.program)
+        binding.crpTask.text = getString(R.string.task)
+        binding.btnTaskField.text = getString(R.string.select_task)
+        binding.btnCompTaskField.text = getString(R.string.submit_report)
 
     }
 
