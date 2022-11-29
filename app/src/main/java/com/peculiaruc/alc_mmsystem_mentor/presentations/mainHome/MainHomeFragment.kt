@@ -12,7 +12,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MainHomeFragmentDrawerLayoutBinding
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.BtmSearchFragmentListAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.MainHomeFragmentDrawerItemsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
@@ -91,7 +90,7 @@ class MainHomeFragment : Fragment() {
     }
 
     private fun initDrawerUi() {
-        val drawerItems = UiData.drawerItems // Store all drawer items
+        val drawerItems = UiData.drawerNavItems // Store all drawer items
 
         val logoutDrawerItemPos = (drawerItems.size - 1) // Get the position of the logout item
 

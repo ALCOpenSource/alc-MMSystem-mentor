@@ -1,27 +1,42 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
+
 import com.peculiaruc.alc_mmsystem_mentor.domain.*
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.DrawerItem
+
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
+import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategories
+import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategoriesTypes
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
 
 object UiData {
 
-    val drawerItems = mutableListOf(
-        DrawerItem(R.drawable.ic_home, R.string.home_fragment_label),
-        DrawerItem(R.drawable.ic_account, R.string.profile_fragment_label),
-        DrawerItem(R.drawable.ic_programs, R.string.programs_fragment_label),
-        DrawerItem(R.drawable.ic_mentor_managers, R.string.my_managers_fragment_label),
-        DrawerItem(R.drawable.ic_task, R.string.tasks_fragment_label),
-        DrawerItem(R.drawable.ic_reports, R.string.reports_fragment_label),
-        DrawerItem(R.drawable.ic_certificate, R.string.certificate_fragment_label),
-        DrawerItem(R.drawable.ic_messages, R.string.messages_fragment_label),
-        DrawerItem(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label),
-        DrawerItem(R.drawable.ic_logout_bckward, R.string.logout),
+    val drawerNavItems = mutableListOf(
+        NavItems(R.drawable.ic_home, R.string.home_fragment_label),
+        NavItems(R.drawable.ic_account, R.string.profile_fragment_label),
+        NavItems(R.drawable.ic_programs, R.string.programs_fragment_label),
+        NavItems(R.drawable.ic_mentor_managers, R.string.my_managers_fragment_label),
+        NavItems(R.drawable.ic_task, R.string.tasks_fragment_label),
+        NavItems(R.drawable.ic_reports, R.string.reports_fragment_label),
+        NavItems(R.drawable.ic_certificate, R.string.certificate_fragment_label),
+        NavItems(R.drawable.ic_messages, R.string.messages_fragment_label),
+        NavItems(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label),
+        NavItems(R.drawable.ic_logout_bckward, R.string.logout),
     )
 
+    val homeNavItems = mutableListOf(
+        NavItems(R.drawable.ic_task, R.string.mms_tasks_in_progress),
+        NavItems(R.drawable.ic_comment_circle_chat_message, R.string.mms_chat_mentor_manager),
+        NavItems(R.drawable.ic_reports, R.string.reports_fragment_label),
+        NavItems(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label),
+    )
 
+    val homeActivityOverview = mutableListOf(
+        ActivityOverview(20, EventCategories.Mentors),
+        ActivityOverview(5, EventCategories.Programs),
+        ActivityOverview(10, EventCategories.Tasks),
+    )
     val searchItems = mutableListOf(
         SearchItem(
             R.drawable.ic_launcher_background,
@@ -53,6 +68,8 @@ object UiData {
             sourceLocation = SearchType.Certificates,
         ),
     )
+}
+
     val availableTechnicalProficiencies = mutableListOf(
         "Python",
         "Java",
@@ -431,6 +448,10 @@ object UiData {
             time = "10 mins"
         ),
 
-    )
+    
 
-}
+data class ActivityOverview(
+    val count: Int,
+    @EventCategoriesTypes
+    val category: EventCategories,
+)

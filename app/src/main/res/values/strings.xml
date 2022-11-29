@@ -57,6 +57,10 @@
     <string name="_3_years">3 years</string>
     <string name="documents">Documents</string>
     <string name="peculiar_umeh">\@peculiar.umeh</string>
+    <string name="mms_view">View</string>
+    <string name="mms_quick_actions">Quick Actions</string>
+    <string name="mms_tasks_in_progress">Tasks In-progress</string>
+    <string name="mms_chat_mentor_manager">Chat Mentor Manager</string>
     <string name="mm_edit_profile">Edit Profile</string>
     <string name="mm_screen_title_ph">Screen Title</string>
     <string name="mms_set_a_profile_picture">Set a profile picture</string>
