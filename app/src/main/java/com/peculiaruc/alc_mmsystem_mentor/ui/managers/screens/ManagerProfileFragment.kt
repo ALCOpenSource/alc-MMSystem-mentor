@@ -36,8 +36,8 @@ class ManagerProfileFragment : Fragment() {
 
         if (manager != null) {
             binding.apply {
-                manager_name.text = manager.managerName
-                manager_title.text = manager.managerTitle
+                managerName.text = manager.managerName
+                managerTitle.text = manager.managerTitle
                 memberSince.text = manager.memberSince
             }
         }
