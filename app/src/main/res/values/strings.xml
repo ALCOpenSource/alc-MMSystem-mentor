@@ -57,7 +57,24 @@
     <string name="_3_years">3 years</string>
     <string name="documents">Documents</string>
     <string name="peculiar_umeh">\@peculiar.umeh</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="mm_edit_profile">Edit Profile</string>
+    <string name="mm_screen_title_ph">Screen Title</string>
+    <string name="mms_set_a_profile_picture">Set a profile picture</string>
+    <string name="mms_select_file">Select file</string>
+    <string name="mms_save">Save</string>
+    <string name="mms_full_name_input_label">Full Name *</string>
+    <string name="mms_input_headline_label">Headline</string>
+    <string name="mms_input_about_label">About</string>
+    <string name="mms_technical_proficiency">Techinal Proficiency</string>
+    <string name="mms_prev_roles_held">Previous Roles Held</string>
+    <string name="mms_prev_program">Previous Programs</string>
+    <string name="mms_choose">Choose</string>
+    <string name="mms_documents">Documenets</string>
+    <string name="mms_social">Social</string>
+    <string name="twitter">Twitter</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="instagram">Instagram</string>
+    <string name="github">Github</string>
+    <string name="website">Website</string>
+    <string name="mms_add_program">Add Program</string>
 </resources>

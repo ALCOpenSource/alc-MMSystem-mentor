@@ -29,6 +29,11 @@ class ProfileFragment : Fragment() {
         return binding.root
     }
 
+        binding.editProfile.setOnClickListener {
+            Navigator.navigate(
+                mmController,
+                MainHomeFragmentDirections.actionMainHomeFragmentToEditProfileFragment()
+            )
     private fun setUpTabLayoutWithViewPager() {
         _binding.viewpager.adapter = ProfileViewPagerAdapter(this)
         TabLayoutMediator(_binding.tabLayout, _binding.viewpager){ tab, position ->

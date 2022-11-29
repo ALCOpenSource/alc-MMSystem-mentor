@@ -53,6 +53,35 @@ object UiData {
             sourceLocation = SearchType.Certificates,
         ),
     )
+    val availableTechnicalProficiencies = mutableListOf(
+        "Python",
+        "Java",
+        "Kotlin",
+        "Django",
+        "JavaScript",
+        "My SQL",
+        "Android",
+        "Swift",
+        "C++",
+    )
+
+    val availableRolesHeld = mutableListOf(
+        "Learner",
+        "Mentor",
+        "Program Assistant",
+        "Program Assistant Lead",
+        "Mentor Manager",
+    )
+
+    val availableDocuments = mutableListOf(
+        "My resume.pdf",
+        "University Cert.doc",
+        "Java Cert.doc",
+    )
+
+    val availablePreviewPrograms = mutableListOf(
+        "Input previous held programs",
+        "Input previous held programs",
 
     val programItems = listOf(
         ProgramItem(
