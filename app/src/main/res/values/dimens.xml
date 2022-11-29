@@ -36,6 +36,6 @@
     <dimen name="_16ssp">16sp</dimen>
     <dimen name="_4sdp">4dp</dimen>
     <dimen name="_8ssp">8sp</dimen>
-    <dimen name="_1sdp">idp</dimen>
+    <dimen name="_1sdp">1dp</dimen>
     <dimen name="_360sdp">360dp</dimen>
 </resources>
