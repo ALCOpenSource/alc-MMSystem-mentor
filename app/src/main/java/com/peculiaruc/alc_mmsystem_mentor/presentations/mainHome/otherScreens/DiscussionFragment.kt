@@ -1,20 +1,20 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentDiscussionBinding
-import com.peculiaruc.alc_mmsystem_mentor.databinding.SettingsFragmentLayoutBinding
 import com.peculiaruc.alc_mmsystem_mentor.domain.DiscussionItem
-import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.DiscussionsAdapter
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
 
-class DiscussionFragment : Fragment() , DiscussionsAdapter.OnDiscussionsClickListener,  DiscussionsAdapter.OnCommentDiscussionsClickListener{
+class DiscussionFragment : Fragment(), DiscussionsAdapter.OnDiscussionsClickListener,
+    DiscussionsAdapter.OnCommentDiscussionsClickListener {
     private var _binding: FragmentDiscussionBinding? = null
     private val binding
         get() = _binding!!
@@ -30,9 +30,11 @@ class DiscussionFragment : Fragment() , DiscussionsAdapter.OnDiscussionsClickLis
         }
 
         binding.floatingActionButton.setOnClickListener {
-
+            Navigator.navigate(
+                mmController,
+                DiscussionFragmentDirections.actionDiscussionFragmentToEditDiscussionFragment()
+            )
         }
-
 
         return binding.root
     }

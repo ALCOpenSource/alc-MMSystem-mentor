@@ -33,7 +33,6 @@ class MentorProgramsFragment : Fragment(), ProgramsAdapter.OnClickListener {
         binding.programsRecyclerview.adapter = adapter
         binding.programsRecyclerview.layoutManager = LinearLayoutManager(activity)
 
-
         return binding.root
     }
 

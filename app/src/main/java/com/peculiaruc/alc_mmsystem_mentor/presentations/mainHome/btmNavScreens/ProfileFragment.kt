@@ -9,7 +9,10 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmProfileFragmentLayoutBinding
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.ProfileViewPagerAdapter
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
 class ProfileFragment : Fragment() {
     private lateinit var _binding: BtmProfileFragmentLayoutBinding
@@ -26,14 +29,17 @@ class ProfileFragment : Fragment() {
     ): View {
         BtmProfileFragmentLayoutBinding.inflate(inflater).let { _binding = it }
         setUpTabLayoutWithViewPager()
-        return binding.root
-    }
 
-        binding.editProfile.setOnClickListener {
+        binding.ivProfileView.setOnClickListener {
             Navigator.navigate(
                 mmController,
                 MainHomeFragmentDirections.actionMainHomeFragmentToEditProfileFragment()
             )
+        }
+        return binding.root
+    }
+
+
     private fun setUpTabLayoutWithViewPager() {
         _binding.viewpager.adapter = ProfileViewPagerAdapter(this)
         TabLayoutMediator(_binding.tabLayout, _binding.viewpager){ tab, position ->

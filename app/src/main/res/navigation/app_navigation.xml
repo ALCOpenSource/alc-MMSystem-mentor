@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_mainHomeFragment_to_emptyNotificationFragment"
             app:destination="@id/emptyNotificationFragment" />
+        <action
+            android:id="@+id/action_mainHomeFragment_to_discussionFragment"
+            app:destination="@id/discussionFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -43,7 +46,7 @@
     <fragment
         android:id="@+id/mentorProgramDetailFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorProgramDetailFragment"
-        android:label="MentorProgramDetailFragment" >
+        android:label="MentorProgramDetailFragment">
         <argument
             android:name="ID"
             app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem" />
@@ -51,7 +54,7 @@
     <fragment
         android:id="@+id/mentorTaskDetailFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorTaskDetailFragment"
-        android:label="MentorTaskDetailFragment" >
+        android:label="MentorTaskDetailFragment">
         <argument
             android:name="id"
             app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.TaskItem" />
@@ -59,7 +62,7 @@
     <fragment
         android:id="@+id/mentorReportDetailFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorReportDetailFragment"
-        android:label="MentorReportDetailFragment" >
+        android:label="MentorReportDetailFragment">
         <argument
             android:name="id"
             app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.ReportItem" />
@@ -67,7 +70,7 @@
     <fragment
         android:id="@+id/mentorCertDetailFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.MentorCertDetailFragment"
-        android:label="MentorCertDetailFragment" >
+        android:label="MentorCertDetailFragment">
         <argument
             android:name="id"
             app:argType="com.peculiaruc.alc_mmsystem_mentor.domain.CertificateItem" />
@@ -75,7 +78,7 @@
     <fragment
         android:id="@+id/emptyNotificationFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.EmptyNotificationFragment"
-        android:label="EmptyNotificationFragment" >
+        android:label="EmptyNotificationFragment">
         <action
             android:id="@+id/action_emptyNotificationFragment_to_notificationsFragment"
             app:destination="@id/notificationsFragment" />
@@ -85,5 +88,17 @@
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.NotificationsFragment"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/editDiscussionFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.EditDiscussionFragment"
+        tools:layout="@layout/fragment_create_discussion" />
+    <fragment
+        android:id="@+id/discussionFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.DiscussionFragment"
+        tools:layout="@layout/fragment_discussion" >
+        <action
+            android:id="@+id/action_discussionFragment_to_editDiscussionFragment"
+            app:destination="@id/editDiscussionFragment" />
+    </fragment>
 
 </navigation>

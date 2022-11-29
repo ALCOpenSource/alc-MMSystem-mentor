@@ -2,6 +2,7 @@ package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.domain.*
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.DrawerItem
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
@@ -17,9 +18,10 @@ object UiData {
         DrawerItem(R.drawable.ic_reports, R.string.reports_fragment_label),
         DrawerItem(R.drawable.ic_certificate, R.string.certificate_fragment_label),
         DrawerItem(R.drawable.ic_messages, R.string.messages_fragment_label),
-        DrawerItem(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label),
-        DrawerItem(R.drawable.ic_logout_bckward, R.string.logout),
+        DrawerItem(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label, routes = MainHomeFragmentDirections.actionMainHomeFragmentToDiscussionFragment()),
     )
+
+    val drawerItemLogout = DrawerItem(R.drawable.ic_logout_bckward, R.string.logout)
 
 
     val searchItems = mutableListOf(
@@ -82,6 +84,7 @@ object UiData {
     val availablePreviewPrograms = mutableListOf(
         "Input previous held programs",
         "Input previous held programs",
+    )
 
     val programItems = listOf(
         ProgramItem(
