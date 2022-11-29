@@ -6,15 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.navArgs
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
+import com.peculiaruc.alc_mmsystem_mentor.data.repositories.ManagersRepository
+import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentManagerProfileBinding
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentManagersBinding
+import kotlinx.android.synthetic.main.manager_item.*
 
 class ManagerProfileFragment : Fragment() {
 
-
-    private var _binding: FragmentManagersBinding? = null
+    private val args: ManagerProfileFragmentArgs by navArgs()
+    private var _binding: FragmentManagerProfileBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -24,8 +28,20 @@ class ManagerProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentManagersBinding
+
+        val manager = ManagersRepository.getManager(args.name)
+
+        _binding = FragmentManagerProfileBinding
             .inflate(layoutInflater, container, false)
+
+        if (manager != null) {
+            binding.apply {
+                manager_name.text = manager.managerName
+                manager_title.text = manager.managerTitle
+                memberSince.text = manager.memberSince
+            }
+        }
+
         return binding.root
     }
 

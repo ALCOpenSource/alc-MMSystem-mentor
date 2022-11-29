@@ -169,7 +169,8 @@
     <fragment
         android:id="@+id/managerProfileFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.managers.screens.ManagerProfileFragment"
-        android:label="{name}">
+        android:label="{name}"
+        tools:layout="@layout/fragment_manager_profile">
         <argument
             android:name="name"
             app:argType="string" />
@@ -177,6 +178,7 @@
             android:id="@+id/action_managerProfileFragment_to_chatFragment"
             app:destination="@id/chatFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.messages.screens.ChatFragment"

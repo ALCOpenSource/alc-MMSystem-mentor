@@ -19,12 +19,6 @@
     <string name="my_managers">My Managers</string>
     <string name="profile_image">Mentor Manager Image</string>
 
-    <string name="manager_name">Manager Name</string>
-    <string name="manager_title">Manager Title</string>
-    <string name="tag">GADS Mentor</string>
-    <string name="tag_two">Tag Two</string>
-    <string name="message_manager">Message Manager</string>
-
     <!-- Messages -->
     <string name="chats">Chats</string>
     <string name="broadcast_messages">Broadcast Messages</string>
@@ -43,6 +37,24 @@
     <string name="add_emojis">Add Emoji</string>
     <string name="place_holder_text">Type message …</string>
 
+    <!-- Managers -->
+    <string name="manager_name">Manager Name</string>
+    <string name="manager_title">Manager Title</string>
+    <string name="tag">GADS Mentor</string>
+    <string name="tag_two">Tag Two</string>
+    <string name="message_manager">Message Manager</string>
+    <string name="about">About</string>
+    <string name="about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissimpharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet maurissed, dignissim lectus. Phasellus eget tortor dapibus, laoreet maurissed, dignissim lectus.</string>
+    <string name="address">Address</string>
+    <string name="member_since">Member since 2021</string>
+    <string name="technical_proficiency">Technical Proficiency</string>
+    <string name="skills">Javascript, Django, Mysql, Android</string>
+    <string name="social">Social</string>
+    <string name="web">www.web.com</string>
+    <string name="linkedin">linkedin.user</string>
+    <string name="instagram">instagram.profile</string>
+    <string name="twitter">twitter.profile</string>
+    <string name="message">Message</string>
 
     <string name="write_article">Room library article write article</string>
     <string name="request_to_be_assigned">Request to be assigned</string>
@@ -64,7 +76,6 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
 
 
     <string name="submitted">Submitted</string>

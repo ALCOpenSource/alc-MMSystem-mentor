@@ -17,9 +17,6 @@ object ManagersRepository {
                      sed, dignissim lectus. 
                 """.trimIndent(),
             memberSince = "Member since June 22 2021",
-            technicalProficiency = "Javascript, Python, Go, AWS, GCP",
-            github = "kenny-dabiri",
-            twitter = "@theKenny",
         ),
         Manager(
             managerName = "Peculiar C Umeh",
@@ -32,9 +29,6 @@ object ManagersRepository {
                      sed, dignissim lectus.
                 """.trimIndent(),
             memberSince = "Member since July 4 2017",
-            address = "Lagos Nigeria",
-            website = "www.andela.com",
-            linkedIn = "@PeculiarUmeh"
         )
 
     )
