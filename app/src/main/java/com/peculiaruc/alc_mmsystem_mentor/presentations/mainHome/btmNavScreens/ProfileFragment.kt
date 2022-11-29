@@ -24,7 +24,6 @@ class ProfileFragment : Fragment() {
     ): View {
         BtmProfileFragmentLayoutBinding.inflate(inflater).let { _binding = it }
 
-
         binding.editProfile.setOnClickListener {
             Navigator.navigate(
                 mmController,

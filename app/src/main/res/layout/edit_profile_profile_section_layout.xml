@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:showIn="@layout/edit_profile_fragment_layout">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/edit_profile_img"
+        style="@style/MMCircleProfileView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/mms_black_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@null" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/label_profile_action_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mms_set_a_profile_picture"
+            app:layout_constraintBottom_toTopOf="@id/edit_profile_select_profile"
+            app:layout_constraintStart_toEndOf="@id/edit_profile_img"
+            app:layout_constraintTop_toTopOf="@id/edit_profile_img" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/edit_profile_select_profile"
+            style="@style/MMButtonOutlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:insetTop="6dp"
+            android:insetBottom="4dp"
+            android:padding="0dp"
+            android:text="@string/mms_select_file"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/edit_profile_img"
+            app:layout_constraintStart_toStartOf="@id/label_profile_action_info"
+            app:layout_constraintTop_toBottomOf="@id/label_profile_action_info"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

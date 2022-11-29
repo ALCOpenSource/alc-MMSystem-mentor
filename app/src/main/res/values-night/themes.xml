@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.AlcMMSystemmentor" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -10,7 +10,7 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -18,6 +18,7 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+
     <style name="MMCircleProfileView">
         <item name="shapeAppearance">@style/circleImageShape</item>
         <item name="android:layout_width">64dp</item>
@@ -32,10 +33,40 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="MMEditTextLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.Corner.Small</item>
+        <item name="hintEnabled">true</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MMEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
     <style name="MMButton" parent="Widget.Material3.Button">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.Corner.Medium</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MMChip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/edit_profile_chip_background_selector</item>
+        <item name="chipStrokeColor">@color/edit_profile_chip_background_selector</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="chipMinTouchTargetSize">0dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="chipIconTint">@color/mms_black_10</item>
+        <item name="chipIcon">@drawable/ic_close</item>
+        <item name="android:textColor">@color/chip_text_selector</item>
+        <item name="chipCornerRadius">5dp</item>
     </style>
 </resources>
