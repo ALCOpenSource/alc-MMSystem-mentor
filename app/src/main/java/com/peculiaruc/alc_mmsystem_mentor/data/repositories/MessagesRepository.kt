@@ -43,34 +43,6 @@ object MessagesRepository {
             )
         ),
 
-        Chat(
-            chatOwner = "Peculiar C Umeh",
-            messages = mutableListOf(
-                Message(
-                    messageId = 1,
-                    messageOwner = "Aisha Phiri",
-                    messageType = "received",
-                    messageBody = "Hie Aisha. I had an issue. I can't seem to be able to login into Circle.so",
-                    timeSent = "7:50am"
-                ),
-                Message(
-                    messageId = 2,
-                    messageOwner = "Aisha Phiri",
-                    messageType = "sent",
-                    messageBody = "Let me check. Give me a minute",
-                    timeSent = "7:53pm",
-                    isSeen = true
-                ),
-                Message(
-                    messageId = 1,
-                    messageOwner = "Aisha Phiri",
-                    messageType = "received",
-                    messageBody = "Thank you. Will wait",
-                    timeSent = "8:00pm"
-                )
-            )
-        )
-
     )
 
     fun getChatMessages(name: String): List<Message>? {
