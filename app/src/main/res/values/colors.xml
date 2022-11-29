@@ -28,4 +28,6 @@
     <color name="title_grey_color">#909090</color>
     <color name="MMS_pry_8">#9CF6FC</color>
     <color name="MMS_pry_9">#F7FEFF</color>
+    <color name="error_red">#FF5964</color>
+    <color name="black_7">#999999</color>
 </resources>

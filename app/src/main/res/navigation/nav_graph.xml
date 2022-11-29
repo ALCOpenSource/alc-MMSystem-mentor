@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Root Navigation -->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_navigation"
     app:startDestination="@id/home">
 
+    <!-- Start Destination - Home -->
     <fragment
         android:id="@+id/home"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.home.screens.HomeFragment"
-        android:label="@string/home"
+        android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
-
         <action
-            android:id="@+id/action_home_to_certificates"
-            app:destination="@id/certificates" />
-        <action
-            android:id="@+id/action_home_to_messages"
-            app:destination="@id/messages" />
-        <action
-            android:id="@+id/action_home_to_tasks_navigation"
+            android:id="@+id/action_homeFragment_to_tasks_navigation"
             app:destination="@id/tasks_navigation" />
         <action
-            android:id="@+id/action_home_to_reports_navigation"
+            android:id="@+id/action_homeFragment_to_reports_navigation"
             app:destination="@id/reports_navigation" />
+        <action
+            android:id="@+id/action_homeFragment_to_my_managers"
+            app:destination="@id/my_managers" />
+        <action
+            android:id="@+id/action_homeFragment_to_certificates"
+            app:destination="@id/certificates" />
     </fragment>
 
 
+    <!-- Tasks Navigation -->
     <navigation android:id="@+id/tasks_navigation"
         app:startDestination="@id/taskFragment">
+
         <fragment
             android:id="@+id/taskFragment"
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskFragment"
@@ -36,10 +39,8 @@
             <action
                 android:id="@+id/action_taskFragment_to_taskDetailFragment"
                 app:destination="@id/taskDetailFragment" />
-            <action
-                android:id="@+id/action_taskFragment_to_homeFragment"
-                app:destination="@id/home" />
         </fragment>
+
         <fragment
             android:id="@+id/taskDetailFragment"
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskDetailFragment"
@@ -53,6 +54,7 @@
                 android:defaultValue="0"
                 app:argType="integer" />
         </fragment>
+
         <fragment
             android:id="@+id/taskAssignedFragment"
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.tasks.screens.TaskAssignedFragment"
@@ -66,11 +68,14 @@
                 android:defaultValue="0"
                 app:argType="integer" />
         </fragment>
+
     </navigation>
 
 
+    <!-- Reports Navigation -->
     <navigation android:id="@+id/reports_navigation"
         app:startDestination="@id/mentorsReportFragment">
+
         <fragment
             android:id="@+id/mentorsReportFragment"
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.MentorsReportFragment"
@@ -82,15 +87,14 @@
             <action
                 android:id="@+id/action_mentorsReportFragment_to_mentorReportDetailsFragment"
                 app:destination="@id/mentorReportDetailsFragment" />
-            <action
-                android:id="@+id/action_mentorsReportFragment_to_homeFragment"
-                app:destination="@id/home" />
         </fragment>
+
         <fragment
             android:id="@+id/mentorReportDetailsFragment"
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.MentorReportDetailsFragment"
             android:label="report"
             tools:layout="@layout/fragment_mentor_report_details" />
+
         <fragment
             android:id="@+id/composeReportFragment"
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.ComposeReportFragment"
@@ -103,6 +107,7 @@
                 android:id="@+id/action_composeReportFragment_to_selectProgramFragment"
                 app:destination="@id/selectProgramFragment" />
         </fragment>
+
         <fragment
             android:id="@+id/mentorReportSelectTasksFragment"
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.MentorsReportSelectTasksFragment"
@@ -112,6 +117,7 @@
                 android:id="@+id/action_mentorReportSelectTasksFragment_to_composeReportFragment"
                 app:destination="@id/composeReportFragment" />
         </fragment>
+
         <fragment
             android:id="@+id/selectProgramFragment"
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.SelectProgramFragment"
@@ -121,28 +127,67 @@
                 android:id="@+id/action_selectProgramFragment_to_composeReportFragment"
                 app:destination="@id/composeReportFragment" />
         </fragment>
+
     </navigation>
 
+
+    <!-- Messages Navigation -->
     <fragment
         android:id="@+id/messages"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.messages.screens.MessagesFragment"
         android:label="Messages"
-        tools:layout="@layout/fragment_messages" />
+        tools:layout="@layout/fragment_messages" >
+        <action
+            android:id="@+id/action_messages_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
 
-    <fragment
-        android:id="@+id/profile"
-        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.profile.screens.ProfileFragment"
-        android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
 
+    <!-- Certificates Navigation -->
     <fragment
         android:id="@+id/certificates"
         android:name="com.peculiaruc.alc_mmsystem_mentor.ui.certificates.screens.CertificatesFragment"
         android:label="Certificates"
         tools:layout="@layout/fragment_certificates" >
-        <action
-            android:id="@+id/action_certificatesFragment_to_homeFragment"
-            app:destination="@id/home" />
     </fragment>
+
+
+    <!-- My managers Navigation -->
+    <fragment
+        android:id="@+id/my_managers"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.managers.screens.ManagersFragment"
+        android:label="My Managers"
+        tools:layout="@layout/fragment_managers" >
+        <action
+            android:id="@+id/action_my_managers_to_managerProfileFragment"
+            app:destination="@id/managerProfileFragment" />
+        <action
+            android:id="@+id/action_my_managers_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/managerProfileFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.managers.screens.ManagerProfileFragment"
+        android:label="{name}"
+        tools:layout="@layout/fragment_manager_profile">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_managerProfileFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.ui.messages.screens.ChatFragment"
+        android:label="{name}"
+        tools:layout="@layout/fragment_chat">
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+
 
 </navigation>

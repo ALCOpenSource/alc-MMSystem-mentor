@@ -6,20 +6,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.navArgs
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Chat
+import com.peculiaruc.alc_mmsystem_mentor.data.repositories.MessagesRepository
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentChatBinding
+import com.peculiaruc.alc_mmsystem_mentor.ui.messages.adapters.ChatListAdapter
+import com.peculiaruc.alc_mmsystem_mentor.ui.messages.adapters.MessageListAdapter
+import kotlinx.android.synthetic.main.chat_item.*
 
 
 class ChatFragment : Fragment() {
 
-    companion object {
-        var CONTACT_NAME = "contact_name"
-    }
-
-    private lateinit var contactName: String
+    private val args: ChatFragmentArgs by navArgs()
 
     private var _binding: FragmentChatBinding? = null
 
@@ -27,17 +29,8 @@ class ChatFragment : Fragment() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
-    private lateinit var toolbar: androidx.appcompat.widget.Toolbar
-
     private lateinit var recyclerView: RecyclerView
 
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            contactName = it.getString(CONTACT_NAME).toString()
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,7 +38,7 @@ class ChatFragment : Fragment() {
     ): View {
 
         _binding = FragmentChatBinding.inflate(inflater, container, false)
-        toolbar = binding.chatToolbar
+        recyclerView = binding.messagesRecyclerview
 
         return binding.root
 
@@ -53,17 +46,25 @@ class ChatFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupNavigation()
 
-        recyclerView = binding.chatRecyclerview
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        setupNavigation()
+        displayMessages()
 
     }
 
     private fun setupNavigation() {
-        toolbar.setupWithNavController(toolbar.findNavController())
-        appBarConfiguration = AppBarConfiguration(toolbar.findNavController().graph)
+        binding.chatToolbar.setupWithNavController(binding.chatToolbar.findNavController())
+        appBarConfiguration = AppBarConfiguration(binding.chatToolbar.findNavController().graph)
     }
 
+    private fun displayMessages() {
 
+        val adapter = MessageListAdapter()
+
+        adapter.submitList(MessagesRepository.getChatMessages(args.name))
+
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(this.requireContext())
+
+    }
 }

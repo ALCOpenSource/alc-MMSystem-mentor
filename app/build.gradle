@@ -58,6 +58,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     // Material Design
     implementation 'com.google.android.material:material:1.7.0'
+    // Circle Image View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
     // Init Font sizes
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     implementation 'com.intuit.ssp:ssp-android:1.1.0'

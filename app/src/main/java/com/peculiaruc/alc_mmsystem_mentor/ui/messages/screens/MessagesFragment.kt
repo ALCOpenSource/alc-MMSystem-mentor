@@ -23,8 +23,7 @@ class MessagesFragment : Fragment() {
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var toolbar: androidx.appcompat.widget.Toolbar
-    private lateinit var chats: TextView
-    private lateinit var broadcasts: TextView
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,17 +34,13 @@ class MessagesFragment : Fragment() {
 
         bottomNavigationView = messagesBinding.bottomNavigation
         toolbar = messagesBinding.toolbar
-        chats = messagesBinding.chats
-        broadcasts = messagesBinding.broadcastMessages
 
         return messagesBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setupNavigation()
-        toggleDisplays()
 
     }
 
@@ -56,63 +51,6 @@ class MessagesFragment : Fragment() {
         NavigationUI.setupWithNavController(
             bottomNavigationView,
             bottomNavigationView.findNavController())
-    }
-
-    private fun toggleDisplays() {
-        chats.setOnClickListener {
-            displayChats()
-        }
-        broadcasts.setOnClickListener {
-            displayBroadcasts()
-        }
-    }
-
-    private fun displayChats() {
-
-        chats.setBackgroundColor(
-            ContextCompat.getColor(requireActivity().applicationContext, R.color.white)
-        )
-        chats.setTextColor(
-            ContextCompat.getColor(requireActivity().applicationContext, R.color.primary_color_2)
-        )
-
-        broadcasts.setBackgroundColor(
-            ContextCompat.getColor(requireActivity().applicationContext, R.color.primary_color_2)
-        )
-        broadcasts.setTextColor(
-            ContextCompat.getColor(requireActivity().applicationContext, R.color.white)
-        )
-
-        childFragmentManager.commit {
-            setReorderingAllowed(true)
-            replace(R.id.messages_container, ChatsFragment.newInstance())
-            addToBackStack("Chats")
-        }
-
-    }
-
-    private fun displayBroadcasts() {
-
-        broadcasts.setBackgroundColor(
-            ContextCompat.getColor(requireActivity().applicationContext, R.color.white)
-        )
-        broadcasts.setTextColor(
-            ContextCompat.getColor(requireActivity().applicationContext, R.color.purple_500)
-        )
-
-        chats.setBackgroundColor(
-            ContextCompat.getColor(requireActivity().applicationContext, R.color.purple_500)
-        )
-        chats.setTextColor(
-            ContextCompat.getColor(requireActivity().applicationContext, R.color.white)
-        )
-
-        childFragmentManager.commit {
-            setReorderingAllowed(true)
-            replace(R.id.messages_container, BroadcastMessagesFragment.newInstance())
-            addToBackStack("Broadcast Messages")
-        }
-
     }
 
 }
