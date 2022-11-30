@@ -5,10 +5,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Program
 
+/**
+ * A [SelectProgramAdapter] that manages the recyclerView for the selectProgramFragment.
+ *
+ * It implements the onBindViewHolder, the onCreateViewHolder and the getItemCount methods.
+ */
 class SelectProgramAdapter(private val program: List<Program>) : RecyclerView.Adapter<SelectProgramAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -26,6 +32,9 @@ class SelectProgramAdapter(private val program: List<Program>) : RecyclerView.Ad
         return program.size
     }
 
+    /**
+     * Holds the views for the adapter
+     */
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val titleText: TextView = itemView.findViewById(R.id.isp_txt)
         val image: ImageView = itemView.findViewById(R.id.google_icon)

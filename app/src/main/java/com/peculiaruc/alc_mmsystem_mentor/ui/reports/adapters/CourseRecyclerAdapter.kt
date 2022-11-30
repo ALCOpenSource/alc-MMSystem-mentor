@@ -9,6 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Course
 
+/**
+ * A [CourseRecyclerAdapter] that manages the recyclerView for the selectProgramFragment.
+ *
+ * It implements the onBindViewHolder, the onCreateViewHolder and the getItemCount methods.
+ */
 class CourseRecyclerAdapter(private val courses: List<Course>) :
     RecyclerView.Adapter<CourseRecyclerAdapter.ViewHolder>() {
 
@@ -30,6 +35,9 @@ class CourseRecyclerAdapter(private val courses: List<Course>) :
         return courses.size
     }
 
+    /**
+     * Holds the views for the adapter
+     */
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val courseTitle: TextView = itemView.findViewById<TextView?>(R.id.textReport)
         val textTitle: TextView = itemView.findViewById(R.id.reporter)

@@ -15,7 +15,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentHomeBinding
 
-
+/**
+ * A [Fragment] that hosts the home page.
+ *
+ * It also manages the entire application navigation controller.
+ *
+ */
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
