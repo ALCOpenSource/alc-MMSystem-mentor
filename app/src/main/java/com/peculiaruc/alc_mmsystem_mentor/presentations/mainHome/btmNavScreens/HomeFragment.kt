@@ -135,7 +135,7 @@ class HomeFragment : Fragment() {
 }
 
 private fun initClickListeners() {
-    binding.homeProfileView.setOnClickListener { drawerVM.changeDrawerState(MainDrawerVM.DrawerRequestState.Open) }
+    binding.homeProfileView.homeProfileView.setOnClickListener { drawerVM.changeDrawerState(MainDrawerVM.DrawerRequestState.Open) }
 }
 
 private fun initViewModels() {

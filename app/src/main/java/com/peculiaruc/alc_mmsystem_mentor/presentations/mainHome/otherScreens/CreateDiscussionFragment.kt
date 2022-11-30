@@ -21,8 +21,11 @@ class CreateDiscussionFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         FragmentCreateDiscussionBinding.inflate(inflater).let { _binding = it }
-        binding.ivNewDiscArrowBack.setOnClickListener {
+        binding.appbar.apply {
+            screenTitle.text = getString(R.string.mms_new_topic)
+            backBtn.setOnClickListener {
             findNavController().navigateUp()
+        }
         }
 
         return binding.root

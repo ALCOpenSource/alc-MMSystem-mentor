@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".presentations.mainHome.otherScreens.CreateDiscussionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/appbar_title_back_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_post_discussion"
         style="@style/MMButton"
         android:layout_width="match_parent"
@@ -18,69 +20,48 @@
         android:layout_marginTop="108dp"
         android:text="Post to Forum"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/body_outlinedTextField" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_cancel_discussion"
-        style="@style/MMButton"
+        style="@style/MMButtonOutlined"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Cancel"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_post_discussion" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Topic"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_new__disc_arrowBack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
-        app:layout_constraintStart_toEndOf="@+id/iv_new__disc_arrowBack"
-        app:layout_constraintTop_toTopOf="@+id/iv_new__disc_arrowBack"
-        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:textStyle="bold"
+        android:layout_marginStart="16dp"
         android:text="Title"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@id/appbar" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:textStyle="bold"
         android:text="Body"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView16"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintStart_toStartOf="@id/textView14"
+        app:layout_constraintTop_toBottomOf="@id/textView16" />
 
-    <ImageView
-        android:id="@+id/iv_new__disc_arrowBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_arrow_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
@@ -91,29 +72,29 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField" />
+        app:layout_constraintStart_toStartOf="@id/textView14"
+        app:layout_constraintTop_toBottomOf="@id/outlinedTextField" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/outlinedTextField"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Enter a Title"
-        app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintStart_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView14">
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="@id/textView14"
+        app:layout_constraintStart_toStartOf="@id/textView14"
+        app:layout_constraintTop_toBottomOf="@id/textView14">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditText"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:maxLines="2"
+            android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            app:layout_constraintEnd_toEndOf="@+id/textView14"
-            app:layout_constraintHorizontal_bias="0.024"
-            app:layout_constraintStart_toStartOf="@+id/textView14"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            android:maxLines="2"
+            android:hint="Enter a Title"
+            app:layout_constraintEnd_toEndOf="@id/textView14"
+            app:layout_constraintStart_toStartOf="@id/textView14"
+            app:layout_constraintTop_toBottomOf="@id/textView14" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -121,12 +102,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/body_outlinedTextField"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Start typing..."
         android:gravity="center"
-        app:layout_constraintEnd_toEndOf="@+id/textView15"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
+        android:hint="Start typing..."
+        app:layout_constraintEnd_toEndOf="@id/textView14"
+        app:layout_constraintStart_toStartOf="@id/textView14"
         app:layout_constraintTop_toBottomOf="@+id/textView15">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -134,11 +115,10 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="216dp"
+            android:gravity="top"
             android:maxLines="8" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

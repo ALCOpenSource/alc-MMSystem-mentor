@@ -90,20 +90,19 @@ class MainHomeFragment : Fragment() {
     }
 
     private fun initDrawerUi() {
-        val drawerItems = UiData.drawerNavItems // Store all drawer items
-
-        val logoutDrawerItemPos = (drawerItems.size - 1) // Get the position of the logout item
-
-        val logoutDrawerItem =
-            drawerItems.removeAt(logoutDrawerItemPos) // Remove the logout item from the main drawer items and store remains
+        val drawerItems = UiData.drawerNavItems
+        val logoutDrawerItem = UiData.drawerNavItemLogout // Store all drawer items
 
         val adapter = MainHomeFragmentDrawerItemsAdapter(requireActivity()) {
-            if (it != null) Toast.makeText(
+            if (it != null && it.routes == null) Toast.makeText(
                 requireActivity(),
                 "Navigate to -> ${getString(it.label)}",
                 Toast.LENGTH_SHORT
             )
                 .show()
+            it?.routes?.let { direction ->
+                Navigator.navigate(mmController, direction)
+            }
         }
         adapter.addAll(drawerItems)
 

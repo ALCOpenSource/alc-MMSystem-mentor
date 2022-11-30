@@ -8,6 +8,7 @@
     <string name="settings_fragment_label">Settings</string>
     <string name="certificate_fragment_label">Certificate</string>
     <string name="discussion_forum_fragment_label">Discussion Forum</string>
+    <string name="discussion">Discussion</string>
     <string name="reports_fragment_label">Reports</string>
     <string name="tasks_fragment_label">Tasks</string>
     <string name="my_managers_fragment_label">My Managers</string>
@@ -81,4 +82,5 @@
     <string name="github">Github</string>
     <string name="website">Website</string>
     <string name="mms_add_program">Add Program</string>
+    <string name="mms_new_topic">New Topic</string>
 </resources>

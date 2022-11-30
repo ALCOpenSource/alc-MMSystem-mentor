@@ -10,37 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <include
             android:id="@+id/homeProfileView"
-            style="@style/MMCircleProfileView"
+            layout="@layout/profile_header_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@id/homeNotificationBtnView"
             app:layout_constraintStart_toStartOf="@id/startGuideLine"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/homeProfileGreeting"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/ui_ph_account_username"
-            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-            app:layout_constraintBottom_toBottomOf="@id/homeProfileView"
-            app:layout_constraintEnd_toStartOf="@id/homeNotificationBtnView"
-            app:layout_constraintStart_toEndOf="@id/homeProfileView"
-            app:layout_constraintTop_toTopOf="@id/homeProfileView"
-            app:layout_constraintVertical_bias="0.24000001" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/homeProfileAccountType"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/ui_ph_accout_type"
-            android:textStyle="italic"
-            app:layout_constraintEnd_toEndOf="@id/homeProfileGreeting"
-            app:layout_constraintStart_toStartOf="@id/homeProfileGreeting"
-            app:layout_constraintTop_toBottomOf="@id/homeProfileGreeting" />
-
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/homeNotificationBtnView"

@@ -7,10 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
+import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.EditProfileFragmentLayoutBinding
+import com.peculiaruc.alc_mmsystem_mentor.presentations.components.MMSDialogProperties
+import com.peculiaruc.alc_mmsystem_mentor.presentations.components.MMSDialog
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.editProfile.EditProfileChipsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.editProfile.EditProfileDocumentsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.editProfile.EditProfilePrevProgramsAdapter
@@ -18,6 +20,7 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.showToast
+
 
 class EditProfileFragment : Fragment() {
     private var _binding: EditProfileFragmentLayoutBinding? = null
@@ -28,6 +31,7 @@ class EditProfileFragment : Fragment() {
     private lateinit var rolesHeldAdapter: EditProfileChipsAdapter.Adapter
     private lateinit var docsAdapter: EditProfileDocumentsAdapter.Adapter
     private lateinit var prevProgramsAdapter: EditProfilePrevProgramsAdapter.Adapter
+    private lateinit var dialog: MMSDialog
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,6 +45,7 @@ class EditProfileFragment : Fragment() {
     }
 
     private fun initUi() {
+        dialog = MMSDialog(requireActivity())
         setScreenTitle()
         initRecyclerViews()
     }
@@ -133,10 +138,28 @@ class EditProfileFragment : Fragment() {
         binding.editProfilePhoto.editProfileImg.setOnClickListener { showToast("Change Profile") }
         binding.editProfilePhoto.editProfileSelectProfile.setOnClickListener { showToast("Change Profile") }
 
-        binding.editProfilePrevPrograms.editProfilePrevProgramsAddProgram.setOnClickListener { showToast("Add Program") }
+        binding.editProfilePrevPrograms.editProfilePrevProgramsAddProgram.setOnClickListener {
+            showToast(
+                "Add Program"
+            )
+        }
         binding.editProfileDocs.editProfileDocsAddDoc.setOnClickListener { showToast("Add Document") }
 
-        binding.editProfileSaveChanges.setOnClickListener { showToast("Save Changes") }
+        binding.editProfileSaveChanges.setOnClickListener {
+            dialog.show(
+                dialogProperties = MMSDialogProperties()
+                    .setMsg("Profile Successfully Updated")
+                    .setPosEnabled(true, "Done")
+                    .setCancelable(false)
+                    .setCancelableOnTouchOutside(false)
+                    .setPosAction {
+                        showToast("Done")
+                        Navigator.navigateUp(mmController)
+                        dialog.hide()
+                    }
+                    .setIllustration(R.drawable.ic_success_illustration)
+            )
+        }
     }
 
     private fun setScreenTitle() {

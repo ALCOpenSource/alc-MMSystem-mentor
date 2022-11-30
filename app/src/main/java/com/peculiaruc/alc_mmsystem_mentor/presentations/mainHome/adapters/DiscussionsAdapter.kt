@@ -19,7 +19,7 @@ class DiscussionsAdapter(
             binding.tvDiscussionTime.text = discussionItem.time
             binding.tvDiscussionTitle.text = discussionItem.title
             binding.tvDiscussionDescription.text = discussionItem.description
-            binding.tvMentorName.text = discussionItem.owner
+            binding.discussionItemHeaderLayout.homeProfileGreeting.text = discussionItem.owner
             binding.ivEditDiscussion.setOnClickListener {
                 listener.onClick(discussionItem)
             }

@@ -17,6 +17,15 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+    <style name="retangleShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0%</item>
+        <item name="background">?backgroundColor</item>
+    </style>
+
+    <style name="MMSDialogTheme" parent="ThemeOverlay.Material3.Dialog.Alert">
+        <item name="shapeAppearanceOverlay">@style/retangleShape</item>
+    </style>
 
     <style name="MMCircleProfileView">
         <item name="shapeAppearance">@style/circleImageShape</item>
