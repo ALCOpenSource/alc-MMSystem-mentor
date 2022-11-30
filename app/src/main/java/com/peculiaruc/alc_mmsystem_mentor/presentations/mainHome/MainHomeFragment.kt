@@ -90,11 +90,11 @@ class MainHomeFragment : Fragment() {
     }
 
     private fun initDrawerUi() {
-        val drawerItems = UiData.drawerItems
-        val logoutDrawerItem = UiData.drawerItemLogout
+        val drawerItems = UiData.drawerNavItems
+        val logoutDrawerItem = UiData.drawerNavItemLogout // Store all drawer items
 
         val adapter = MainHomeFragmentDrawerItemsAdapter(requireActivity()) {
-            if (it != null && it?.routes == null) Toast.makeText(
+            if (it != null && it.routes == null) Toast.makeText(
                 requireActivity(),
                 "Navigate to -> ${getString(it.label)}",
                 Toast.LENGTH_SHORT

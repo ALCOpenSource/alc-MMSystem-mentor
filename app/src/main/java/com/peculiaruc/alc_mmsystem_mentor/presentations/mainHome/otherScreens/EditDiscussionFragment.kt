@@ -26,10 +26,12 @@ class EditDiscussionFragment : Fragment() {
         binding.btnSaveChangesDiscussion.setOnClickListener {
             PostUpdateDialog().show(parentFragmentManager, "dialog")
         }
-        binding.ivNewDiscArrowBack.setOnClickListener {
-            findNavController().navigateUp()
+        binding.appbar.apply {
+            screenTitle.text = getString(R.string.mms_new_topic)
+            backBtn.setOnClickListener {
+                findNavController().navigateUp()
+            }
         }
-
         return binding.root
     }
 

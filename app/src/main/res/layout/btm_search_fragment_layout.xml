@@ -75,11 +75,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:constraint_referenced_ids="btn_search_type_all,btn_search_type_cert,btn_search_type_mentManagers,btn_search_type_ments,btn_search_type_reports,,btn_search_type_tasks,btn_search_type_progams"
-                    app:flow_horizontalGap="1.5dp"
-                    app:flow_horizontalAlign="start"
-                    app:flow_wrapMode="chain2"
                     app:flow_firstHorizontalStyle="spread_inside"
                     app:flow_verticalAlign="bottom"
+                    app:flow_wrapMode="chain2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,8 +85,8 @@
                     android:id="@+id/btn_search_type_all"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="All"
                     android:checked="true"
+                    android:text="All"
                     app:useMaterialThemeColors="true" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton

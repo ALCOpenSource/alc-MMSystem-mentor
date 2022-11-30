@@ -8,6 +8,7 @@
     <string name="settings_fragment_label">Settings</string>
     <string name="certificate_fragment_label">Certificate</string>
     <string name="discussion_forum_fragment_label">Discussion Forum</string>
+    <string name="discussion">Discussion</string>
     <string name="reports_fragment_label">Reports</string>
     <string name="tasks_fragment_label">Tasks</string>
     <string name="my_managers_fragment_label">My Managers</string>
@@ -57,6 +58,10 @@
     <string name="_3_years">3 years</string>
     <string name="documents">Documents</string>
     <string name="peculiar_umeh">\@peculiar.umeh</string>
+    <string name="mms_view">View</string>
+    <string name="mms_quick_actions">Quick Actions</string>
+    <string name="mms_tasks_in_progress">Tasks In-progress</string>
+    <string name="mms_chat_mentor_manager">Chat Mentor Manager</string>
     <string name="mm_edit_profile">Edit Profile</string>
     <string name="mm_screen_title_ph">Screen Title</string>
     <string name="mms_set_a_profile_picture">Set a profile picture</string>
@@ -77,4 +82,5 @@
     <string name="github">Github</string>
     <string name="website">Website</string>
     <string name="mms_add_program">Add Program</string>
+    <string name="mms_new_topic">New Topic</string>
 </resources>

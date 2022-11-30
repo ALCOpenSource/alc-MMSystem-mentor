@@ -1,29 +1,45 @@
 package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils
 
 import com.peculiaruc.alc_mmsystem_mentor.R
+
 import com.peculiaruc.alc_mmsystem_mentor.domain.*
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.DrawerItem
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
+import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategories
+import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategoriesTypes
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
 
 object UiData {
 
-    val drawerItems = mutableListOf(
-        DrawerItem(R.drawable.ic_home, R.string.home_fragment_label),
-        DrawerItem(R.drawable.ic_account, R.string.profile_fragment_label),
-        DrawerItem(R.drawable.ic_programs, R.string.programs_fragment_label),
-        DrawerItem(R.drawable.ic_mentor_managers, R.string.my_managers_fragment_label),
-        DrawerItem(R.drawable.ic_task, R.string.tasks_fragment_label),
-        DrawerItem(R.drawable.ic_reports, R.string.reports_fragment_label),
-        DrawerItem(R.drawable.ic_certificate, R.string.certificate_fragment_label),
-        DrawerItem(R.drawable.ic_messages, R.string.messages_fragment_label),
-        DrawerItem(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label, routes = MainHomeFragmentDirections.actionMainHomeFragmentToDiscussionFragment()),
+    val drawerNavItemLogout = NavItems(R.drawable.ic_logout_bckward, R.string.logout)
+
+    val drawerNavItems = mutableListOf(
+        NavItems(R.drawable.ic_home, R.string.home_fragment_label),
+        NavItems(R.drawable.ic_account, R.string.profile_fragment_label),
+        NavItems(R.drawable.ic_programs, R.string.programs_fragment_label),
+        NavItems(R.drawable.ic_mentor_managers, R.string.my_managers_fragment_label),
+        NavItems(R.drawable.ic_task, R.string.tasks_fragment_label),
+        NavItems(R.drawable.ic_reports, R.string.reports_fragment_label),
+        NavItems(R.drawable.ic_certificate, R.string.certificate_fragment_label),
+        NavItems(R.drawable.ic_messages, R.string.messages_fragment_label),
+        NavItems(
+            R.drawable.ic_discussion_forum,
+            R.string.discussion_forum_fragment_label,
+            routes = MainHomeFragmentDirections.actionMainHomeFragmentToDiscussionFragment()
+        ),
     )
 
-    val drawerItemLogout = DrawerItem(R.drawable.ic_logout_bckward, R.string.logout)
-
-
+    val homeNavItems = mutableListOf(
+        NavItems(R.drawable.ic_task, R.string.mms_tasks_in_progress),
+        NavItems(R.drawable.ic_comment_circle_chat_message, R.string.mms_chat_mentor_manager),
+        NavItems(R.drawable.ic_reports, R.string.reports_fragment_label),
+        NavItems(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label),
+    )
+    val homeActivityOverview = mutableListOf(
+        ActivityOverview(20, EventCategories.Mentors),
+        ActivityOverview(5, EventCategories.Programs),
+        ActivityOverview(10, EventCategories.Tasks),
+    )
     val searchItems = mutableListOf(
         SearchItem(
             R.drawable.ic_launcher_background,
@@ -55,6 +71,7 @@ object UiData {
             sourceLocation = SearchType.Certificates,
         ),
     )
+
     val availableTechnicalProficiencies = mutableListOf(
         "Python",
         "Java",
@@ -112,7 +129,7 @@ object UiData {
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
 
-        ),
+            ),
         ProgramItem(
             id = 4,
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
@@ -121,7 +138,7 @@ object UiData {
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
 
-        ),
+            ),
         ProgramItem(
             id = 5,
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
@@ -263,7 +280,7 @@ object UiData {
             achievements = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             recommendations = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             blocker = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
-        ),ReportItem(
+        ), ReportItem(
             id = 6,
             title = "Google Africa Scholarship Report",
             owner = "Ibrahim Kabir",
@@ -271,7 +288,7 @@ object UiData {
             achievements = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             recommendations = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             blocker = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
-        ),ReportItem(
+        ), ReportItem(
             id = 7,
             title = "Google Africa Scholarship Report",
             owner = "Ibrahim Kabir",
@@ -279,7 +296,7 @@ object UiData {
             achievements = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             recommendations = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             blocker = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
-        ),ReportItem(
+        ), ReportItem(
             id = 8,
             title = "Google Africa Scholarship Report",
             owner = "Ibrahim Kabir",
@@ -287,7 +304,7 @@ object UiData {
             achievements = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             recommendations = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             blocker = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
-        ),ReportItem(
+        ), ReportItem(
             id = 9,
             title = "Google Africa Scholarship Report",
             owner = "Ibrahim Kabir",
@@ -295,7 +312,7 @@ object UiData {
             achievements = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             recommendations = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             blocker = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
-        ),ReportItem(
+        ), ReportItem(
             id = 10,
             title = "Google Africa Scholarship Report",
             owner = "Ibrahim Kabir",
@@ -303,7 +320,7 @@ object UiData {
             achievements = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             recommendations = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             blocker = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
-        ),ReportItem(
+        ), ReportItem(
             id = 11,
             title = "Google Africa Scholarship Report",
             owner = "Ibrahim Kabir",
@@ -320,37 +337,44 @@ object UiData {
             title = "GADS CLOUD 2022 - COMPLETION",
             time = "Oct 16 2022",
             certImage = R.drawable.cert_ph
-        ),CertificateItem(
+        ),
+        CertificateItem(
             id = 2,
             title = "GADS CLOUD 2022 - COMPLETION",
             time = "Oct 16 2022",
             certImage = R.drawable.cert_ph
-        ),CertificateItem(
+        ),
+        CertificateItem(
             id = 3,
             title = "GADS CLOUD 2022 - COMPLETION",
             time = "Oct 16 2022",
             certImage = R.drawable.cert_ph
-        ),CertificateItem(
+        ),
+        CertificateItem(
             id = 4,
             title = "GADS CLOUD 2022 - COMPLETION",
             time = "Oct 16 2022",
             certImage = R.drawable.cert_ph
-        ),CertificateItem(
+        ),
+        CertificateItem(
             id = 5,
             title = "GADS CLOUD 2022 - COMPLETION",
             time = "Oct 16 2022",
             certImage = R.drawable.cert_ph
-        ),CertificateItem(
+        ),
+        CertificateItem(
             id = 6,
             title = "GADS CLOUD 2022 - COMPLETION",
             time = "Oct 16 2022",
             certImage = R.drawable.cert_ph
-        ),CertificateItem(
+        ),
+        CertificateItem(
             id = 7,
             title = "GADS CLOUD 2022 - COMPLETION",
             time = "Oct 16 2022",
             certImage = R.drawable.cert_ph
-        ),CertificateItem(
+        ),
+        CertificateItem(
             id = 8,
             title = "GADS CLOUD 2022 - COMPLETION",
             time = "Oct 16 2022",
@@ -389,7 +413,7 @@ object UiData {
             title = "Ferdinand Johnson created All Mentors Daily Task Report For February",
             time = "Yesterday at 11.52PM"
         ),
-        )
+    )
 
     val discussionList = listOf(
         DiscussionItem(
@@ -398,7 +422,7 @@ object UiData {
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             title = "The New MMS Discussion Forum",
             owner = "Samuel Kabede"
-            ),
+        ),
         DiscussionItem(
             id = 2,
             time = "5h ago",
@@ -427,13 +451,19 @@ object UiData {
             owner = "Sarah Tasha",
             description = "Found this insightful. Please how can I register to be part of the program",
             time = "10 mins"
-        ),CommentItem(
+        ),
+        CommentItem(
             id = 3,
             owner = "Sarah Tasha",
             description = "Found this insightful. Please how can I register to be part of the program",
             time = "10 mins"
         ),
-
     )
 
 }
+
+data class ActivityOverview(
+    val count: Int,
+    @EventCategoriesTypes
+    val category: EventCategories,
+)

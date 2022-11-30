@@ -38,7 +38,6 @@
         android:id="@+id/settingsFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.SettingsFragment"
         tools:layout="@layout/settings_fragment_layout" />
-
     <fragment
         android:id="@+id/editProfileFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.EditProfileFragment"
@@ -91,14 +90,28 @@
     <fragment
         android:id="@+id/editDiscussionFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.EditDiscussionFragment"
+        tools:layout="@layout/fragment_edit_discussion" />
+    <fragment
+        android:id="@+id/createDiscussionFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.CreateDiscussionFragment"
         tools:layout="@layout/fragment_create_discussion" />
     <fragment
         android:id="@+id/discussionFragment"
         android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.DiscussionFragment"
-        tools:layout="@layout/fragment_discussion" >
+        tools:layout="@layout/fragment_discussion">
         <action
             android:id="@+id/action_discussionFragment_to_editDiscussionFragment"
             app:destination="@id/editDiscussionFragment" />
+        <action
+            android:id="@+id/action_discussionFragment_to_createDiscussionFragment"
+            app:destination="@id/createDiscussionFragment" />
+        <action
+            android:id="@+id/action_discussionFragment_to_discussionCommentFragment"
+            app:destination="@id/discussionCommentFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/discussionCommentFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.CommentsFragment"
+        tools:layout="@layout/fragment_comments" />
 
 </navigation>
