@@ -44,11 +44,11 @@ class ComposeReportTasksFragment : Fragment() {
         binding.crpTxt.text = getString(R.string.program)
         binding.crpTask.text = getString(R.string.task)
         binding.btnTaskField.text = getString(R.string.select_task)
-        binding.btnCompTaskField.text = getString(R.string.submit_report)
+        binding.btnComposeTaskField.text = getString(R.string.submit_report)
 
-        binding.btnCompTaskField.setOnClickListener {
+        binding.btnComposeTaskField.setOnClickListener {
             val action = ComposeReportTasksFragmentDirections.actionComposeReportTasksFragmentToMentorReportSelectTasksFragment()
-            binding.btnCompTaskField.findNavController().navigate(action)
+            binding.btnComposeTaskField.findNavController().navigate(action)
         }
 
     }

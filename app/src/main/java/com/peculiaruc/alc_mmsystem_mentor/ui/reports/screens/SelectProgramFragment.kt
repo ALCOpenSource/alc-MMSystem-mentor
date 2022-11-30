@@ -52,7 +52,7 @@ class SelectProgramFragment : Fragment() {
             data.add(
                 Program(
                     title = getString(R.string.room_course),
-                    image = R.drawable.ic_task
+                    image = R.drawable.ic_google_fill
                 )
             )
         }

@@ -2,6 +2,11 @@ package com.peculiaruc.alc_mmsystem_mentor.data.repositories
 
 import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Manager
 
+/**
+ * A [ManagersRepository] object that holds the abstracted data of the Managers.
+ *
+ *
+ */
 object ManagersRepository {
 
     val allManagers: List<Manager> = mutableListOf(
@@ -33,6 +38,9 @@ object ManagersRepository {
 
     )
 
+    /**
+     * It is used to fetch the manager's data from the server.
+     */
     fun getManager(name: String) : Manager? = allManagers.find { manager -> manager.managerName == name }
 
 }

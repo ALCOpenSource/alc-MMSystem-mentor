@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".ui.reports.screens.ComposeReportFragment">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/cps_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:minHeight="?attr/actionBarSize"
-        tools:visibility="visible"
         app:contentInsetStart="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cps_case"
@@ -28,9 +28,9 @@
                 android:id="@+id/action_back"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/go_back"
                 android:paddingStart="16dp"
                 android:paddingEnd="8dp"
-                android:contentDescription="@string/go_back"
                 android:src="@drawable/ic_arrow_left"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -62,8 +62,8 @@
         android:id="@+id/cps_choose_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
         android:gravity="start"
         android:textColor="@color/MMS_black_2"
@@ -80,19 +80,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_12"
         android:layout_marginTop="@dimen/_8sdp"
-        android:padding="4dp"
         android:contentDescription="@string/go_back"
+        android:padding="4dp"
         android:src="@drawable/ic_ellipse_bold"
-        app:layout_constraintTop_toBottomOf="@id/cps_choose_txt"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cps_choose_txt" />
 
     <TextView
         android:id="@+id/program_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
         android:layout_marginTop="@dimen/_6sdp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="@dimen/_4sdp"
         android:gravity="start"
         android:textColor="@color/MMS_black_5"
         android:textSize="@dimen/_12ssp"
@@ -108,19 +108,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_12"
         android:layout_marginTop="@dimen/_8sdp"
-        android:padding="4dp"
         android:contentDescription="@string/go_back"
+        android:padding="4dp"
         android:src="@drawable/ic_ellipse_light"
-        app:layout_constraintTop_toBottomOf="@id/cps_choose_txt"
-        app:layout_constraintStart_toEndOf="@id/program_txt"/>
+        app:layout_constraintStart_toEndOf="@id/program_txt"
+        app:layout_constraintTop_toBottomOf="@id/cps_choose_txt" />
 
     <TextView
         android:id="@+id/task_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
         android:layout_marginTop="@dimen/_6sdp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="@dimen/_4sdp"
         android:gravity="start"
         android:textColor="@color/MMS_black_5"
         android:textSize="@dimen/_12ssp"
@@ -153,17 +153,17 @@
         android:id="@+id/gads_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="4dp"
         android:gravity="start"
+        android:text="@string/gads_program_underline"
         android:textColor="@color/MMS_black_2"
         android:textSize="@dimen/_12ssp"
         app:fontFamily="@font/mukta_regular"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_program_field"
-        android:text="@string/gads_program_underline" />
+        app:layout_constraintTop_toBottomOf="@id/btn_program_field" />
 
     <ImageView
         android:id="@+id/cancel_indicator"
@@ -173,45 +173,50 @@
         android:layout_marginTop="@dimen/_4sdp"
         android:contentDescription="@string/go_back"
         android:src="@drawable/ic_cancel_vector"
-        app:layout_constraintTop_toTopOf="@id/gads_txt"
-        app:layout_constraintStart_toEndOf="@id/gads_txt"/>
+        app:layout_constraintStart_toEndOf="@id/gads_txt"
+        app:layout_constraintTop_toTopOf="@id/gads_txt" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/field_label"
-        style="@style/ContainedTextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_8sdp"
-        app:hintTextColor="@color/title_grey_color"
-        app:layout_constraintTop_toBottomOf="@id/gads_txt"
         android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginVertical="@dimen/_8sdp"
+        app:boxStrokeColor="@color/title_grey_color"
+        app:boxStrokeWidth="0.5dp"
+        app:hintTextColor="@color/title_grey_color"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/gads_txt">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/field_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:gravity="top"
             android:hint="@string/report_title"
+            android:imeOptions="actionNext"
             android:inputType="textEmailAddress"
             android:textColorHint="@color/title_grey_color" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/field_label2"
-        style="@style/ContainedTextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_8sdp"
-        app:hintTextColor="@color/title_grey_color"
-        app:layout_constraintTop_toBottomOf="@id/field_label"
         android:layout_marginHorizontal="@dimen/margin_16"
-        app:layout_constraintStart_toStartOf="@id/field_label"
-        app:layout_constraintEnd_toEndOf="@id/field_label">
+        android:layout_marginVertical="@dimen/_8sdp"
+        app:boxStrokeColor="@color/title_grey_color"
+        app:boxStrokeWidth="0.5dp"
+        app:hintTextColor="@color/title_grey_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/field_label">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/field_text2"
@@ -223,92 +228,94 @@
             android:hint="@string/major_achievement"
             android:imeOptions="actionNext"
             android:inputType="textMultiLine"
-            android:lines="4"
-            android:maxLength="30"
-            android:overScrollMode="always"
-            android:scrollbarStyle="insideInset"
-            android:scrollbars="vertical"
-            android:scrollHorizontally="false"
-            android:textColorHint="#616161" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/field_label3"
-        style="@style/ContainedTextInputLayoutStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_8sdp"
-        app:hintTextColor="@color/title_grey_color"
-        app:layout_constraintTop_toBottomOf="@id/field_label2"
-        android:layout_marginHorizontal="@dimen/margin_16"
-        app:layout_constraintStart_toStartOf="@id/field_label2"
-        app:layout_constraintEnd_toEndOf="@id/field_label2">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/field_text3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
             android:lines="3"
             android:overScrollMode="always"
             android:scrollbarStyle="insideInset"
             android:scrollbars="vertical"
             android:scrollHorizontally="false"
-            android:maxLength="30"
+            android:textColorHint="@color/title_grey_color" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field_label3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginVertical="@dimen/_8sdp"
+        app:boxStrokeColor="@color/title_grey_color"
+        app:boxStrokeWidth="0.5dp"
+        app:hintTextColor="@color/title_grey_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/field_label2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/field_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:gravity="top"
             android:hint="@string/major_blocker"
+            android:imeOptions="actionNext"
             android:inputType="textMultiLine"
+            android:lines="3"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
             android:textColorHint="@color/title_grey_color" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/field_label4"
-        style="@style/ContainedTextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_8sdp"
-        app:hintTextColor="@color/title_grey_color"
-        app:layout_constraintTop_toBottomOf="@id/field_label3"
         android:layout_marginHorizontal="@dimen/margin_16"
-        app:layout_constraintStart_toStartOf="@id/field_label3"
-        app:layout_constraintEnd_toEndOf="@id/field_label3">
+        android:layout_marginVertical="@dimen/_8sdp"
+        app:boxStrokeColor="@color/title_grey_color"
+        app:boxStrokeWidth="0.5dp"
+        app:hintTextColor="@color/title_grey_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/field_label3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/field_text4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:lines="4"
+            android:gravity="top"
+            android:hint="@string/major_recommendations"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:lines="3"
             android:overScrollMode="always"
             android:scrollbarStyle="insideInset"
             android:scrollbars="vertical"
             android:scrollHorizontally="false"
-            android:maxLength="30"
-            android:gravity="top"
-            android:hint="@string/major_blocker"
-            android:inputType="textMultiLine"
             android:textColorHint="@color/title_grey_color" />
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_compose_field"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginHorizontal="@dimen/margin_16"
+        android:layout_marginBottom="21dp"
         android:fontFamily="@font/montserrat_regular"
-        app:fontFamily="@font/montserrat_semibold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
         app:backgroundTint="#035D63"
         app:cornerRadius="10dp"
-        android:textColor="@android:color/white"
-        tools:text="Submit Report"
-        android:textAllCaps="false"
+        app:fontFamily="@font/montserrat_semibold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/field_label4"
-        app:layout_constraintStart_toStartOf="@+id/field_label4"
-        app:layout_constraintTop_toBottomOf="@id/field_label4" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Submit Report" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,10 @@
 package com.peculiaruc.alc_mmsystem_mentor.data.local.database.models
 
+/**
+ * A [Manager] class that holds the managers data information.
+ *
+ *
+ */
 data class Manager(
 
     val managerName: String,

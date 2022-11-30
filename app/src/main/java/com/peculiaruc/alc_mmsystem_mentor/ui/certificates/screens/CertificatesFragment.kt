@@ -12,6 +12,12 @@ import androidx.navigation.ui.setupWithNavController
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentBroadcastMessagesBinding
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentCertificatesBinding
 
+/**
+ * A [Fragment] that displays the certificates ui.
+ *
+ *
+ *
+ */
 class CertificatesFragment : Fragment() {
 
     private lateinit var binding: FragmentCertificatesBinding

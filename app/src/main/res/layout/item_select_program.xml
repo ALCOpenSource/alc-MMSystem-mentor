@@ -6,7 +6,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:cardUseCompatPadding="true"
         >
 
@@ -20,8 +20,8 @@
        android:id="@+id/google_icon"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:layout_marginStart="@dimen/margin_12"
-       android:layout_marginVertical="@dimen/margin_14"
+       android:layout_marginStart="16dp"
+       android:layout_marginVertical="14dp"
        android:src="@drawable/ic_google_fill"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
@@ -33,34 +33,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="14dp"
         android:text="@string/gads_program_2022"
         android:textColor="@color/MMS_black_2"
         android:fontFamily="@font/montserrat_semibold"
-        android:textSize="@dimen/margin_14"
+        android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@id/google_icon"
-        app:layout_constraintTop_toTopOf="@id/google_icon"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/calendar_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_24sdp"
         android:src="@drawable/ic_calendar"
-        app:layout_constraintStart_toStartOf="@id/isp_txt"
+        app:layout_constraintStart_toEndOf="@id/google_icon"
         app:layout_constraintTop_toBottomOf="@id/isp_txt"
-        app:layout_constraintBottom_toBottomOf="@id/google_icon"
+
         android:contentDescription="@string/google_icon" />
 
     <TextView
         android:id="@+id/isp_txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginStart="6dp"
         android:text="@string/isp_date"
-        android:textSize="@dimen/_12ssp"
+        android:textSize="12sp"
         android:textColor="@color/MMS_black_5"
         app:layout_constraintStart_toEndOf="@id/calendar_icon"
-        app:layout_constraintTop_toTopOf="@id/calendar_icon"
+        app:layout_constraintTop_toBottomOf="@id/isp_txt"
         app:layout_constraintBottom_toBottomOf="@id/calendar_icon"/>
 
     <ImageView

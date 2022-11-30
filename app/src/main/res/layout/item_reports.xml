@@ -9,8 +9,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="4dp"
         app:cardElevation="4dp"
-        app:cardUseCompatPadding="true"
-        app:contentPadding="@dimen/_8sdp">
+        app:cardUseCompatPadding="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -18,24 +17,27 @@
 
             <TextView
                 android:id="@+id/textReport"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
                 android:text="@string/google_africa_scholarship_report"
                 android:textColor="@color/MMS_black_2"
-                android:textSize="@dimen/margin_14"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/reporter"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/by_name"
-                android:textSize="@dimen/margin_12"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
                 android:textColor="@color/MMS_black_5"
                 android:textAppearance="@android:style/TextAppearance.Material.Medium"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textReport" />
 
@@ -43,10 +45,10 @@
                 android:id="@+id/textDash"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:layout_marginStart="8dp"
                 android:text="@string/dash"
                 android:textAppearance="@android:style/TextAppearance.Material.Medium"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/reporter"
                 app:layout_constraintTop_toBottomOf="@+id/textReport" />
 
@@ -55,11 +57,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/date"
-                android:textSize="@dimen/margin_12"
+                android:textSize="12sp"
                 android:textColor="@color/MMS_black_5"
                 android:textAppearance="@android:style/TextAppearance.Material.Medium"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/textDash"
                 app:layout_constraintTop_toBottomOf="@+id/textReport" />
 
@@ -69,8 +71,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_20"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@id/reportDate"
                 app:layout_constraintStart_toEndOf="@id/textReport"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/shareIcon"
@@ -83,10 +85,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@id/downloadIcon"
                 app:layout_constraintStart_toEndOf="@id/downloadIcon"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toTopOf="@id/downloadIcon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:srcCompat="@drawable/ic_share_alt"
                 android:contentDescription="@string/download_icon" />
