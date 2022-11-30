@@ -14,7 +14,12 @@ import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Program
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentSelectProgramBinding
 import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.SelectProgramAdapter
 
-
+/**
+ * A [Fragment] where a mentor can view assigned tasks, completed or the ones still in progress.
+ *
+ * It has fields to filter through the assigned and the completed tasks.
+ *
+ */
 class SelectProgramFragment : Fragment() {
 
     private var _binding: FragmentSelectProgramBinding? = null

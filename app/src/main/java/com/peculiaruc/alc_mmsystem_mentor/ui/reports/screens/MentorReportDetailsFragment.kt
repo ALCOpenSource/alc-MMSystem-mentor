@@ -1,15 +1,20 @@
 package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorReportDetailsBinding
-import kotlinx.android.synthetic.main.fragment_mentor_report_details.*
 
+/**
+ * A [Fragment] that displays the details of the mentors report.
+ *
+ * It has the major achievement column, the major blocker column
+ * and also a share and download button to share the information or download it as a pdf.
+ */
 class MentorReportDetailsFragment : Fragment() {
 
     private var _binding: FragmentMentorReportDetailsBinding? = null

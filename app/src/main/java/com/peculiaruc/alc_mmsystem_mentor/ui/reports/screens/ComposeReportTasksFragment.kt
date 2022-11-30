@@ -9,7 +9,12 @@ import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentComposeReportTasksBinding
 
-
+/**
+ * A [Fragment] that displays the mentors report field.
+ *
+ * It has fields to take in information as regards the tasks they managed
+ * and also a button to submit it to the server.
+ */
 class ComposeReportTasksFragment : Fragment() {
 
     private var _binding: FragmentComposeReportTasksBinding? = null

@@ -8,6 +8,11 @@ import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentReportDownloadBinding
 
+/**
+ *
+ * The [Fragment] that hosts, the report downloading Dialog.
+ *
+ */
 class ReportDownloadFragment : Fragment() {
     private var _binding: FragmentReportDownloadBinding? = null
 

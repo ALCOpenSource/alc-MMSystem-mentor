@@ -8,7 +8,11 @@ import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentReportSubmittedBinding
 
-
+/**
+ *
+ * The [Fragment] that hosts, the report submitting Dialog.
+ *
+ */
 class ReportSubmittedFragment : Fragment() {
 
     private var _binding: FragmentReportSubmittedBinding? = null

@@ -15,6 +15,12 @@ import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Course
 import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.CourseRecyclerAdapter
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorsReportBinding
 
+/**
+ * A [Fragment] that displays the mentors report cards.
+ *
+ * On clicking each cards it takes you to a more detailed page.
+ *
+ */
 class MentorsReportFragment : Fragment() {
 
     private var _binding: FragmentMentorsReportBinding? = null
@@ -25,7 +31,7 @@ class MentorsReportFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentMentorsReportBinding.inflate(inflater, container, false)
         val view = binding.root
 

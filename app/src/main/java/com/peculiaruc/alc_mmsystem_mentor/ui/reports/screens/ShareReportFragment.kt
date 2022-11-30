@@ -9,6 +9,11 @@ import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentShareReportBinding
 
+/**
+ *
+ * The [Fragment] that hosts, the report sharing Dialog.
+ *
+ */
 class ShareReportFragment : Fragment() {
     private var _binding: FragmentShareReportBinding? = null
 

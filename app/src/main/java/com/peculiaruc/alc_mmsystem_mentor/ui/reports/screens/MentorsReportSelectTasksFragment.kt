@@ -13,7 +13,12 @@ import com.peculiaruc.alc_mmsystem_mentor.data.local.models.ReportTask
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorsReportSelectTasksBinding
 import com.peculiaruc.alc_mmsystem_mentor.ui.reports.adapters.SelectTasksAdapter
 
-
+/**
+ * A [Fragment] where a mentor can view assigned tasks, completed or the ones still in progress.
+ *
+ * It has fields to filter through the assigned and the completed tasks.
+ *
+ */
 class MentorsReportSelectTasksFragment : Fragment() {
 
     private var _binding: FragmentMentorsReportSelectTasksBinding? = null

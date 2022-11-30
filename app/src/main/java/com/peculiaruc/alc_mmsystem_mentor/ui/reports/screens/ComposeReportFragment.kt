@@ -1,16 +1,20 @@
 package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentComposeReportProgramBinding
-import kotlinx.android.synthetic.main.fragment_compose_report_program.*
 
-
+/**
+ * A [Fragment] that displays the mentors report field.
+ *
+ * It has fields to take in information as regards the programs they supervise
+ * and also a button to submit it to the server.
+ */
 class ComposeReportFragment : Fragment() {
     private var _binding: FragmentComposeReportProgramBinding? = null
 
@@ -41,6 +45,9 @@ class ComposeReportFragment : Fragment() {
         binding.btnProgramField.text = getString(R.string.select_task)
         binding.btnComposeField.text = getString(R.string.submit_report)
 
+        /**
+         * Navigates from the compose report screen to the submitted form dialog.
+         */
         binding.btnComposeField.setOnClickListener {
             val action = ComposeReportFragmentDirections.actionComposeReportFragmentToReportSubmittedFragment()
             binding.btnComposeField.findNavController().navigate(action)
