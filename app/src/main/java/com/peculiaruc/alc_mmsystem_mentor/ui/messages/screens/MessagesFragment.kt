@@ -16,7 +16,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMessagesBinding
 
-
+/**
+ * A [Fragment] that displays the messages ui.
+ *
+ *
+ *
+ */
 class MessagesFragment : Fragment() {
 
     private lateinit var messagesBinding: FragmentMessagesBinding

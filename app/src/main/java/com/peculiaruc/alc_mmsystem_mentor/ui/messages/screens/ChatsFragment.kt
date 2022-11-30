@@ -12,6 +12,12 @@ import com.peculiaruc.alc_mmsystem_mentor.data.repositories.MessagesRepository
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentChatsBinding
 import com.peculiaruc.alc_mmsystem_mentor.ui.messages.adapters.ChatListAdapter
 
+/**
+ * A [Fragment] that displays the chats messages ui.
+ *
+ *
+ *
+ */
 class ChatsFragment : Fragment() {
 
     private var _binding: FragmentChatsBinding? = null
@@ -60,6 +66,9 @@ class ChatsFragment : Fragment() {
 
     companion object {
 
+        /**
+         * creates a new instance of the ChatsFragment at runtime
+         */
         @JvmStatic
         fun newInstance() = ChatsFragment()
 

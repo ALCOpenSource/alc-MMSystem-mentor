@@ -9,13 +9,25 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Manager
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ManagerItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.ui.managers.screens.ManagersFragmentDirections
+import com.peculiaruc.alc_mmsystem_mentor.ui.messages.adapters.ChatListAdapter
 
+/**
+ * A [ManagersListAdapter] that manages the recyclerView for the selectProgramFragment.
+ *
+ * It implements the onBindViewHolder, the onCreateViewHolder and the getItemCount methods.
+ */
 class ManagersListAdapter(private val onManagerClicked: (Manager) -> Unit) :
     ListAdapter<Manager, ManagersListAdapter.ManagerViewHolder>(DiffCallBack) {
 
+    /**
+     * Holds the views for the adapter
+     */
     class ManagerViewHolder(private var binding: ManagerItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        /**
+         * Binds the managers views to the data
+         */
         fun bind(manager: Manager) {
             binding.apply {
                 managerName.text = manager.managerName

@@ -16,6 +16,13 @@ import com.peculiaruc.alc_mmsystem_mentor.data.repositories.ManagersRepository
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentManagersBinding
 import com.peculiaruc.alc_mmsystem_mentor.ui.managers.adapters.ManagersListAdapter
 
+
+/**
+ * A [Fragment] that displays the managers details screen ui.
+ *
+ *
+ *
+ */
 class ManagersFragment : Fragment() {
 
 

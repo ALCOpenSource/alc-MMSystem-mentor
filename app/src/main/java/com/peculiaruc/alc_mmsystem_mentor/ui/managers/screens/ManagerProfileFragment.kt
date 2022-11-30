@@ -15,6 +15,12 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentManagerProfileBind
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentManagersBinding
 import kotlinx.android.synthetic.main.manager_item.*
 
+/**
+ * A [Fragment] that displays the managers profile ui.
+ *
+ *
+ *
+ */
 class ManagerProfileFragment : Fragment() {
 
     private val args: ManagerProfileFragmentArgs by navArgs()

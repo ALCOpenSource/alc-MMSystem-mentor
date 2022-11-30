@@ -19,6 +19,12 @@ import com.peculiaruc.alc_mmsystem_mentor.ui.messages.adapters.MessageListAdapte
 import kotlinx.android.synthetic.main.chat_item.*
 
 
+/**
+ * A [Fragment] that displays the chats ui.
+ *
+ *
+ *
+ */
 class ChatFragment : Fragment() {
 
     private val args: ChatFragmentArgs by navArgs()

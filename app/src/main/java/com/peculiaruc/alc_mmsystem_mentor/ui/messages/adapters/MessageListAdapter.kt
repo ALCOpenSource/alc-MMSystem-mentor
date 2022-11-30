@@ -14,16 +14,21 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.MessageItemBinding
  *
  * It implements the onBindViewHolder, the onCreateViewHolder and the getItemCount methods.
  */
-class MessageListAdapter(
-) :
+class MessageListAdapter():
     ListAdapter<Message, MessageListAdapter.MessageViewHolder>(DiffCallBack) {
 
+    /**
+     * Holds the views for the adapter
+     */
     class MessageViewHolder(
         private var binding: MessageItemBinding,
 
         ) :
         RecyclerView.ViewHolder(binding.root) {
 
+        /**
+         * Binds the message views to the data
+         */
         fun bind(message: Message) {
 
             binding.apply {

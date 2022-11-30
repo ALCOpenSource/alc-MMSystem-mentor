@@ -16,9 +16,15 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.ChatItemBinding
 class ChatListAdapter(private val onChatClicked: (Chat) -> Unit) :
     ListAdapter<Chat, ChatListAdapter.ChatViewHolder>(DiffCallBack) {
 
+    /**
+     * Holds the views for the adapter
+     */
     class ChatViewHolder(private var binding: ChatItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        /**
+         * Binds the chats views to the data
+         */
         fun bind(chat: Chat) {
             val displayMessage = chat.messages.last().messageBody.take(25) + "..."
             val displayTimeSent = chat.messages.last().timeSent
