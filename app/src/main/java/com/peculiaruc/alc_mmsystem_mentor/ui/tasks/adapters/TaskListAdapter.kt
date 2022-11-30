@@ -12,6 +12,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 
+/**
+ * A [TaskListAdapter] that manages the recyclerView for the selectProgramFragment.
+ *
+ * It implements the onBindViewHolder, the onCreateViewHolder and the getItemCount methods.
+ */
 class TaskListAdapter :
     ListAdapter<Task, TaskListAdapter.TaskViewHolder>(TasksComparator()) {
 
@@ -43,6 +48,9 @@ class TaskListAdapter :
         }
     }
 
+    /**
+     * Holds the views for the adapter
+     */
     class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private val taskItemView: TextView = itemView.findViewById<TextView>(R.id.textView)

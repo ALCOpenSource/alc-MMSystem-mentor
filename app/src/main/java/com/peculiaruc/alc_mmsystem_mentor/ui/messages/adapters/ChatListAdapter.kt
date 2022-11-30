@@ -8,6 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Chat
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ChatItemBinding
 
+/**
+ * A [ChatListAdapter] that manages the recyclerView for the selectProgramFragment.
+ *
+ * It implements the onBindViewHolder, the onCreateViewHolder and the getItemCount methods.
+ */
 class ChatListAdapter(private val onChatClicked: (Chat) -> Unit) :
     ListAdapter<Chat, ChatListAdapter.ChatViewHolder>(DiffCallBack) {
 

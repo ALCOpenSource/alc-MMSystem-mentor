@@ -1,18 +1,19 @@
 package com.peculiaruc.alc_mmsystem_mentor.ui.messages.adapters
 
-import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Chat
 import com.peculiaruc.alc_mmsystem_mentor.data.local.database.models.Message
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MessageItemBinding
 
+/**
+ * A [MessageListAdapter] that manages the recyclerView for the selectProgramFragment.
+ *
+ * It implements the onBindViewHolder, the onCreateViewHolder and the getItemCount methods.
+ */
 class MessageListAdapter(
 ) :
     ListAdapter<Message, MessageListAdapter.MessageViewHolder>(DiffCallBack) {
