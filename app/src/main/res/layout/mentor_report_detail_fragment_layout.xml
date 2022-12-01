@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:drawableTint="@color/black"
-        android:textStyle="bold"
-        android:textSize="20sp"
         android:text="Googl Africa ScholarShip Report"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/iv_reports_cancel"
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,27 +124,27 @@
 
     <Button
         android:id="@+id/btn_download"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         style="@style/MMButton"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="48dp"
         android:text="Download"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_share" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_share"
+        style="@style/MMButtonOutlined"
+        android:layout_width="140dp"
+        android:layout_height="46dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="36dp"
+        android:padding="12dp"
+        android:text="Share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_details_report_recommendations"
-        app:layout_constraintVertical_bias="0.809" />
-
-    <Button
-        android:id="@+id/btn_share"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="Share"
-        style="@style/MMButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.737"
-        app:layout_constraintStart_toEndOf="@+id/btn_download"
-        app:layout_constraintTop_toBottomOf="@+id/tv_details_report_recommendations"
-        app:layout_constraintVertical_bias="0.809" />
+        app:layout_constraintVertical_bias="0.873" />
 </androidx.constraintlayout.widget.ConstraintLayout>

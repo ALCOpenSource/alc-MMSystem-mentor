@@ -42,12 +42,12 @@
             android:id="@+id/tvProfileProfTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:text="@string/technical_proficiency"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.014"
+            app:layout_constraintHorizontal_bias="0.029"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvProfileBioDesc" />
 
@@ -60,59 +60,63 @@
             android:textColor="@color/text_color"
             android:textSize="12sp"
             android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileProfTitle"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileProfTitle"
             app:layout_constraintTop_toBottomOf="@+id/tvProfileProfTitle" />
 
         <TextView
             android:id="@+id/tvProfileProgsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="12dp"
             android:text="@string/previous_programs"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileProfDesc"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileProfDesc"
             app:layout_constraintTop_toBottomOf="@id/tvProfileProfDesc" />
 
         <TextView
             android:id="@+id/tvProfileProgsDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:text="@string/previous_programs_description"
             android:textColor="@color/text_color"
             android:textSize="12sp"
             android:textStyle="normal"
-            app:layout_constraintStart_toStartOf="@id/tvProfileProgsTitle"
-            app:layout_constraintTop_toBottomOf="@id/tvProfileProgsTitle" />
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileProgsTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileProgsTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileProgsTitle" />
 
         <TextView
             android:id="@+id/tvProfileRolesTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:text="@string/previous_roles_held"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvProfileProgsDesc" />
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileProgsDesc"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileProgsDesc"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileProgsDesc" />
 
         <TextView
             android:id="@+id/tvProfileRolesDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:text="@string/previous_roles_held_description"
             android:textColor="@color/text_color"
             android:textSize="12sp"
             android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.094"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileRolesTitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileRolesTitle"
             app:layout_constraintTop_toBottomOf="@+id/tvProfileRolesTitle" />
 
         <TextView
@@ -131,22 +135,22 @@
             android:id="@+id/tvProfileInterestsDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="@string/program_of_interest_desc"
             android:textColor="@color/text_color"
             android:textSize="12sp"
             android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileInterestsTitle"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintHorizontal_bias="0.158"
             app:layout_constraintStart_toEndOf="@+id/tvProfileInterestsTitle"
-            app:layout_constraintTop_toBottomOf="@+id/tvProfileRolesDesc" />
+            app:layout_constraintTop_toTopOf="@+id/tvProfileInterestsTitle" />
 
         <TextView
             android:id="@+id/tvProfileBeenMentorTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
             android:text="@string/been_a_mentor_before"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -158,23 +162,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="180dp"
-            android:layout_marginBottom="16dp"
             android:text="@string/yes"
             android:textColor="@color/text_color"
             android:textSize="12sp"
             android:textStyle="normal"
-            app:layout_constraintBottom_toTopOf="@+id/tvProfileExperienceDesc"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileBeenMentorTitle"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.703"
+            app:layout_constraintHorizontal_bias="0.833"
             app:layout_constraintStart_toEndOf="@+id/tvProfileBeenMentorTitle"
-            app:layout_constraintTop_toBottomOf="@+id/tvProfileInterestsDesc"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileBeenMentorTitle"
             app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/tvProfileExperienceTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:text="@string/years_of_technical_experience"
             android:textSize="15sp"
@@ -187,45 +190,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginBottom="4dp"
             android:text="@string/_3_years"
             android:textColor="@color/text_color"
             android:textSize="12sp"
             android:textStyle="normal"
-            app:layout_constraintBottom_toBottomOf="@id/tvProfileExperienceTitle"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileExperienceTitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@id/tvProfileExperienceTitle" />
+            app:layout_constraintStart_toEndOf="@id/tvProfileExperienceTitle"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileExperienceTitle" />
 
         <TextView
             android:id="@+id/tvProfileDocumentsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="20dp"
             android:text="@string/documents"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.023"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileExperienceTitle"
             app:layout_constraintTop_toBottomOf="@+id/tvProfileExperienceTitle" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvProfileDocs"
             android:layout_width="340dp"
-            android:layout_height="119dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.163"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileDocumentsTitle"
             app:layout_constraintTop_toBottomOf="@+id/tvProfileDocumentsTitle" />
 
         <TextView
             android:id="@+id/item_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/social_handle_background"
             android:drawablePadding="8dp"
             android:paddingHorizontal="8dp"
@@ -235,7 +237,7 @@
             android:textSize="12sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/email_icon"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/rvProfileDocs"
             app:layout_constraintTop_toBottomOf="@+id/rvProfileDocs" />
 
         <TextView
@@ -252,16 +254,18 @@
             android:textSize="12sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/git_icon"
-            app:layout_constraintBottom_toTopOf="@+id/item_4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toEndOf="@+id/item_1" />
+            app:layout_constraintBottom_toBottomOf="@+id/item_1"
+            app:layout_constraintEnd_toEndOf="@+id/rvProfileDocs"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/item_1"
+            app:layout_constraintTop_toTopOf="@+id/item_1"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/item_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/social_handle_background"
             android:drawablePadding="8dp"
             android:paddingHorizontal="8dp"
@@ -271,17 +275,16 @@
             android:textSize="12sp"
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/insta_icon"
-            app:layout_constraintEnd_toStartOf="@+id/item_4"
-            app:layout_constraintHorizontal_bias="0.04"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/item_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/item_1"
             app:layout_constraintTop_toBottomOf="@+id/item_1" />
 
         <TextView
             android:id="@+id/item_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/social_handle_background"
             android:drawablePadding="8dp"
             android:paddingHorizontal="8dp"
@@ -292,7 +295,10 @@
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/linkedin_icon"
             app:layout_constraintBottom_toTopOf="@+id/item_5"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="@+id/item_2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/item_2"
+            app:layout_constraintTop_toTopOf="@+id/item_3" />
 
         <TextView
             android:id="@+id/item_5"
@@ -309,19 +315,20 @@
             android:textStyle="bold"
             app:drawableStartCompat="@drawable/twitter_icon"
             app:layout_constraintBottom_toTopOf="@+id/editProfile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.028"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="@+id/item_3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/item_3"
+            app:layout_constraintTop_toBottomOf="@+id/item_3" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/editProfile"
             style="@style/MMButton"
             android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
             android:text="@string/edit_profile"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

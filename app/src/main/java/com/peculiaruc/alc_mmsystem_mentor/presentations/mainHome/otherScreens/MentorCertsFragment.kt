@@ -28,8 +28,8 @@ class MentorCertsFragment : Fragment(), CertificatesAdapter.OnClickListener {
         MentorCertsFragmentLayoutBinding.inflate(inflater).let { _binding = it }
         _binding = MentorCertsFragmentLayoutBinding.inflate(layoutInflater)
         val adapter = CertificatesAdapter(UiData.certificateList,this)
-        binding.certificatesRv.adapter = adapter
-        binding.certificatesRv.layoutManager = LinearLayoutManager(activity)
+        binding.certificatesRv .adapter = adapter
+        binding.certificatesRv .layoutManager = LinearLayoutManager(activity)
 
         return binding.root
     }
