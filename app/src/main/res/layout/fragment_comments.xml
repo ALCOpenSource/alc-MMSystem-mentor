@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="4dp"
     tools:context=".presentations.mainHome.otherScreens.CommentsFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -137,7 +137,8 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="@+id/tv_discussion_description"
         app:layout_constraintTop_toBottomOf="@+id/tv_discussion_description"
-        app:srcCompat="@drawable/ic_messages" />
+        app:srcCompat="@drawable/ic_messages"
+        app:tint="@color/mms_pry_9" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/outlinedTextField"
@@ -175,7 +176,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/comments_rv"
-        android:layout_width="362dp"
+        android:layout_width="wrap_content"
         android:layout_height="189dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
