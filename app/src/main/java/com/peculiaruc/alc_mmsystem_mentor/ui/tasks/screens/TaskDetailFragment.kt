@@ -17,6 +17,12 @@ import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
+/**
+ * A [Fragment] that displays the tasks details screen.
+ *
+ *
+ *
+ */
 class TaskDetailFragment : Fragment() {
 
     var tasks: ArrayList<Task> = arrayListOf()

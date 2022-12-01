@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:background="@color/transparent_white"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.reports.screens.ReportDownloadFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/margin_30"
+        android:layout_marginHorizontal="@dimen/margin_24"
         android:outlineAmbientShadowColor="@color/shadow_color"
         android:outlineSpotShadowColor="@color/shadow_color"
         app:cardCornerRadius="@dimen/margin_16"
@@ -59,14 +60,15 @@
 
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_action_field"
-                android:layout_width="match_parent"
+                android:id="@+id/btn_download_dialog_field"
+                android:layout_width="318dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_24"
                 android:fontFamily="@font/montserrat_regular"
                 app:fontFamily="@font/montserrat_semibold"
                 app:backgroundTint="#035D63"
-                app:cornerRadius="10dp"
+                app:cornerRadius="15dp"
                 android:textColor="@android:color/white"
                 tools:text="Done"
                 android:textAllCaps="false"

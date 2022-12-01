@@ -30,7 +30,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvTitle"
+                android:id="@+id/shareTitle"
                 style="@style/text_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,11 +53,11 @@
                 android:src="@drawable/ic_email_sent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/shareTitle"
                 android:contentDescription="Success image" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_action_field"
+                android:id="@+id/btn_share_dialog_field"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="@dimen/margin_16"
@@ -68,13 +68,13 @@
                 android:textColor="@android:color/white"
                 tools:text="Open Email App"
                 android:textAllCaps="false"
-                app:layout_constraintBottom_toTopOf="@id/btn_cancel_field"
+                app:layout_constraintBottom_toTopOf="@id/btn_cancel_dialog_field"
                 app:layout_constraintEnd_toEndOf="@+id/iv_success"
                 app:layout_constraintStart_toStartOf="@+id/iv_success"
                 app:layout_constraintTop_toBottomOf="@id/iv_success" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_cancel_field"
+                android:id="@+id/btn_cancel_dialog_field"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="@dimen/margin_8"
@@ -86,10 +86,10 @@
                 app:cornerRadius="10dp"
                 app:fontFamily="@font/mukta_semibold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/btn_action_field"
+                app:layout_constraintEnd_toEndOf="@+id/btn_share_dialog_field"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/btn_action_field"
-                app:layout_constraintTop_toBottomOf="@id/btn_action_field"
+                app:layout_constraintStart_toStartOf="@+id/btn_share_dialog_field"
+                app:layout_constraintTop_toBottomOf="@id/btn_share_dialog_field"
                 app:strokeColor="#035D63"
                 app:strokeWidth="@dimen/_1sdp"
                 tools:text="Cancel" />

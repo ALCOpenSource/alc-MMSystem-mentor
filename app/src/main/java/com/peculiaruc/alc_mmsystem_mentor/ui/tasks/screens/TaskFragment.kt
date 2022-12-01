@@ -13,6 +13,7 @@ import com.peculiaruc.alc_mmsystem_mentor.MainActivity
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentTaskBinding
+import com.peculiaruc.alc_mmsystem_mentor.ui.messages.adapters.ChatListAdapter
 import com.peculiaruc.alc_mmsystem_mentor.ui.tasks.adapters.TaskListAdapter
 import java.util.*
 
@@ -222,6 +223,11 @@ class TaskFragment : Fragment() {
 
 private const val ARG_OBJECT = "object"
 
+/**
+ * A [TaskAdapter] manages the sync between the views and the data sets of the tasks fragment.
+ *
+ * It overrides the createFragments.
+ */
 class TaskAdapter(taskFragment: TaskFragment) : FragmentStateAdapter(taskFragment) {
     override fun getItemCount(): Int = 4
 

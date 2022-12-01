@@ -132,7 +132,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_task_field"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_height="48dp"
         android:layout_marginTop="14dp"
         android:fontFamily="@font/montserrat_regular"
         android:paddingHorizontal="@dimen/margin_40"

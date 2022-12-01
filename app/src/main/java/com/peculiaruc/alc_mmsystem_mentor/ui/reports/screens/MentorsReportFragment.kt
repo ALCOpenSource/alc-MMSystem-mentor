@@ -59,13 +59,13 @@ class MentorsReportFragment : Fragment() {
             )
         }
 
-        val adapter = CourseRecyclerAdapter(data)
+        val adapter = CourseRecyclerAdapter(requireContext(), data)
 
         recyclerView.adapter = adapter
 
         val fab = view.findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
-            val action = MentorsReportFragmentDirections.actionMentorsReportFragmentToMentorReportDetailsFragment()
+            val action = MentorsReportFragmentDirections.actionMentorsReportFragmentToComposeReportFragment()
             fab.findNavController().navigate(action)
         }
 

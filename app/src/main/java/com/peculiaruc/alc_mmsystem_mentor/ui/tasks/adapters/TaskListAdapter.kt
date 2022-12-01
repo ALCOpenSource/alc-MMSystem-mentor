@@ -22,6 +22,9 @@ class TaskListAdapter :
 
     private lateinit var taskList: ArrayList<Task>
 
+    /**
+     * Filters the list in the course array list
+     */
     fun filterList(filterList: ArrayList<Task>) {
         // below line is to add our filtered
         // list in our course array list.
@@ -56,6 +59,9 @@ class TaskListAdapter :
         private val taskItemView: TextView = itemView.findViewById<TextView>(R.id.textView)
         private val taskItemView2: TextView = itemView.findViewById<TextView>(R.id.textView2)
 
+        /**
+         * Binds the chats views to the data
+         */
         fun bind(title: String, assigned: Boolean, completed: Boolean) {
             taskItemView.text = title
             if (completed) {
@@ -66,6 +72,9 @@ class TaskListAdapter :
         }
 
         companion object {
+            /**
+             * Inflates the task_list_item layout at runtime
+             */
             fun create(parent: ViewGroup): TaskViewHolder {
                 val view: View = LayoutInflater.from(parent.context)
                     .inflate(R.layout.task_list_item, parent, false)
@@ -74,6 +83,9 @@ class TaskListAdapter :
         }
     }
 
+    /**
+     * Compares the values of the contents within the recyclerView
+     */
     class TasksComparator : DiffUtil.ItemCallback<Task>() {
         override fun areItemsTheSame(oldItem: Task, newItem: Task): Boolean {
             return oldItem === newItem

@@ -30,7 +30,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvTitle"
+                android:id="@+id/reportTitle"
                 style="@style/text_bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,13 +53,13 @@
                 android:src="@drawable/ic_success_2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintTop_toBottomOf="@+id/reportTitle"
                 android:contentDescription="Success image" />
 
 
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_action_field"
+                android:id="@+id/btn_report_field"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="@dimen/margin_16"

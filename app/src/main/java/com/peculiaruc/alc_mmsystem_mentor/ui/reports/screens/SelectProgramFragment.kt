@@ -61,10 +61,10 @@ class SelectProgramFragment : Fragment() {
 
         recyclerView.adapter = adapter
 
-        binding.programTxtAll.setOnClickListener {
-            val action = SelectProgramFragmentDirections.actionSelectProgramFragmentToComposeReportFragment()
-            binding.programTxtAll.findNavController().navigate(action)
-        }
+//        binding.programTxtAll.setOnClickListener {
+//            val action = SelectProgramFragmentDirections.actionSelectProgramFragmentToComposeReportFragment()
+//            binding.programTxtAll.findNavController().navigate(action)
+//        }
 
     }
 

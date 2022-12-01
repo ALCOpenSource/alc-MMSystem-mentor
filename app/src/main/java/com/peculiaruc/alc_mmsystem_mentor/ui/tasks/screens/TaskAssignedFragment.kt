@@ -12,6 +12,12 @@ import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 
+/**
+ * A [Fragment] that displays the tasks assigning screen.
+ *
+ *
+ *
+ */
 class TaskAssignedFragment : Fragment() {
 
     var tasks: ArrayList<Task> = arrayListOf()

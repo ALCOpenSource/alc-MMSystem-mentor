@@ -84,6 +84,10 @@
             <action
                 android:id="@+id/action_mentorsReportFragment_to_mentorReportDetailsFragment"
                 app:destination="@id/mentorReportDetailsFragment" />
+
+            <action
+                android:id="@+id/action_mentorsReportFragment_to_composeReportFragment"
+                app:destination="@id/composeReportFragment" />
         </fragment>
 
         <fragment
@@ -91,12 +95,7 @@
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.MentorReportDetailsFragment"
             android:label="report"
             tools:layout="@layout/fragment_mentor_report_details" >
-            <action
-                android:id="@+id/action_mentorReportDetailsFragment_to_reportDownloadFragment"
-                app:destination="@id/reportDownloadFragment" />
-            <action
-                android:id="@+id/action_mentorReportDetailsFragment_to_shareReportFragment"
-                app:destination="@id/shareReportFragment" />
+
         </fragment>
 
         <fragment
@@ -106,8 +105,11 @@
             tools:layout="@layout/fragment_compose_report_program">
 
             <action
-                android:id="@+id/action_composeReportFragment_to_reportSubmittedFragment"
-                app:destination="@id/reportSubmittedFragment" />
+                android:id="@+id/action_composeReportFragment_to_composeReportTasksFragment"
+                app:destination="@id/composeReportTasksFragment" />
+            <action
+                android:id="@+id/action_composeReportFragment_to_selectProgramFragment"
+                app:destination="@id/selectProgramFragment" />
         </fragment>
 
         <fragment
@@ -123,9 +125,6 @@
             android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.SelectProgramFragment"
             android:label="Select Program"
             tools:layout="@layout/fragment_select_program">
-            <action
-                android:id="@+id/action_selectProgramFragment_to_composeReportFragment"
-                app:destination="@id/composeReportFragment" />
         </fragment>
 
         <fragment
@@ -136,32 +135,11 @@
             <action
                 android:id="@+id/action_composeReportTasksFragment_to_mentorReportSelectTasksFragment"
                 app:destination="@id/mentorReportSelectTasksFragment" />
+            <action
+                android:id="@+id/action_composeReportTasksFragment_to_composeReportFragment"
+                app:destination="@id/composeReportFragment" />
         </fragment>
 
-        <fragment
-            android:id="@+id/shareReportFragment"
-            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.ShareReportFragment"
-            android:label="fragment_share_report"
-            tools:layout="@layout/fragment_share_report" >
-            <action
-                android:id="@+id/action_shareReportFragment_to_selectProgramFragment"
-                app:destination="@id/selectProgramFragment" />
-            <action
-                android:id="@+id/action_shareReportFragment_to_composeReportTasksFragment"
-                app:destination="@id/composeReportTasksFragment" />
-        </fragment>
-
-        <fragment
-            android:id="@+id/reportDownloadFragment"
-            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.ReportDownloadFragment"
-            android:label="fragment_report_download"
-            tools:layout="@layout/fragment_report_download" />
-
-        <fragment
-            android:id="@+id/reportSubmittedFragment"
-            android:name="com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.ReportSubmittedFragment"
-            android:label="fragment_report_submitted"
-            tools:layout="@layout/fragment_report_submitted" />
     </navigation>
 
 

@@ -1,13 +1,16 @@
 package com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens
 
+import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentComposeReportTasksBinding
+import kotlinx.android.synthetic.main.item_report_dialog.view.*
 
 /**
  * A [Fragment] that displays the mentors report field.
@@ -47,8 +50,42 @@ class ComposeReportTasksFragment : Fragment() {
         binding.btnComposeTaskField.text = getString(R.string.submit_report)
 
         binding.btnComposeTaskField.setOnClickListener {
+            showReportSubmittedSuccessDialog()
+        }
+
+        binding.crpTxt.setOnClickListener {
+            val action = ComposeReportTasksFragmentDirections.actionComposeReportTasksFragmentToComposeReportFragment()
+            binding.crpTxt.findNavController().navigate(action)
+        }
+
+        binding.btnTaskField.setOnClickListener {
             val action = ComposeReportTasksFragmentDirections.actionComposeReportTasksFragmentToMentorReportSelectTasksFragment()
-            binding.btnComposeTaskField.findNavController().navigate(action)
+            binding.btnTaskField.findNavController().navigate(action)
+        }
+
+    }
+
+    /**
+     * Inflates the report submitted dialog
+     */
+    private fun showReportSubmittedSuccessDialog() {
+        context?.let {
+            Dialog(it, android.R.style.Theme_Translucent).also { dialog ->
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+                val sheetView = LayoutInflater.from(context)
+                    .inflate(R.layout.item_report_dialog, null, false)
+
+                sheetView.reportTitle.setText(R.string.report_submitted)
+                sheetView.btn_report_field.setText(R.string.done)
+                sheetView.btn_report_field.setOnClickListener {
+                    dialog.dismiss()
+                }
+
+                dialog.setContentView(sheetView)
+                dialog.show()
+                dialog.setCanceledOnTouchOutside(true)
+            }
+
         }
 
     }
