@@ -8,12 +8,10 @@ import android.view.ViewGroup
 import android.view.Window
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Course
-import com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.ComposeReportTasksFragmentDirections
 import com.peculiaruc.alc_mmsystem_mentor.ui.reports.screens.MentorsReportFragmentDirections
 import kotlinx.android.synthetic.main.item_report_download.view.*
 import kotlinx.android.synthetic.main.share_report_dialog.view.*
@@ -61,8 +59,8 @@ class CourseRecyclerAdapter(val context: Context, private val courses: List<Cour
          * Handles the onClickListeners for the views.
          */
         fun setListeners() {
-            imageView.setOnClickListener(this@CourseViewHolder)
-            imageView2.setOnClickListener(this@CourseViewHolder)
+            imageView.setOnClickListener(this)
+            imageView2.setOnClickListener(this)
             itemView.setOnClickListener {
                 val action = MentorsReportFragmentDirections.actionMentorsReportFragmentToMentorReportDetailsFragment()
                 itemView.findNavController().navigate(action)
@@ -79,15 +77,11 @@ class CourseRecyclerAdapter(val context: Context, private val courses: List<Cour
             }
         }
 
-        /**
-         * Inflates the report downloaded dialog
-         */
         private fun showSubmittedSuccessDialog() {
             context.let {
                 Dialog(it, android.R.style.Theme_Translucent).also { dialog ->
                     dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-                    val sheetView = LayoutInflater.from(context)
-                        .inflate(R.layout.item_report_download, null, false)
+                    val sheetView = View.inflate(context, R.layout.item_report_download, null)
 
                     sheetView.tvTitle.setText(R.string.report_downloaded)
                     sheetView.btn_download_dialog_field.setText(R.string.done)
@@ -104,15 +98,11 @@ class CourseRecyclerAdapter(val context: Context, private val courses: List<Cour
 
         }
 
-        /**
-         * Inflates the share report dialog
-         */
         private fun showShareDialog() {
             context.let {
                 Dialog(it, android.R.style.Theme_Translucent).also { dialog ->
                     dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-                    val sheetView = LayoutInflater.from(context)
-                        .inflate(R.layout.share_report_dialog, null, false)
+                    val sheetView = View.inflate(context, R.layout.share_report_dialog, null)
 
                     sheetView.shareTitle.setText(R.string.share_report)
                     sheetView.btn_share_dialog_field.setText(R.string.open_email_app)

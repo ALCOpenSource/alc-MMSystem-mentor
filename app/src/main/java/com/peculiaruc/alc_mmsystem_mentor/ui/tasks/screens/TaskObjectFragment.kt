@@ -11,8 +11,17 @@ import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 import com.peculiaruc.alc_mmsystem_mentor.ui.tasks.adapters.TaskListAdapter
 
+/**
+ * A [Fragment] that displays the tasks assigning screen.
+ *
+ *
+ *
+ */
 class TaskObjectFragment(position: Int) : Fragment() {
 
+    /**
+     * Holds the object reference to the constant value of the tempName string.
+     */
     object Key{
         const val tempName: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissimpharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet maurissed, dignissim lectus. Phasellus eget tortor dapibus, laoreet maurissed, dignissim lectus."
     }

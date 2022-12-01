@@ -65,15 +65,12 @@ class ComposeReportTasksFragment : Fragment() {
 
     }
 
-    /**
-     * Inflates the report submitted dialog
-     */
+
     private fun showReportSubmittedSuccessDialog() {
         context?.let {
             Dialog(it, android.R.style.Theme_Translucent).also { dialog ->
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-                val sheetView = LayoutInflater.from(context)
-                    .inflate(R.layout.item_report_dialog, null, false)
+                val sheetView = View.inflate(context, R.layout.item_report_dialog, null)
 
                 sheetView.reportTitle.setText(R.string.report_submitted)
                 sheetView.btn_report_field.setText(R.string.done)
