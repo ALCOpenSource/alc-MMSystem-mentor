@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.peculiaruc.alc_mmsystem_mentor">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,13 +15,63 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlcMMSystemmentor"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+            android:name=".view.activity.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+
         <activity
-            android:name=".activities.SplashScreenActivity"
-            android:theme="@style/splashScreenTheme"
-            android:exported="true">
+            android:name=".view.activity.CriteriaFormActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+
+
+        <activity
+            android:name=".view.activity.ProgramDetailActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+
+        <activity
+            android:name=".view.activity.ApplicantProfileActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+
+        <activity
+            android:name=".view.activity.EditApplicantProfileActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+
+        <activity
+            android:name=".view.activity.PasswordActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+
+        <activity
+            android:name=".view.activity.NewPasswordActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+
+        <activity
+            android:name=".view.activity.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+        <activity
+            android:name=".view.activity.LogInActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+        <activity
+            android:name=".view.activity.OnBoardingActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:exported="false"
+            android:theme="@style/splashScreenTheme" />
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/splashScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
