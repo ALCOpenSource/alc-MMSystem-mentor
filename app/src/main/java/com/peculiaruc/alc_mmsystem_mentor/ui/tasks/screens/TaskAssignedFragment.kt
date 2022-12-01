@@ -13,7 +13,7 @@ import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
 
 
-const val tempName: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit anet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattias tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesue nibh nigh"
+private const val tempName: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit anet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattias tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesue nibh nigh"
 /**
  * A [Fragment] that displays the tasks assigning screen.
  *
