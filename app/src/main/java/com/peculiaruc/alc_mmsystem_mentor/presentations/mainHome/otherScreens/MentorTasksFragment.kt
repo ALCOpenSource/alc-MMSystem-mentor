@@ -28,8 +28,8 @@ class MentorTasksFragment : Fragment(), TasksAdapter.OnTaskClickListener {
         MentorTasksFragmentLayoutBinding.inflate(inflater).let { _binding = it }
         _binding = MentorTasksFragmentLayoutBinding.inflate(layoutInflater)
         val adapter = TasksAdapter(UiData.taskItems,this)
-        binding.tasksRecyclerView.adapter = adapter
-        binding.tasksRecyclerView.layoutManager = LinearLayoutManager(activity)
+        binding.tasksRecyclerView  .adapter = adapter
+        binding.tasksRecyclerView .layoutManager = LinearLayoutManager(activity)
         return binding.root
     }
 

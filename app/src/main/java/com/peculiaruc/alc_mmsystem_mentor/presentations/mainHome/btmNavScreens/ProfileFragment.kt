@@ -16,7 +16,6 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmControl
 
 class ProfileFragment : Fragment() {
     private lateinit var _binding: BtmProfileFragmentLayoutBinding
-    private lateinit var adapter : ProfileViewPagerAdapter
     private var tabTitles = arrayListOf("About", "Programs", "Tasks", "Reports", " Certificates")
 
     private val binding

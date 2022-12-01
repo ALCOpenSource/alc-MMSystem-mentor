@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:elevation="0dp"
+    android:layout_marginBottom="8dp"
     android:layout_marginHorizontal="16dp"
     app:cardElevation="0dp"
     app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
@@ -28,7 +29,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_cert_title"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:ellipsize="end"
             android:gravity="center|start"
@@ -36,11 +37,13 @@
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
             android:textColor="@color/mm_search_title_color"
+            android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/iv_cert_logo"
             app:layout_constraintEnd_toStartOf="@id/search_list_item_location"
             app:layout_constraintStart_toEndOf="@id/iv_cert_logo"
             app:layout_constraintTop_toTopOf="@id/iv_cert_logo"
+            app:layout_constraintVertical_bias="0.0"
             tools:text="GADS CLOuD 2022 - COMPLETION" />
 
         <com.google.android.material.textview.MaterialTextView
