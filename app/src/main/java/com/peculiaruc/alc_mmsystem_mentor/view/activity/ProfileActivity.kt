@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityApplicantProfileBinding
 
-class ApplicantProfileActivity : AppCompatActivity() {
+/**
+ * This class defines the mentor's profile view
+ */
+class ProfileActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityApplicantProfileBinding
 
@@ -27,7 +30,7 @@ class ApplicantProfileActivity : AppCompatActivity() {
         }
 
         binding.editProfileButton.setOnClickListener {
-            startActivity(Intent(this, EditApplicantProfileActivity::class.java))
+            startActivity(Intent(this, EditProfileActivity::class.java))
         }
 
     }

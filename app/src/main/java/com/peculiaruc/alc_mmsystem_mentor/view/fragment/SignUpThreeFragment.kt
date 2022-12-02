@@ -8,7 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentRegisterThreeBinding
 
-
+/**
+ * This class is for mentor applicants to provide
+ * technical proficiencies and previous
+ * roles held while signing up
+ */
 class SignUpThreeFragment : Fragment() {
 
     private lateinit var binding: FragmentRegisterThreeBinding

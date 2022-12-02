@@ -19,7 +19,10 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentRegisterOneBinding
 import java.io.FileDescriptor
 import java.io.IOException
 
-
+/**
+ * This class is for mentor applicants to provide
+ * basic information while signing up
+ */
 class SignUpOneFragment : Fragment() {
 
     private lateinit var binding: FragmentRegisterOneBinding

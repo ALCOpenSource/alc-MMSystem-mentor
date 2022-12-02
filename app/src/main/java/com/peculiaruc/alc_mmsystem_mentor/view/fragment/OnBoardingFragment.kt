@@ -9,11 +9,15 @@ import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentOnBoardingBinding
 
+/**
+ * This class defines the OnBoarding Process
+ */
 class OnBoardingFragment : Fragment() {
 
     companion object {
         private const val ARG_POSITION = "ARG_POSITION"
 
+        // Gets an instance of the application profile fragment
         fun getInstance(position: Int) = OnBoardingFragment().apply {
             arguments = bundleOf(ARG_POSITION to position)
         }

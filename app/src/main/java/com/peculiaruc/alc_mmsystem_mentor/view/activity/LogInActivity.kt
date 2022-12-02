@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityLoginBinding
 
+/**
+ * This class is for login into the application
+ */
 
 class LogInActivity : AppCompatActivity() {
 
@@ -35,7 +38,7 @@ class LogInActivity : AppCompatActivity() {
         }
 
         val googleTextView: TextView = binding.googleSignIn.getChildAt(0) as TextView
-        googleTextView.text = "Sign In with Google"
+        googleTextView.text = getString(R.string.sign_in_with_google)
 
     }
 

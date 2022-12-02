@@ -19,11 +19,11 @@
     <string name="prev_program">Previous Programs</string>
     <string name="prev_role_detail">Learner, Mentor, Program Assistant, Program Assistant Lead</string>
     <string name="previous_roles">Previous Roles Held:</string>
-    <string name="about_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</string>
+    <string name="about_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</string>
     <string name="leadership_skills">Leadership skills from the previous mentoring program?</string>
     <string name="link_to_project">Provide a link of project built with the preferred language.</string>
     <string name="past_experience">Are you experienced being a past mentor in the same Program in Andela?</string>
-    <string name="recommendation_letter">Uplod a recommendation letter for the selected program.</string>
+    <string name="recommendation_letter">Upload a recommendation letter for the selected program.</string>
 
     <string-array name="on_boarding_texts">
         <item> Get real-time updates from Mentor Managers</item>
@@ -142,6 +142,8 @@
     <string name="continue_to_login">Continue</string>
     <string name="continue_one">Continue</string>
     <string name="been_mentor_before_one">Been mentor before:</string>
+    <string name="program_title">Andela Google Africa Scholarship Program</string>
+    <string name="sign_in_with_google">Sign In with Google</string>
 
 
 </resources>

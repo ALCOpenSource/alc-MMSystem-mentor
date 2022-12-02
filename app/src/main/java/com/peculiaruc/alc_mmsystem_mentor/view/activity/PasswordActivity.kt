@@ -7,6 +7,9 @@ import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityForgotPasswordBinding
 
 
+/**
+ * This class sends a link to mentors to reset password
+ */
 class PasswordActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityForgotPasswordBinding

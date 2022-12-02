@@ -1,15 +1,12 @@
 package com.peculiaruc.alc_mmsystem_mentor.view.activity
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
-import android.database.Cursor
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
-import android.provider.OpenableColumns
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import androidx.appcompat.app.AppCompatActivity
@@ -19,11 +16,12 @@ import java.io.FileDescriptor
 import java.io.IOException
 
 
-class EditApplicantProfileActivity : AppCompatActivity() {
+/**
+ * This class is for updating profile
+ */
+class EditProfileActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityApplicantEditProfileBinding
-
-    private lateinit var pdfUri: Uri
     private var imageUri: Uri? = null
     private val resultLoadImage = 123
 
@@ -36,7 +34,7 @@ class EditApplicantProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.backArrow.setOnClickListener {
-            startActivity(Intent(this, ApplicantProfileActivity::class.java))
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
 
         binding.btnLogout.setOnClickListener {
@@ -44,7 +42,7 @@ class EditApplicantProfileActivity : AppCompatActivity() {
         }
 
         binding.editProfileSaveButton.setOnClickListener {
-            startActivity(Intent(this, ApplicantProfileActivity::class.java))
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
 
         binding.chooseDocOne.setOnClickListener {
@@ -71,33 +69,12 @@ class EditApplicantProfileActivity : AppCompatActivity() {
         startActivityForResult(pdfIntent, 12)
     }
 
-    @SuppressLint("Range")
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        // For loading PDF
+        // For loading IMAGE
         when (requestCode) {
-            12 -> if (resultCode == RESULT_OK) {
-
-                pdfUri = data?.data!!
-                val uri: Uri = data.data!!
-                val uriString: String = uri.toString()
-                var pdfName: String? = null
-                if (uriString.startsWith("content://")) {
-                    var myCursor: Cursor? = null
-                    try {
-                        myCursor =
-                            this.contentResolver.query(uri, null, null, null, null)
-                        if (myCursor != null && myCursor.moveToFirst()) {
-                            pdfName =
-                                myCursor.getString(myCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME))
-                            binding.selectedDocOne.text = pdfName
-                        }
-                    } finally {
-                        myCursor?.close()
-                    }
-                }
-            }
 
             resultLoadImage -> if (requestCode == resultLoadImage && resultCode == Activity.RESULT_OK && data != null) {
                 imageUri = data.data
@@ -108,6 +85,7 @@ class EditApplicantProfileActivity : AppCompatActivity() {
         }
 
     }
+
 
     private fun uriToBitmap(selectedFileUri: Uri): Bitmap? {
         try {

@@ -13,13 +13,14 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.LayoutCriteriaBottomSheetD
 import com.peculiaruc.alc_mmsystem_mentor.view.activity.ProgramDetailActivity
 
 
+/**
+ * This class creates a bottom sheet that
+ * displays success message for a request
+ */
 class CriteriaBottomSheetFragment : BottomSheetDialogFragment() {
 
     private lateinit var binding: LayoutCriteriaBottomSheetDialogBinding
 
-    companion object {
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

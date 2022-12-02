@@ -22,7 +22,7 @@
             android:theme="@style/splashScreenTheme" />
 
         <activity
-            android:name=".view.activity.CriteriaFormActivity"
+            android:name=".view.activity.CriteriaActivity"
             android:exported="false"
             android:theme="@style/splashScreenTheme" />
 
@@ -33,12 +33,12 @@
             android:theme="@style/splashScreenTheme" />
 
         <activity
-            android:name=".view.activity.ApplicantProfileActivity"
+            android:name=".view.activity.ProfileActivity"
             android:exported="false"
             android:theme="@style/splashScreenTheme" />
 
         <activity
-            android:name=".view.activity.EditApplicantProfileActivity"
+            android:name=".view.activity.EditProfileActivity"
             android:exported="false"
             android:theme="@style/splashScreenTheme" />
 

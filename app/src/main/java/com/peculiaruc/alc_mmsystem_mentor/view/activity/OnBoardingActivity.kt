@@ -11,6 +11,9 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityOnBoardingBinding
 import com.peculiaruc.alc_mmsystem_mentor.view.adapter.OnBoardingAdapter
 
 
+/**
+ * This class defines the OnBoarding process
+ */
 class OnBoardingActivity : AppCompatActivity() {
 
 

@@ -8,6 +8,9 @@ import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityProgramDetailsBinding
 
 
+/**
+ * This class defines the mentor's program details
+ */
 class ProgramDetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProgramDetailsBinding
 
@@ -28,7 +31,7 @@ class ProgramDetailActivity : AppCompatActivity() {
         }
 
         binding.btnProgramRequest.setOnClickListener {
-            startActivity(Intent(this, CriteriaFormActivity::class.java))
+            startActivity(Intent(this, CriteriaActivity::class.java))
         }
 
     }

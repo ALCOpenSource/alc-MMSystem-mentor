@@ -8,6 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 
+/**
+ * This is an adapter class for creating notifications
+ */
 class NotificationAdapter(private val context: Context, var list: ArrayList<NotificationData>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

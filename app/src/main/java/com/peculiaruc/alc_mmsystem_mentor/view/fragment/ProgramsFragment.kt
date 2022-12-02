@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityProgramsBinding
 import com.peculiaruc.alc_mmsystem_mentor.view.adapter.ViewPagerAdapter
 
+/**
+ * This class defines the list of programs
+ */
 class ProgramsFragment : Fragment() {
 
     private lateinit var binding: ActivityProgramsBinding
@@ -59,6 +62,7 @@ class ProgramsFragment : Fragment() {
 
 
     companion object {
+        // Gets an instance of the programs fragment
         fun newInstance(): ProgramsFragment = ProgramsFragment()
     }
 }

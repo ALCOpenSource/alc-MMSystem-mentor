@@ -5,6 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.peculiaruc.alc_mmsystem_mentor.R
 
+
+/**
+ * This class is for the application
+ * process to become a mentor
+ */
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 

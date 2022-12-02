@@ -13,8 +13,11 @@ import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.LayoutBottomSheetDialogBinding
 import com.peculiaruc.alc_mmsystem_mentor.view.activity.RegisterActivity
 
-
-class BottomSheetFragment : BottomSheetDialogFragment() {
+/**
+ * This class creates a bottom sheet that
+ * displays success message for a registration
+ */
+class SignUpBottomSheetFragment : BottomSheetDialogFragment() {
 
     private lateinit var binding: LayoutBottomSheetDialogBinding
 

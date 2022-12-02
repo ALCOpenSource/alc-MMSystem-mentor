@@ -15,6 +15,10 @@ import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentRegisterFourBinding
 
 
+/**
+ * This class is for mentor applicants to upload
+ * documents and provide social links
+ */
 class SignUpFourFragment : Fragment() {
 
 
@@ -50,7 +54,7 @@ class SignUpFourFragment : Fragment() {
         }
     }
 
-    // Intent for openning files
+    // Intent for opening files
     private fun selectPdf() {
         val pdfIntent = Intent(Intent.ACTION_GET_CONTENT)
         pdfIntent.type = "application/pdf"
@@ -87,4 +91,6 @@ class SignUpFourFragment : Fragment() {
             }
         }
     }
+
+
 }

@@ -16,6 +16,10 @@ import com.peculiaruc.alc_mmsystem_mentor.view.adapter.NotificationAdapter
 import com.peculiaruc.alc_mmsystem_mentor.view.adapter.NotificationData
 import kotlinx.coroutines.*
 
+/**
+ * This class defines the notification view
+ * and interaction that occur during mentor application process
+ */
 class NotificationFragment : Fragment() {
     private lateinit var binding: FragmentNotificationBinding
     private lateinit var adapter: NotificationAdapter

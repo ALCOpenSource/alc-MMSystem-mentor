@@ -12,6 +12,10 @@ import com.peculiaruc.alc_mmsystem_mentor.view.adapter.ProgramsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.view.utils.ProgramHelper
 
 
+/**
+ * This class creates a view that displays
+ * all mentor's programs
+ */
 class AllProgramFragment : Fragment() {
 
     private lateinit var binding: FragmentProgramsAllBinding

@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 
+/**
+ * This is an adapter class for creating view pagers
+ */
 class ViewPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     private val mFrgmentList = ArrayList<Fragment>()
@@ -17,6 +20,7 @@ class ViewPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     override fun getPageTitle(position: Int) = mFrgmentTitleList[position]
 
+    // Adds fragments to the view pager adapter
     fun addFragment(fragment: Fragment, title: String) {
         mFrgmentList.add(fragment)
         mFrgmentTitleList.add(title)

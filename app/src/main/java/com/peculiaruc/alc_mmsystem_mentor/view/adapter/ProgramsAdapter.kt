@@ -8,7 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.CardViewProgramBinding
 import com.peculiaruc.alc_mmsystem_mentor.view.activity.ProgramDetailActivity
 
-
+/**
+ * This is an adapter class for creating programs
+ */
 class ProgramsAdapter(var context: Context, private var programList: ArrayList<ProgramModel>) :
     RecyclerView.Adapter<ProgramsAdapter.ViewHolder>() {
 
@@ -39,11 +41,13 @@ class ProgramsAdapter(var context: Context, private var programList: ArrayList<P
         return programList.size
     }
 
-    // Holds the views for adding it to image and text
+    /* Holds the views for adding it to image and text */
     inner class ViewHolder(private var item: CardViewProgramBinding) :
         RecyclerView.ViewHolder(item.root) {
+
+        // binds data to views
         fun bind(program: ProgramModel) {
-            item.tvPrgName.text = program.prgName
+            item.tvPrgName.text = context.getString(program.prgName)
             item.ivPrgImg.setImageResource(program.imgResId)
 
             item.cvProgram.setOnClickListener {

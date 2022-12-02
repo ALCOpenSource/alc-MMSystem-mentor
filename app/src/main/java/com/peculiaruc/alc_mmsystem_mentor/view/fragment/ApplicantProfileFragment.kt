@@ -7,10 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityApplicantProfileBinding
-import com.peculiaruc.alc_mmsystem_mentor.view.activity.EditApplicantProfileActivity
+import com.peculiaruc.alc_mmsystem_mentor.view.activity.EditProfileActivity
 import com.peculiaruc.alc_mmsystem_mentor.view.activity.LogInActivity
 import com.peculiaruc.alc_mmsystem_mentor.view.activity.MainActivity
 
+
+/**
+ * This class creates a view that displays
+ * mentor's profile
+ */
 class ApplicantProfileFragment : Fragment() {
 
     private lateinit var binding: ActivityApplicantProfileBinding
@@ -37,13 +42,14 @@ class ApplicantProfileFragment : Fragment() {
         }
 
         binding.editProfileButton.setOnClickListener {
-            startActivity(Intent(requireActivity(), EditApplicantProfileActivity::class.java))
+            startActivity(Intent(requireActivity(), EditProfileActivity::class.java))
         }
 
 
     }
 
     companion object {
+        // Gets an instance of the application profile fragment
         fun newInstance(): ApplicantProfileFragment = ApplicantProfileFragment()
     }
 

@@ -11,7 +11,10 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentProgramsCompletedB
 import com.peculiaruc.alc_mmsystem_mentor.view.adapter.ProgramsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.view.utils.ProgramHelper
 
-
+/**
+ * This class creates a view that displays
+ * mentor's completed programs
+ */
 class CompletedProgramFragment : Fragment() {
 
     private lateinit var binding: FragmentProgramsCompletedBinding

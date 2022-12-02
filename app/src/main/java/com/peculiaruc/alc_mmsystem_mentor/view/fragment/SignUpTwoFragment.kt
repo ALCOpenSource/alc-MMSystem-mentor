@@ -8,6 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentRegisterTwoBinding
 
+/**
+ * This class is for mentor applicants to provide
+ * program information while signing up
+ */
 class SignUpTwoFragment : Fragment() {
     private lateinit var binding: FragmentRegisterTwoBinding
 

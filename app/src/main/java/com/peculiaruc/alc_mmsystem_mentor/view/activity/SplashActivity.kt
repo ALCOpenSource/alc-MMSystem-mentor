@@ -8,12 +8,15 @@ import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.peculiaruc.alc_mmsystem_mentor.R
 
+
+/**
+ * This class showcases the brand logo
+ * and provides an entry point into the application
+ */
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
-    /*
-    *  Application entry point
-    */
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)

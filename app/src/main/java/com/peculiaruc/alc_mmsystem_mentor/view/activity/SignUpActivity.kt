@@ -1,13 +1,15 @@
 package com.peculiaruc.alc_mmsystem_mentor.view.activity
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivitySignUpBinding
-import com.peculiaruc.alc_mmsystem_mentor.view.fragment.BottomSheetFragment
+import com.peculiaruc.alc_mmsystem_mentor.view.fragment.SignUpBottomSheetFragment
 
 
+/**
+ * This class is for signing up to become a mentor
+ */
 class SignUpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
@@ -22,15 +24,15 @@ class SignUpActivity : AppCompatActivity() {
 
         // adding on click listener for our button.
         binding.btnSignUpApply.setOnClickListener {
-            showBottomSheet(binding.root)
+            showBottomSheet()
         }
 
     }
 
 
-    private fun showBottomSheet(view: View?) {
-        val bottomSheetFragment = BottomSheetFragment()
-        bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
+    private fun showBottomSheet() {
+        val signUpBottomSheetFragment = SignUpBottomSheetFragment()
+        signUpBottomSheetFragment.show(supportFragmentManager, signUpBottomSheetFragment.tag)
 
     }
 

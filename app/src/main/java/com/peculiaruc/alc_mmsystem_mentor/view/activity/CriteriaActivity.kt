@@ -2,13 +2,15 @@ package com.peculiaruc.alc_mmsystem_mentor.view.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityCriteriaFormBinding
 import com.peculiaruc.alc_mmsystem_mentor.view.fragment.CriteriaBottomSheetFragment
 
-class CriteriaFormActivity : AppCompatActivity() {
+/**
+ * This class is for completing application criteria form
+ */
+class CriteriaActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCriteriaFormBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +23,7 @@ class CriteriaFormActivity : AppCompatActivity() {
 
 
         binding.btnCriteriaSubmit.setOnClickListener {
-            showBottomSheet(binding.root)
+            showBottomSheet()
         }
 
 
@@ -32,7 +34,7 @@ class CriteriaFormActivity : AppCompatActivity() {
 
     }
 
-    private fun showBottomSheet(view: View?) {
+    private fun showBottomSheet() {
         val criteriaBottomSheetFragment = CriteriaBottomSheetFragment()
         criteriaBottomSheetFragment.show(supportFragmentManager, criteriaBottomSheetFragment.tag)
 
