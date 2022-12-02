@@ -57,6 +57,17 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="4dp"
+        app:layout_constraintTop_toBottomOf="@id/cps_toolbar"
+        app:layout_constraintBottom_toTopOf="@id/btn_compose_field">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/cps_choose_txt"
@@ -71,7 +82,7 @@
         app:fontFamily="@font/mukta_semibold"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cps_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/choose_report" />
 
     <ImageView
@@ -278,6 +289,7 @@
         app:boxStrokeColor="@color/title_grey_color"
         app:boxStrokeWidth="0.5dp"
         app:hintTextColor="@color/title_grey_color"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/field_label3">
@@ -299,7 +311,8 @@
             android:scrollHorizontally="false"
             android:textColorHint="@color/title_grey_color" />
     </com.google.android.material.textfield.TextInputLayout>
-
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_compose_field"
@@ -317,5 +330,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Submit Report" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
