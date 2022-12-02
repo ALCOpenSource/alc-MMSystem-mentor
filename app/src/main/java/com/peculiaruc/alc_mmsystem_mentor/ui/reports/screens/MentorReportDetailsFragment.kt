@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentMentorReportDetailsBinding
 import kotlinx.android.synthetic.main.item_report_download.view.*
@@ -49,6 +50,9 @@ class MentorReportDetailsFragment : Fragment() {
         }
         binding.btnShareField.setOnClickListener {
             showShareDialog()
+        }
+        binding.actionBack.setOnClickListener {
+            it.findNavController().navigateUp()
         }
     }
 

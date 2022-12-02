@@ -69,6 +69,10 @@ class MentorsReportFragment : Fragment() {
             fab.findNavController().navigate(action)
         }
 
+        binding.tool.actionBack.setOnClickListener {
+            it.findNavController().navigateUp()
+        }
+
     }
 
     /**

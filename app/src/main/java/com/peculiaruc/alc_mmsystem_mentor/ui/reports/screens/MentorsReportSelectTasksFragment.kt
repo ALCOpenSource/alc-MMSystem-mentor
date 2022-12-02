@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
@@ -58,6 +59,10 @@ class MentorsReportSelectTasksFragment : Fragment() {
         val adapter = SelectTasksAdapter(data)
 
         recyclerView.adapter = adapter
+
+       binding.tool1.actionBack.setOnClickListener {
+           it.findNavController().navigateUp()
+       }
 
     }
 

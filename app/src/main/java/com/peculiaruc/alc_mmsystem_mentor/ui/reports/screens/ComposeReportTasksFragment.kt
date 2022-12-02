@@ -39,6 +39,10 @@ class ComposeReportTasksFragment : Fragment() {
 
         binding.toolbarCreateTitle.text = getString(R.string.compose_report)
 
+        binding.actionBack.setOnClickListener {
+            it.findNavController().navigateUp()
+        }
+
         navListener()
     }
 

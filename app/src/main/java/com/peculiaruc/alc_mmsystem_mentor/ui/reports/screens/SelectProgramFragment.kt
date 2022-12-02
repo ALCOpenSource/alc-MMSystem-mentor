@@ -66,6 +66,10 @@ class SelectProgramFragment : Fragment() {
 //            binding.programTxtAll.findNavController().navigate(action)
 //        }
 
+        binding.tool2.actionBack.setOnClickListener {
+            it.findNavController().navigateUp()
+        }
+
     }
 
 
