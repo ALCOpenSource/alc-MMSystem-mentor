@@ -12,6 +12,9 @@ class ProgramHelper {
 
 
         /* Get all program list */
+        /**
+         * Adds all program items data to [programList]
+         */
         fun <ArrayList> getAllProgramList(): ArrayList {
             val programList = ArrayList<ProgramModel>()
             programList.add(
@@ -55,7 +58,9 @@ class ProgramHelper {
             return programList as ArrayList
         }
 
-        /* Get assigned program list */
+        /**
+         * Adds assigned program items data to [programList]
+         */
         fun <ArrayList> getAssignedProgramList(): ArrayList {
             val programList = ArrayList<ProgramModel>()
             programList.add(
@@ -92,7 +97,9 @@ class ProgramHelper {
             return programList as ArrayList
         }
 
-        /* Get completed program list */
+        /**
+         * Adds completed program items data to [programList]
+         */
         fun <ArrayList> getCompletedProgramList(): ArrayList {
             val programList = ArrayList<ProgramModel>()
             programList.add(

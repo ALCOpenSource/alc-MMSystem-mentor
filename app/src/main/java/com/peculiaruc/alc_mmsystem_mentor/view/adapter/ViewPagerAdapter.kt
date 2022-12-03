@@ -20,7 +20,11 @@ class ViewPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     override fun getPageTitle(position: Int) = mFrgmentTitleList[position]
 
-    /* This function add fragment and title to the view pager adapter */
+
+
+    /**
+     * Add [fragment] and [title] to the view pager adapter
+     */
     fun addFragment(fragment: Fragment, title: String) {
         mFrgmentList.add(fragment)
         mFrgmentTitleList.add(title)
