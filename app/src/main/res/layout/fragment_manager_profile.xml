@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_16sdp"
+    tools:context=".ui.managers.screens.ManagerProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:src="@drawable/male_one_min"
+            android:layout_alignParentStart="true"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/manager_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/manager_name"/>
+
+            <TextView
+                android:id="@+id/manager_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="@string/manager_title"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/about_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_32sdp">
+
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/about"/>
+
+        <TextView
+            android:id="@+id/about_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="@string/about_body"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/about_section"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="@string/address"
+            app:drawableStartCompat="@drawable/location"
+            app:tint="@color/title_grey_color"
+            android:drawablePadding="@dimen/_4sdp"/>
+
+        <TextView
+            android:id="@+id/member_since"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="@string/member_since"
+            app:drawableStartCompat="@drawable/ic_calendar"
+            android:drawablePadding="@dimen/_4sdp"/>
+
+        <LinearLayout
+            android:id="@+id/technical_proficiency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/technical_proficiency"/>
+
+            <TextView
+                android:id="@+id/skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="@string/skills"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/social_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/info_section"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_32sdp">
+
+        <TextView
+            android:id="@+id/social_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/social"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@color/background_white"
+                android:textAlignment="textStart"
+                android:text="@string/web"
+                android:textColor="@color/primary_color_2"
+                app:drawableStartCompat="@drawable/globe"
+                app:tint="@color/primary_color_2"
+                android:drawablePadding="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:background="@color/background_white"
+                android:textAlignment="center"
+                android:text="@string/twitter"
+                android:textColor="@color/primary_color_2"
+                app:drawableStartCompat="@drawable/twitter"
+                app:tint="@color/primary_color_2"
+                android:drawablePadding="@dimen/_4sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@color/background_white"
+                android:textAlignment="textStart"
+                android:text="@string/linkedin"
+                android:textColor="@color/primary_color_2"
+                app:drawableStartCompat="@drawable/linkedin"
+                app:tint="@color/primary_color_2"
+                android:drawablePadding="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:background="@color/background_white"
+                android:textAlignment="center"
+                android:text="@string/instagram"
+                android:textColor="@color/primary_color_2"
+                app:drawableStartCompat="@drawable/instagram"
+                app:tint="@color/primary_color_2"
+                android:drawablePadding="@dimen/_4sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/all_green_rounded_corner"
+        android:textColor="@color/white"
+        android:text="@string/message"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

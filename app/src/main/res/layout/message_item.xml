@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/message"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_6sdp"
+        android:padding="@dimen/_16sdp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/message_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="18dp"
+            android:paddingHorizontal="18dp"
+            android:background="@color/background_white">
+
+            <TextView
+                android:id="@+id/message_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/received_message"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"/>
+
+            <RelativeLayout
+                android:id="@+id/message_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent">
+
+                <TextView
+                    android:id="@+id/time_sent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/time_sent"
+                    android:textAlignment="textStart"
+                    tools:ignore="RelativeOverlap" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent">
+
+                    <ImageView
+                        android:id="@+id/single_tick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/sent"
+                        android:contentDescription="@string/sent"/>
+
+                    <ImageView
+                        android:id="@+id/double_tick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/seen"
+                        android:src="@drawable/seen"
+                        android:visibility="gone"
+                        tools:ignore="ImageContrastCheck" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

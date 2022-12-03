@@ -7,4 +7,27 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green_text">#06B9C6</color>
+    <color name="primary_color_2">#035D63</color>
+    <color name="background_white">#F7FEFF</color>
+    <color name="item_border_color">#E6FDFE</color>
+    <color name="border_color">#9CF6FC</color>
+    <color name="header_text_color">#333333</color>
+
+
+
+    <color name="shadow_color">#801678b0</color>
+    <color name="transparent_white">#5CDADADA</color>
+    <color name="textcolorPrimary">#012b7a</color>
+    <color name="outline_button_color">#035D63</color>
+    <color name="MMS_black_2">#333333</color>
+    <color name="MMS_black_4">#666666</color>
+    <color name="MMS_black_5">#808080</color>
+    <color name="MMS_pry_10">#E6FDFE</color>
+    <color name="MMS_pry_2">#035D63</color>
+    <color name="title_grey_color">#909090</color>
+    <color name="MMS_pry_8">#9CF6FC</color>
+    <color name="MMS_pry_9">#F7FEFF</color>
+    <color name="error_red">#FF5964</color>
+    <color name="black_7">#999999</color>
 </resources>

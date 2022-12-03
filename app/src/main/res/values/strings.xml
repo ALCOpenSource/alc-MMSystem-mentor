@@ -1,3 +1,137 @@
 <resources>
-    <string name="app_name">alc-MMSystem-mentor</string>
+    <string name="app_name">Mentor</string>
+    <string name="my_tasks">My Tasks</string>
+
+    <string name="assign_task">Assign Task</string>
+    <string name="quick_actions">Quick Actions</string>
+
+    <string name="view_tasks_in_progress">Tasks in Progress</string>
+    <string name="view_chats_with_mentor_managers">Chat</string>
+    <string name="view_reports">Reports</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="programs">Programs</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="certificates">Certificates</string>
+    <string name="my_managers">My Managers</string>
+    <string name="profile_image">Mentor Manager Image</string>
+
+    <!-- Messages -->
+    <string name="chats">Chats</string>
+    <string name="broadcast_messages">Broadcast Messages</string>
+    <string name="start_new_chat">Start New Chat</string>
+    <string name="chat_name">Aisha Phiri</string>
+    <string name="received_message">Hello Kenny, trust you are well? </string>
+    <string name="sent_message">Hello, Aisha</string>
+    <string name="time_elapsed">30m</string>
+    <string name="number_of_chats">2</string>
+    <string name="time_sent">6:00pm</string>
+    <string name="sent">Message has been sent</string>
+    <string name="seen">Message has been seen</string>
+    <string name="start_of_conversation">Start of Conversation</string>
+    <string name="send_message">Send Message</string>
+    <string name="attach_files">Attach Files</string>
+    <string name="add_emojis">Add Emoji</string>
+    <string name="place_holder_text">Type message …</string>
+
+    <!-- Managers -->
+    <string name="manager_name">Manager Name</string>
+    <string name="manager_title">Manager Title</string>
+    <string name="tag">GADS Mentor</string>
+    <string name="tag_two">Tag Two</string>
+    <string name="message_manager">Message Manager</string>
+    <string name="about">About</string>
+    <string name="about_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissimpharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet maurissed, dignissim lectus. Phasellus eget tortor dapibus, laoreet maurissed, dignissim lectus.</string>
+    <string name="address">Address</string>
+    <string name="member_since">Member since 2021</string>
+    <string name="technical_proficiency">Technical Proficiency</string>
+    <string name="skills">Javascript, Django, Mysql, Android</string>
+    <string name="social">Social</string>
+    <string name="web">www.web.com</string>
+    <string name="linkedin">linkedin.user</string>
+    <string name="instagram">instagram.profile</string>
+    <string name="twitter">twitter.profile</string>
+    <string name="message">Message</string>
+
+    <string name="write_article">Room library article write article</string>
+    <string name="request_to_be_assigned">Request to be assigned</string>
+    <string name="start">Start</string>
+    <string name="back_button">back button</string>
+    <string name="room_library_article_writing">Room library article writing</string>
+    <string name="_3_days">3 days from now</string>
+    <string name="a_calendar">An image of a calendar</string>
+    <string name="an_image">An image</string>
+    <string name="image_search">Image for Search Action</string>
+    <string name="task_details">Task Details</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</string>
+    <string name="title_activity_task">TaskActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="submitted">Submitted</string>
+    <string name="google_africa_scholarship_report">Google Africa Scholarship Report</string>
+    <string name="by_name">By Ibrahim Kabir</string>
+    <string name="dash">-</string>
+    <string name="date">19th - 25th Oct 22</string>
+    <string name="download_icon">download icon</string>
+    <string name="go_back">go back</string>
+    <string name="report">Reports</string>
+    <string name="maximum">Maximum</string>
+    <string name="sort">Sort</string>
+    <string name="program_reports">Program Reports</string>
+    <string name="all">All</string>
+    <string name="google_icon">Google Icon</string>
+    <string name="gads_program_2022">GADS Program 2022</string>
+    <string name="gads_program_underline">GADS Program 2022…</string>
+    <string name="isp_date">Dec 12, 2022</string>
+    <string name="assigned">Assigned</string>
+    <string name="completed">Completed</string>
+    <string name="compose_report">Compose Report</string>
+    <string name="choose_report">Choose Report Type</string>
+    <string name="task">Task</string>
+    <string name="report_title">Report Title</string>
+    <string name="major_achievement">Major Achievement</string>
+    <string name="major_blocker">Major Blocker</string>
+    <string name="google_africa_scholarship">Google Africa Scholarship</string>
+    <string name="program_report">Program Report</string>
+    <string name="you_are_seeing_this_indicator">You are seeing this indicator because we are setting up your store and downloading data for offline, as a result, some functionalities might be limited or inoperative till download and setup is complete. Also, your data computation might be incorrect till setup is done</string>
+    <string name="room_article">Room library article write article</string>
+    <string name="lorep_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. </string>
+    <string name="complete">Complete</string>
+
+
+    <string name="report_submitted">Report Submitted Successfully!</string>
+    <string name="share_report">Share report via email</string>
+    <string name="report_downloaded">Report Downloaded Successfully!</string>
+    <string name="days_from_now">3 days from now</string>
+    <string name="room_course">Room library article write…</string>
+    <string name="all_reports">All Reports</string>
+    <string name="program">Program</string>
+    <string name="success_image">Success image</string>
+    <string name="kid_with_kite">Kid with kite</string>
+    <string name="share">Share</string>
+    <string name="download">Download</string>
+    <string name="open_email_app">Open Email App</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_task">Select Task</string>
+    <string name="submit_report">Submit Report</string>
+    <string name="select_program">Select Program</string>
+    <string name="done">Done</string>
+    <string name="fab">fab</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="major_recommendations">Major Recommendations</string>
+    <string name="aisha_phiri">Aisha Phiri</string>
+
+
 </resources>

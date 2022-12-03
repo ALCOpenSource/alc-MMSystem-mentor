@@ -1,0 +1,41 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_30">@dimen/_30sdp</dimen>
+    <dimen name="margin_16">@dimen/_16sdp</dimen>
+    <dimen name="margin_12">@dimen/_12sdp</dimen>
+    <dimen name="margin_10">@dimen/_10sdp</dimen>
+    <dimen name="margin_14">@dimen/_14ssp</dimen>
+    <dimen name="margin_8">@dimen/_8sdp</dimen>
+    <dimen name="margin_6">@dimen/_6sdp</dimen>
+    <dimen name="margin_44">@dimen/_44sdp</dimen>
+    <dimen name="margin_40">@dimen/_40sdp</dimen>
+    <dimen name="margin_24">@dimen/_24sdp</dimen>
+    <dimen name="_14sdp">14dp</dimen>
+    <dimen name="margin_20">@dimen/_20sdp</dimen>
+    <dimen name="text_20">@dimen/_20ssp</dimen>
+    <dimen name="text_12">@dimen/_12ssp</dimen>
+    <dimen name="text_18">@dimen/_18ssp</dimen>
+    <dimen name="text_14">@dimen/_14ssp</dimen>
+    <dimen name="text_16">@dimen/_16ssp</dimen>
+
+
+    <dimen name="_30sdp">30dp</dimen>
+    <dimen name="_16sdp">16dp</dimen>
+    <dimen name="_12sdp">12dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="_14ssp">14sp</dimen>
+    <dimen name="_8sdp">8dp</dimen>
+    <dimen name="_6sdp">6dp</dimen>
+    <dimen name="_44sdp">44dp</dimen>
+    <dimen name="_40sdp">40dp</dimen>
+    <dimen name="_24sdp">24dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_20ssp">20sp</dimen>
+    <dimen name="_12ssp">12sp</dimen>
+    <dimen name="_18ssp">18sp</dimen>
+    <dimen name="_16ssp">16sp</dimen>
+    <dimen name="_4sdp">4dp</dimen>
+    <dimen name="_8ssp">8sp</dimen>
+    <dimen name="_1sdp">1dp</dimen>
+    <dimen name="_360sdp">360dp</dimen>
+</resources>
