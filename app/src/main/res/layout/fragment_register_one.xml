@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
 
-                android:fontFamily="@font/mukta_semi_bold"
+                android:fontFamily="@font/mukta_semibold"
                 android:text="@string/fill_in_the_form_below"
                 android:textColor="@color/mms_black_2"
                 android:textSize="15sp"
@@ -186,7 +186,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="40dp"
 
-                android:fontFamily="@font/mukta_semi_bold"
+                android:fontFamily="@font/mukta_semibold"
                 android:text="@string/on_boarding_btn_next"
                 android:textAllCaps="false"
                 android:textSize="18sp"

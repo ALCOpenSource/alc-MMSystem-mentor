@@ -52,7 +52,7 @@
             android:layout_alignParentEnd="true"
             app:queryBackground="@color/white"
             app:searchHintIcon="@null"
-            app:searchIcon="@drawable/ic_search" />
+            app:searchIcon="@drawable/ic_search2" />
 
     </RelativeLayout>
 

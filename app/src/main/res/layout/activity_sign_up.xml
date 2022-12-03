@@ -151,7 +151,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="50dp"
-        android:fontFamily="@font/mukta_semi_bold"
+        android:fontFamily="@font/mukta_semibold"
         android:text="Apply"
         android:textAllCaps="false"
         android:textColor="@color/mms_black_10"

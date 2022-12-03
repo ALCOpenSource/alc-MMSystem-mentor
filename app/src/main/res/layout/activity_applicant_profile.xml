@@ -122,7 +122,7 @@
                         android:layout_marginStart="30dp"
                         android:layout_marginEnd="30dp"
                         android:layout_marginBottom="30dp"
-                        android:fontFamily="@font/mukta_semi_bold"
+                        android:fontFamily="@font/mukta_semibold"
                         android:text="@string/on_boarding_btn_next"
                         android:textAllCaps="false"
                         android:textSize="18sp"
@@ -144,7 +144,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/mukta_semi_bold"
+                    android:fontFamily="@font/mukta_semibold"
                     android:text="@string/bio"
                     android:textColor="@color/mms_black_1"
                     android:textSize="15sp" />
@@ -162,7 +162,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/mukta_semi_bold"
+                    android:fontFamily="@font/mukta_semibold"
                     android:text="@string/technical_proficiency"
                     android:textColor="@color/mms_black_1"
                     android:textSize="15sp" />
@@ -180,7 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/mukta_semi_bold"
+                    android:fontFamily="@font/mukta_semibold"
                     android:text="@string/prev_program"
                     android:textColor="@color/mms_black_1"
                     android:textSize="15sp" />
@@ -198,7 +198,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/mukta_semi_bold"
+                    android:fontFamily="@font/mukta_semibold"
                     android:text="@string/previous_roles"
                     android:textColor="@color/mms_black_1"
                     android:textSize="15sp" />
@@ -216,7 +216,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/mukta_semi_bold"
+                    android:fontFamily="@font/mukta_semibold"
                     android:text="@string/program_of_interest_profile"
                     android:textColor="@color/mms_black_1"
                     android:textSize="15sp" />
@@ -230,7 +230,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/mukta_semi_bold"
+                        android:fontFamily="@font/mukta_semibold"
                         android:text="@string/been_mentor_before_one"
                         android:textColor="@color/mms_black_1"
                         android:textSize="15sp" />
@@ -256,7 +256,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/mukta_semi_bold"
+                        android:fontFamily="@font/mukta_semibold"
                         android:text="@string/years_of_technical_experience_profile"
                         android:textColor="@color/mms_black_1"
                         android:textSize="15sp" />
@@ -277,7 +277,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/mukta_semi_bold"
+                    android:fontFamily="@font/mukta_semibold"
                     android:text="@string/documents"
                     android:textColor="@color/mms_black_1"
                     android:textSize="15sp" />
@@ -367,7 +367,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginStart="10dp"
 
-                        android:fontFamily="@font/mukta_semi_bold"
+                        android:fontFamily="@font/mukta_semibold"
                         android:text="@string/www_andela_com"
                         android:textColor="@color/mms_pry_2"
                         android:textSize="12sp" />
@@ -406,7 +406,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginStart="10dp"
 
-                            android:fontFamily="@font/mukta_semi_bold"
+                            android:fontFamily="@font/mukta_semibold"
                             android:text="@string/peculiar_umeh"
                             android:textColor="@color/mms_pry_2"
                             android:textSize="12sp" />
@@ -440,7 +440,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginStart="10dp"
 
-                            android:fontFamily="@font/mukta_semi_bold"
+                            android:fontFamily="@font/mukta_semibold"
                             android:text="@string/peculiar_umeh"
                             android:textColor="@color/mms_pry_2"
                             android:textSize="12sp" />
@@ -481,7 +481,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginStart="10dp"
 
-                            android:fontFamily="@font/mukta_semi_bold"
+                            android:fontFamily="@font/mukta_semibold"
                             android:text="@string/peculiar_umeh"
                             android:textColor="@color/mms_pry_2"
                             android:textSize="12sp" />
@@ -516,7 +516,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginStart="10dp"
 
-                            android:fontFamily="@font/mukta_semi_bold"
+                            android:fontFamily="@font/mukta_semibold"
                             android:text="@string/peculiar_umeh"
                             android:textColor="@color/mms_pry_2"
                             android:textSize="12sp" />
@@ -534,7 +534,7 @@
                 android:layout_marginTop="25dp"
 
                 android:layout_marginBottom="151dp"
-                android:fontFamily="@font/mukta_semi_bold"
+                android:fontFamily="@font/mukta_semibold"
                 android:text="@string/edit_profile"
                 android:textAllCaps="false"
                 android:textSize="18sp"

@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/mukta_semi_bold"
+                android:fontFamily="@font/mukta_semibold"
                 android:text="@string/fill_in_the_form_below"
                 android:textColor="@color/mms_black_2"
                 android:textSize="15sp"
@@ -218,7 +218,7 @@
                 android:layout_width="140dp"
                 android:layout_height="50dp"
 
-                android:fontFamily="@font/mukta_semi_bold"
+                android:fontFamily="@font/mukta_semibold"
                 android:text="@string/on_boarding_btn_next"
                 android:textAllCaps="false"
                 android:textSize="18sp"
@@ -233,7 +233,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="120dp"
-                android:fontFamily="@font/mukta_semi_bold"
+                android:fontFamily="@font/mukta_semibold"
 
                 android:text="@string/on_boarding_btn_prev"
                 android:textAllCaps="false"

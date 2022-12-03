@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:fontFamily="@font/mukta_semi_bold"
+        android:fontFamily="@font/mukta_semibold"
         android:text="@string/splash_screen_app_name"
         android:textColor="@color/mms_black_2"
         android:textSize="18sp"
