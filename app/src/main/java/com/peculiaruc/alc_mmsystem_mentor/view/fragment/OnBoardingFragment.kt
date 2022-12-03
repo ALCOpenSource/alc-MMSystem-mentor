@@ -17,7 +17,7 @@ class OnBoardingFragment : Fragment() {
     companion object {
         private const val ARG_POSITION = "ARG_POSITION"
 
-        // Gets an instance of the application profile fragment
+        // This function gets an instance of the OnBoarding fragment
         fun getInstance(position: Int) = OnBoardingFragment().apply {
             arguments = bundleOf(ARG_POSITION to position)
         }

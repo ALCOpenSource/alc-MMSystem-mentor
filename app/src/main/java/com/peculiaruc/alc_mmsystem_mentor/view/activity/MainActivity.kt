@@ -1,12 +1,13 @@
 package com.peculiaruc.alc_mmsystem_mentor.view.activity
 
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityMainBinding
-import com.peculiaruc.alc_mmsystem_mentor.view.fragment.ApplicantProfileFragment
+import com.peculiaruc.alc_mmsystem_mentor.view.fragment.ProfileFragment
 import com.peculiaruc.alc_mmsystem_mentor.view.fragment.ProgramsFragment
 
 
@@ -23,9 +24,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        // binding.bottomNav.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-
         setBottomNavigation()
 
         binding.ivProfileImg.setOnClickListener {
@@ -36,31 +34,26 @@ class MainActivity : AppCompatActivity() {
     private fun setBottomNavigation() {
 
         binding.bottomNav.setOnItemSelectedListener { item ->
+            var selectedFragment: Fragment? = null
             when (item.itemId) {
-                R.id.menu_home -> {
 
-                }
-                R.id.menu_search -> {
+                R.id.menu_home -> selectedFragment = Fragment()
 
-                }
-                R.id.menu_programs -> {
-                    val programsFragment = ProgramsFragment.newInstance()
-                    openFragment(programsFragment)
-                    return@setOnItemSelectedListener true
-                }
+                R.id.menu_search -> selectedFragment = Fragment()
 
-                R.id.menu_message -> {
+                R.id.menu_programs -> selectedFragment = ProgramsFragment()
 
-                }
+                R.id.menu_message -> selectedFragment = Fragment()
 
-                R.id.menu_profile -> {
-                    val applicantProfileFragment = ApplicantProfileFragment.newInstance()
-                    openFragment(applicantProfileFragment)
-                    return@setOnItemSelectedListener true
-                }
+                R.id.menu_profile -> selectedFragment = ProfileFragment()
+
             }
-            false
+
+            openFragment(selectedFragment!!)
+
+            true
         }
+
     }
 
 

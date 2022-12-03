@@ -16,7 +16,7 @@ import com.peculiaruc.alc_mmsystem_mentor.view.activity.MainActivity
  * This class creates a view that displays
  * mentor's profile
  */
-class ApplicantProfileFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
     private lateinit var binding: ActivityApplicantProfileBinding
 
@@ -46,11 +46,6 @@ class ApplicantProfileFragment : Fragment() {
         }
 
 
-    }
-
-    companion object {
-        // Gets an instance of the application profile fragment
-        fun newInstance(): ApplicantProfileFragment = ApplicantProfileFragment()
     }
 
 

@@ -70,24 +70,31 @@ class SignUpFourFragment : Fragment() {
         when (requestCode) {
             12 -> if (resultCode == RESULT_OK) {
 
-                pdfUri = data?.data!!
-                val uri: Uri = data.data!!
-                val uriString: String = uri.toString()
-                var pdfName: String? = null
-                if (uriString.startsWith("content://")) {
-                    var myCursor: Cursor? = null
-                    try {
-                        myCursor =
-                            requireActivity().contentResolver.query(uri, null, null, null, null)
-                        if (myCursor != null && myCursor.moveToFirst()) {
-                            pdfName =
-                                myCursor.getString(myCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME))
-                            binding.selectedDocOne.text = pdfName
-                        }
-                    } finally {
-                        myCursor?.close()
-                    }
+                getFile(data)
+
+            }
+        }
+    }
+
+    @SuppressLint("Range")
+    // This function gets the file from device storage
+    private fun getFile(data: Intent?) {
+        pdfUri = data?.data!!
+        val uri: Uri = data.data!!
+        val uriString: String = uri.toString()
+        var pdfName: String? = null
+        if (uriString.startsWith("content://")) {
+            var myCursor: Cursor? = null
+            try {
+                myCursor =
+                    requireActivity().contentResolver.query(uri, null, null, null, null)
+                if (myCursor != null && myCursor.moveToFirst()) {
+                    pdfName =
+                        myCursor.getString(myCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME))
+                    binding.selectedDocOne.text = pdfName
                 }
+            } finally {
+                myCursor?.close()
             }
         }
     }

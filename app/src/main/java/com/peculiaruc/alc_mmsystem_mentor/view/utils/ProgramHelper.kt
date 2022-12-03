@@ -11,7 +11,7 @@ class ProgramHelper {
     companion object {
 
 
-        // Returns all programs list
+        // This function returns an arraylist of all programs
         fun <ArrayList> getAllProgramList(): ArrayList {
             val programList = ArrayList<ProgramModel>()
             programList.add(
@@ -55,7 +55,7 @@ class ProgramHelper {
             return programList as ArrayList
         }
 
-        // Returns assigned programs list
+        // This function returns an arraylist of assigned programs
         fun <ArrayList> getAssignedProgramList(): ArrayList {
             val programList = ArrayList<ProgramModel>()
             programList.add(
@@ -92,7 +92,7 @@ class ProgramHelper {
             return programList as ArrayList
         }
 
-        // Returns completed programs list
+        // This function returns an arraylist of completed programs
         fun <ArrayList> getCompletedProgramList(): ArrayList {
             val programList = ArrayList<ProgramModel>()
             programList.add(

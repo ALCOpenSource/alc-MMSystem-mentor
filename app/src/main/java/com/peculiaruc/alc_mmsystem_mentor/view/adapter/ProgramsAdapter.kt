@@ -27,7 +27,7 @@ class ProgramsAdapter(var context: Context, private var programList: ArrayList<P
 
     }
 
-    // binds the list items to a view
+    // This function binds the list items to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(
             programList[position]
@@ -41,11 +41,14 @@ class ProgramsAdapter(var context: Context, private var programList: ArrayList<P
         return programList.size
     }
 
-    /* Holds the views for adding it to image and text */
+
+    /**
+     * This class holds the views for adding it to image and text
+     */
     inner class ViewHolder(private var item: CardViewProgramBinding) :
         RecyclerView.ViewHolder(item.root) {
 
-        // binds data to views
+        // This function binds programs to views
         fun bind(program: ProgramModel) {
             item.tvPrgName.text = context.getString(program.prgName)
             item.ivPrgImg.setImageResource(program.imgResId)

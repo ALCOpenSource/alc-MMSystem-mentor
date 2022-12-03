@@ -60,9 +60,4 @@ class ProgramsFragment : Fragment() {
 
     }
 
-
-    companion object {
-        // Gets an instance of the programs fragment
-        fun newInstance(): ProgramsFragment = ProgramsFragment()
-    }
 }
