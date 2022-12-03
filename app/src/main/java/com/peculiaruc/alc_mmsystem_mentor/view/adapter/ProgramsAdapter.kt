@@ -48,7 +48,7 @@ class ProgramsAdapter(var context: Context, private var programList: ArrayList<P
     inner class ViewHolder(private var item: CardViewProgramBinding) :
         RecyclerView.ViewHolder(item.root) {
 
-        // This function bind program item to the defined layout
+        /* This function bind program item to the defined layout */
         fun bind(program: ProgramModel) {
             item.tvPrgName.text = context.getString(program.prgName)
             item.ivPrgImg.setImageResource(program.imgResId)
