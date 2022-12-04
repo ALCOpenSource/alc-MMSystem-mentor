@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_mentor_registration_flow"
+    app:startDestination="@id/signUpOneFragment">
+
+    <fragment
+        android:id="@+id/signUpOneFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.view.fragment.SignUpOneFragment"
+        android:label="fragment_sign_up_one"
+        tools:layout="@layout/fragment_register_one">
+
+
+        <action
+            android:id="@+id/action_signUpOneFragment_to_signUpTwoFragment"
+            app:destination="@id/signUpTwoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpTwoFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.view.fragment.SignUpTwoFragment"
+        android:label="fragment_sign_up_two"
+        tools:layout="@layout/fragment_register_two">
+
+        <action
+            android:id="@+id/action_signUpTwoFragment_to_signUpThreeFragment"
+            app:destination="@id/signUpThreeFragment" />
+        <action
+            android:id="@+id/action_signUpTwoFragment_to_signUpOneFragment"
+            app:destination="@id/signUpOneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpThreeFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.view.fragment.SignUpThreeFragment"
+        android:label="fragment_sign_up_three"
+        tools:layout="@layout/fragment_register_three">
+
+        <action
+            android:id="@+id/action_signUpThreeFragment_to_signUpFourFragment"
+            app:destination="@id/signUpFourFragment" />
+        <action
+            android:id="@+id/action_signUpThreeFragment_to_signUpTwoFragment"
+            app:destination="@id/signUpTwoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFourFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.view.fragment.SignUpFourFragment"
+        android:label="fragment_sign_up_four"
+        tools:layout="@layout/fragment_register_four">
+
+        <action
+            android:id="@+id/action_signUpFourFragment_to_signUpThreeFragment"
+            app:destination="@id/signUpThreeFragment" />
+        <action
+            android:id="@+id/action_signUpFourFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.peculiaruc.alc_mmsystem_mentor.view.fragment.NotificationFragment"
+        android:label="NotificationFragment" />
+
+</navigation>
