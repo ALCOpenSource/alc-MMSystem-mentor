@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/back_arrow"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+
+        android:fontFamily="@font/mukta_bold"
+        android:text="@string/francess_roseline"
+        android:textAlignment="center"
+        android:textColor="@color/mms_black_2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:scrollbars="none"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_arrow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@+id/back_arrow"
+                app:layout_constraintTop_toBottomOf="@+id/back_arrow">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="112dp"
+                    android:layout_height="112dp"
+                    app:cardCornerRadius="62dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/user_profile_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_user" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/francess_roseline"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Mentor Applicant"
+                        android:textColor="@color/mms_black_5"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:text="@string/logout"
+                        android:textAllCaps="false"
+                        android:textColor="@color/mms_black_10"
+                        android:textSize="12sp"
+                        app:icon="@drawable/ic_logout"
+                        app:iconGravity="end"
+                        app:iconPadding="8dp"
+                        app:layout_constraintStart_toStartOf="@+id/textView9"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9"
+                        app:strokeColor="@color/mms_pry_2" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_register_one_next"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:fontFamily="@font/mukta_semibold"
+                        android:text="@string/on_boarding_btn_next"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+
+                        app:cornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mukta_semibold"
+                    android:text="@string/bio"
+                    android:textColor="@color/mms_black_1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:text="@string/bio_sdetail"
+                    android:textColor="@color/mms_black_3"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mukta_semibold"
+                    android:text="@string/technical_proficiency"
+                    android:textColor="@color/mms_black_1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:text="@string/tech_proficiency"
+                    android:textColor="@color/mms_black_3"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mukta_semibold"
+                    android:text="@string/prev_program"
+                    android:textColor="@color/mms_black_1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:text="@string/prev_program_detail"
+                    android:textColor="@color/mms_black_3"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mukta_semibold"
+                    android:text="@string/previous_roles"
+                    android:textColor="@color/mms_black_1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mukta_regular"
+                    android:text="@string/prev_role_detail"
+                    android:textColor="@color/mms_black_3"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mukta_semibold"
+                    android:text="@string/program_of_interest_profile"
+                    android:textColor="@color/mms_black_1"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_semibold"
+                        android:text="@string/been_mentor_before_one"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/yes"
+                        android:textColor="@color/mms_black_3"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/mukta_semibold"
+                        android:text="@string/years_of_technical_experience_profile"
+                        android:textColor="@color/mms_black_1"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="9dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/_3_years"
+                        android:textColor="@color/mms_black_3"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/mukta_semibold"
+                    android:text="@string/documents"
+                    android:textColor="@color/mms_black_1"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:contentDescription="@string/document_icon"
+                        android:src="@drawable/ic_document" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/my_resume_doc"
+                        android:textColor="@color/mms_black_3"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:contentDescription="@string/document_icon"
+                        android:src="@drawable/ic_document" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/my_resume_doc"
+                        android:textColor="@color/mms_black_3"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        android:contentDescription="@string/document_icon"
+                        android:src="@drawable/ic_document" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="@string/my_resume_doc"
+                        android:textColor="@color/mms_black_3"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/view_background"
+                    android:orientation="horizontal"
+                    android:paddingStart="3dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="12dp"
+
+                        android:contentDescription="@string/globe"
+
+                        android:src="@drawable/ic_globe"
+                        app:tint="@color/mms_pry_2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+
+                        android:fontFamily="@font/mukta_semibold"
+                        android:text="@string/www_andela_com"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:id="@+id/view10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/view_background"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="12dp"
+                            android:backgroundTint="#F44336"
+                            android:contentDescription="@string/github"
+                            android:src="@drawable/ic_github"
+                            app:tint="@color/mms_pry_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+
+                            android:fontFamily="@font/mukta_semibold"
+                            android:text="@string/peculiar_umeh"
+                            android:textColor="@color/mms_pry_2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/view11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/view_background"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="12dp"
+                            android:backgroundTint="#F44336"
+                            android:contentDescription="@string/instagram"
+                            android:src="@drawable/ic_instagram"
+                            app:tint="@color/mms_pry_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+
+                            android:fontFamily="@font/mukta_semibold"
+                            android:text="@string/peculiar_umeh"
+                            android:textColor="@color/mms_pry_2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:id="@+id/view12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_weight="1"
+                        android:background="@drawable/view_background"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="12dp"
+                            android:backgroundTint="#F44336"
+                            android:contentDescription="@string/linkedin"
+                            android:src="@drawable/ic_linkedin"
+                            app:tint="@color/mms_pry_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+
+                            android:fontFamily="@font/mukta_semibold"
+                            android:text="@string/peculiar_umeh"
+                            android:textColor="@color/mms_pry_2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/view13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_marginStart="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/view_background"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="12dp"
+                            android:backgroundTint="#F44336"
+                            android:contentDescription="@string/twitter"
+                            android:src="@drawable/ic_twitter"
+                            app:tint="@color/mms_pry_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+
+                            android:fontFamily="@font/mukta_semibold"
+                            android:text="@string/peculiar_umeh"
+                            android:textColor="@color/mms_pry_2"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/editProfileButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+
+                android:layout_marginBottom="151dp"
+                android:fontFamily="@font/mukta_semibold"
+                android:text="@string/edit_profile"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="10dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

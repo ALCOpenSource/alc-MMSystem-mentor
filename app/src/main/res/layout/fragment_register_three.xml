@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+
+        android:layout_marginEnd="25dp"
+
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="200dp"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mukta_bold"
+                android:text="@string/become_a_mentor"
+                android:textColor="@color/mms_pry_2"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/mukta_semibold"
+                android:text="@string/fill_in_the_form_below"
+                android:textColor="@color/mms_black_2"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="@string/page_3_of_4"
+                android:textColor="@color/mms_black_2"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+            <TextView
+                android:id="@+id/tvTechnicalProf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/mukta_bold"
+                android:text="@string/technical_proficiency"
+                android:textColor="@color/mms_black_2"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <RelativeLayout
+                android:id="@+id/rl_technical_chips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+
+                android:background="@drawable/bg_chips_rectangle"
+                android:gravity="top"
+                app:layout_constraintEnd_toEndOf="@+id/tvTechnicalProf"
+                app:layout_constraintStart_toStartOf="@+id/tvTechnicalProf"
+                app:layout_constraintTop_toBottomOf="@+id/tvTechnicalProf">
+
+
+                <com.google.android.material.chip.ChipGroup
+
+                    android:id="@+id/chipGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerHorizontal="true"
+                    app:chipSpacingVertical="-5dp"
+                    app:singleLine="false">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip1"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+                        android:text="@string/Python" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+                        android:text="@string/Java" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip3"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+                        android:text="@string/kotlin" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip4"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+                        android:text="@string/Django" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip5"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+                        android:text="@string/JavaScript" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip6"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+                        android:text="@string/MySQL" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip7"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+                        android:text="@string/Android" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip8"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+                        android:text="@string/Swift" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip9"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter"
+
+                        android:text="@string/CPlus" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvPrevRoles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/mukta_bold"
+                android:text="@string/previous_roles_held"
+                android:textColor="@color/mms_black_2"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/rl_technical_chips" />
+
+            <RelativeLayout
+                android:id="@+id/rl_prev_roles_chips"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/bg_chips_rectangle"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/tvPrevRoles"
+                app:layout_constraintStart_toStartOf="@+id/tvPrevRoles"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrevRoles">
+
+
+                <com.google.android.material.chip.ChipGroup
+
+                    android:id="@+id/chipGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingVertical="-5dp"
+                    app:singleLine="false">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG1"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/Learner" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG2"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/Mentor" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG3"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/PA" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG4"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/PALead" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG5"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/MM" />
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sign_up_two_next"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+
+                android:fontFamily="@font/mukta_semibold"
+                android:text="@string/on_boarding_btn_next"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sign_up_two_prev"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="120dp"
+                android:fontFamily="@font/mukta_semibold"
+
+                android:text="@string/on_boarding_btn_prev"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rl_prev_roles_chips"
+                app:strokeColor="@color/mms_pry_2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

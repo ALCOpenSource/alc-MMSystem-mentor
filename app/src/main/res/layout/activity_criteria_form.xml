@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tlbTitle"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/mukta_bold"
+        android:maxLines="1"
+        android:text="Google Africa Scholarship Program"
+        android:textAlignment="center"
+        android:textColor="@color/mms_black_2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlbTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mukta_regular"
+                android:text="@string/leadership_skills"
+                android:textColor="@color/mms_black_5"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Program Assistant">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="@string/link_to_project"
+                android:textColor="@color/mms_black_5"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Project 1 URL">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Project 2 URL">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="@string/past_experience"
+                android:textColor="@color/mms_black_5"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+
+
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/mms_pry_2"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:buttonTint="@color/mms_pry_2"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/mukta_regular"
+                android:text="@string/recommendation_letter"
+                android:textColor="@color/mms_black_5"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_background_stroke"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="recommendation 1.pdf"
+                        android:textColor="@color/mms_black_3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Choose"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+
+
+                        android:layout_marginStart="25dp"
+
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_remove_circle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="recommendation 1.pdf"
+                        android:textColor="@color/mms_black_3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/mukta_regular"
+                        android:text="Choose"
+                        android:textColor="@color/mms_pry_2"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/ic_remove_circle" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Select Previous Held Roles." />
+
+            <RelativeLayout
+                android:id="@+id/rl_prev_roles_chips"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+
+                android:background="@drawable/bg_chips_rectangle"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/tvPrevRoles"
+                app:layout_constraintStart_toStartOf="@+id/tvPrevRoles"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrevRoles">
+
+
+                <com.google.android.material.chip.ChipGroup
+
+                    android:id="@+id/chipGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    app:singleLine="false">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG1"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/Learner" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG2"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/Mentor" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG3"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/PA" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG4"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/PALead" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipG5"
+                        style="@style/Colors_Widget.MaterialComponents.Chip.Filter2"
+                        android:text="@string/MM" />
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_criteria_submit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:layout_marginTop="30dp"
+
+                android:layout_marginBottom="120dp"
+
+
+                android:fontFamily="@font/mukta_semibold"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
