@@ -81,8 +81,7 @@ To use and contribute to the project, do the following:
 
 ## Design
 - The design can be find [here](https://www.figma.com/file/JNZKj3lachPypSOMBOhC1e/MMS-ALC-Mobile-Project?node-id=0%3A1)
-- Find the Prototype [here](https://www.figma.com/file/bUlIQe3tOUH14n6aOUeAsF/mentor-prototype?node-id=0%3A1&t=gSJrcVE00ehsLMtU-1)
-- Work on your Team assigned task eg. Team 1, Team 2 etc.
+-   Find the Prototype [here](https://www.figma.com/file/bUlIQe3tOUH14n6aOUeAsF/mentor-prototype?node-id=0%3A1&t=gSJrcVE00ehsLMtU-1)- Work on your Team assigned task eg. Team 1, Team 2 etc.
 - NOTE: Stickly adhere to the style guide on the design, buttons, texts etc.
 
 # Creating issue for your Teams
