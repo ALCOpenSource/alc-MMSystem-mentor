@@ -7,13 +7,31 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.TaskListItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
 import com.peculiaruc.alc_mmsystem_mentor.domain.TaskItem
 
+/**
+ * Tasks adapter
+ *
+ * @property taskList
+ * @property listener
+ * @constructor Create empty Tasks adapter
+ */
 class TasksAdapter(
     private val taskList: List<TaskItem>,
     private val listener : OnTaskClickListener
 ) : RecyclerView.Adapter<TasksAdapter.TaskViewHolder>()  {
 
 
+    /**
+     * Task view holder
+     *
+     * @property binding
+     * @constructor Create empty Task view holder
+     */
     inner class TaskViewHolder(val binding : TaskListItemBinding) : RecyclerView.ViewHolder(binding.root){
+        /**
+         * Bind item
+         *
+         * @param taskItem
+         */
         fun bindItem(taskItem: TaskItem){
             binding.tvTaskTitle.text = taskItem.title
             binding.tvTaskProgress.text = taskItem.progress

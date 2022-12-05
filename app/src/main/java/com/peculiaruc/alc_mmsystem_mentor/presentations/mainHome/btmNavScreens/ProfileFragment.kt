@@ -14,6 +14,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.Profil
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
+/**
+ * Profile fragment
+ *
+ * @constructor Create empty Profile fragment
+ */
 class ProfileFragment : Fragment() {
     private lateinit var _binding: BtmProfileFragmentLayoutBinding
     private var tabTitles = arrayListOf("About", "Programs", "Tasks", "Reports", " Certificates")

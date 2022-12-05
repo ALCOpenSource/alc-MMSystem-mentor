@@ -22,6 +22,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmControl
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.showToast
 
 
+/**
+ * Edit profile fragment
+ *
+ * @constructor Create empty Edit profile fragment
+ */
 class EditProfileFragment : Fragment() {
     private var _binding: EditProfileFragmentLayoutBinding? = null
     private val binding

@@ -16,6 +16,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
+/**
+ * Mentor certs fragment
+ *
+ * @constructor Create empty Mentor certs fragment
+ */
 class MentorCertsFragment : Fragment(), CertificatesAdapter.OnClickListener {
     private var _binding: MentorCertsFragmentLayoutBinding? = null
     private val binding

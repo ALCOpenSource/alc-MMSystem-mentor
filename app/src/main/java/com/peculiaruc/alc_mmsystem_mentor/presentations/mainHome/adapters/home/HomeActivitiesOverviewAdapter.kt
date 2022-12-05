@@ -7,8 +7,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmHomeActivityOverviewListItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.ActivityOverview
 
+/**
+ * Home activities overview adapter
+ *
+ * @constructor Create empty Home activities overview adapter
+ */
 class HomeActivitiesOverviewAdapter {
 
+
+    /**
+     * Adapter
+     *
+     * @property onItemClick
+     * @constructor Create empty Adapter
+     */
     class Adapter(private val onItemClick: (ActivityOverview) -> Unit) :
         RecyclerView.Adapter<ViewHolder>() {
 
@@ -29,6 +41,11 @@ class HomeActivitiesOverviewAdapter {
 
         override fun getItemCount(): Int = overview.size
 
+        /**
+         * Add
+         *
+         * @param _navItem
+         */
         fun add(_navItem: MutableList<ActivityOverview>) {
             androidx.recyclerview.widget.DiffUtil.calculateDiff(
                 DiffUtil(_navItem, overview),
@@ -40,6 +57,13 @@ class HomeActivitiesOverviewAdapter {
 
     }
 
+    /**
+     * Diff util
+     *
+     * @property _new
+     * @property _old
+     * @constructor Create empty Diff util
+     */
     internal class DiffUtil(
         private val _new: MutableList<ActivityOverview>,
         private val _old: MutableList<ActivityOverview>
@@ -56,9 +80,23 @@ class HomeActivitiesOverviewAdapter {
 
     }
 
+    /**
+     * View holder
+     *
+     * @property binding
+     * @constructor Create empty View holder
+     */
     class ViewHolder(private val binding: BtmHomeActivityOverviewListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        /**
+         * Bind
+         *
+         * @param _overview
+         * @param onItemClick
+         * @receiver
+         * @return
+         */
         fun bind(
             _overview: ActivityOverview,
             onItemClick: (ActivityOverview) -> Unit

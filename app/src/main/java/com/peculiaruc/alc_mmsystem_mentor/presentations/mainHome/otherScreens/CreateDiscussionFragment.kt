@@ -10,7 +10,11 @@ import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentCreateDiscussionBinding
 import com.peculiaruc.alc_mmsystem_mentor.databinding.SettingsFragmentLayoutBinding
 
-
+/**
+ * Create discussion fragment
+ *
+ * @constructor Create empty Create discussion fragment
+ */
 class CreateDiscussionFragment : Fragment() {
     private var _binding: FragmentCreateDiscussionBinding? = null
     private val binding

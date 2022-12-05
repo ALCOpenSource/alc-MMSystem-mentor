@@ -7,8 +7,22 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 
+
+/**
+ * Documents recycler adapter
+ *
+ * @property items
+ * @constructor Create empty Documents recycler adapter
+ */
 class DocumentsRecyclerAdapter(private val items: ArrayList<String>)  : RecyclerView.Adapter<DocumentsRecyclerAdapter.ViewHolder>() {
 
+    /**
+     * Documents Adapter View holder
+     *
+     * @constructor
+     *
+     * @param itemView
+     */
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val documentTittleTv : TextView =  itemView.findViewById(R.id.tvDocTitle)
     }

@@ -16,6 +16,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
+/**
+ * Mentor tasks fragment
+ *
+ * @constructor Create empty Mentor tasks fragment
+ */
 class MentorTasksFragment : Fragment(), TasksAdapter.OnTaskClickListener {
     private var _binding: MentorTasksFragmentLayoutBinding? = null
     private val binding

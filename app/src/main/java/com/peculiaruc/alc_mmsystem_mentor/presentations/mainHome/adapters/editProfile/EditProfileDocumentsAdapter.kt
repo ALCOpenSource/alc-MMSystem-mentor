@@ -8,9 +8,21 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.EditProfileDocsListItemLayoutBinding
 
+
+/**
+ * Edit profile documents adapter
+ *
+ * @constructor Create empty Edit profile documents adapter
+ */
 object EditProfileDocumentsAdapter {
 
-
+    /**
+     * Adapter
+     *
+     * @property onSelect
+     * @property onDelete
+     * @constructor Create empty Adapter
+     */
     class Adapter(private val onSelect: (String) -> Unit, private val onDelete: (String) -> Unit) :
         RecyclerView.Adapter<ViewHolder>() {
 
@@ -60,9 +72,23 @@ object EditProfileDocumentsAdapter {
         }
     }
 
+    /**
+     * View holder
+     *
+     * @property binding
+     * @constructor Create empty View holder
+     */
     class ViewHolder(private val binding: EditProfileDocsListItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        /**
+         * Bind -> Contents to views
+         * @param item
+         * @param onSelect
+         * @param onDelete
+         * @receiver
+         * @receiver
+         */
         fun bind(item: String, onSelect: (String) -> Unit, onDelete: (String) -> Unit) {
 
             binding.editProfileDocLabel.text = item

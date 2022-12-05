@@ -12,6 +12,11 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchFragmentLayoutBin
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.BtmSearchFragmentListAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 
+/**
+ * Search fragment
+ *
+ * @constructor Create empty Search fragment
+ */
 class SearchFragment : Fragment(), View.OnClickListener {
     private var _binding: BtmSearchFragmentLayoutBinding? = null
     private val binding

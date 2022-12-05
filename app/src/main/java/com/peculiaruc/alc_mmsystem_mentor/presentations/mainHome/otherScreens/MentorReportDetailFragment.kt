@@ -13,6 +13,11 @@ import com.peculiaruc.alc_mmsystem_mentor.components.ShareDialog
 import com.peculiaruc.alc_mmsystem_mentor.databinding.DownloadCustomDialogBinding
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MentorReportDetailFragmentLayoutBinding
 
+/**
+ * Mentor report detail fragment
+ *
+ * @constructor Create empty Mentor report detail fragment
+ */
 class MentorReportDetailFragment : Fragment() {
     private var _binding: MentorReportDetailFragmentLayoutBinding? = null
     private val binding

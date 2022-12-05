@@ -1,5 +1,12 @@
 package com.peculiaruc.alc_mmsystem_mentor.utils
 
+/**
+ * Search type
+ *
+ * @constructor
+ *
+ * @param _readableValue
+ */
 @SearchTypes
 enum class SearchType(_readableValue: String) {
     All("All"),
@@ -11,6 +18,13 @@ enum class SearchType(_readableValue: String) {
     Programs("Programs")
 }
 
+
+/**
+ * Event categories
+ *
+ * @property _readableValue
+ * @constructor Create empty Event categories
+ */
 enum class EventCategories(val _readableValue: String) {
     Certificates("Certificates"),
     MentorManagers("Mentor Managers"),

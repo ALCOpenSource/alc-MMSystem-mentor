@@ -5,6 +5,11 @@ import androidx.lifecycle.asLiveData
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
+/**
+ * Main Navigation Drawer ViewModel
+ * Maintains the state of drawer across different views
+ * @constructor Create empty Main Drawer ViewModel
+ */
 class MainDrawerVM : ViewModel() {
 
     private val _drawerState: MutableStateFlow<DrawerRequestState> =

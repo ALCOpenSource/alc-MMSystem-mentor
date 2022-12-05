@@ -7,6 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmMessagesFragmentLayoutBinding
 
+/**
+ * Messages fragment
+ *
+ * @constructor Create empty Messages fragment
+ */
 class MessagesFragment : Fragment() {
     private var _binding: BtmMessagesFragmentLayoutBinding? = null
     private val binding

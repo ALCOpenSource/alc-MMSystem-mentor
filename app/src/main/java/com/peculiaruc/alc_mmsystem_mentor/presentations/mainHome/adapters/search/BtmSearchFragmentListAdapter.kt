@@ -18,6 +18,14 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchTaskAssignedListI
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchTypes
 
+/**
+ * Btm search fragment list adapter
+ *
+ * @property onItemClick
+ * @constructor
+ *
+ * @param context
+ */
 class BtmSearchFragmentListAdapter(context: Context, val onItemClick: (SearchItem?) -> Unit) :
     ArrayAdapter<SearchItem>(context, 0) {
     companion object {
@@ -65,6 +73,12 @@ class BtmSearchFragmentListAdapter(context: Context, val onItemClick: (SearchIte
         }
     }
 
+    /**
+     * Report list view holder
+     *
+     * @property binding
+     * @constructor Create empty Report list view holder
+     */
     internal class ReportListViewHolder(private val binding: BtmSearchReportListItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(_searchItem: SearchItem?, onItemClick: (SearchItem?) -> Unit): View {

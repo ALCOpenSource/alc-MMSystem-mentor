@@ -16,6 +16,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
+/**
+ * Mentor reports fragment
+ *
+ * @constructor Create empty Mentor reports fragment
+ */
 class MentorReportsFragment : Fragment(), ReportsAdapter.OnClickListener {
     private var _binding: MentorReportsFragmentLayoutBinding? = null
     private val binding

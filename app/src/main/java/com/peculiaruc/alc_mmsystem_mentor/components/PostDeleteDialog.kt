@@ -11,6 +11,11 @@ import androidx.fragment.app.DialogFragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.DownloadCustomDialogBinding
 import com.peculiaruc.alc_mmsystem_mentor.databinding.PostDeleteDialogBinding
 
+/**
+ * Post delete dialog
+ *
+ * @constructor Create empty Post delete dialog
+ */
 class PostDeleteDialog : DialogFragment() {
 
     private lateinit var binding: PostDeleteDialogBinding

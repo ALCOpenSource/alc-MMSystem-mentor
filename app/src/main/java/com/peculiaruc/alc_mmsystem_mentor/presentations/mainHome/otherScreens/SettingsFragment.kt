@@ -7,6 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.SettingsFragmentLayoutBinding
 
+/**
+ * Settings fragment
+ *
+ * @constructor Create empty Settings fragment
+ */
 class SettingsFragment : Fragment() {
     private var _binding: SettingsFragmentLayoutBinding? = null
     private val binding

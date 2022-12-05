@@ -7,12 +7,25 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.DiscussionsListItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.domain.DiscussionItem
 import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
 
+/**
+ * Discussions adapter
+ *
+ * @property discussionList
+ * @property listener
+ * @property commentListener
+ * @constructor Create empty Discussions adapter
+ */
 class DiscussionsAdapter(
     private val discussionList: List<DiscussionItem>,
     private val listener: OnDiscussionsClickListener,
     private val commentListener : OnCommentDiscussionsClickListener
 ) : RecyclerView.Adapter<DiscussionsAdapter.DiscussionsViewHolder>() {
-
+    /**
+     * Discussions view holder
+     *
+     * @property binding
+     * @constructor Create empty Discussions view holder
+     */
     inner class DiscussionsViewHolder(val binding: DiscussionsListItemBinding) : RecyclerView.ViewHolder(binding.root){
 
         fun bindItem(discussionItem: DiscussionItem){

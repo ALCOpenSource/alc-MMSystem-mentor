@@ -7,13 +7,29 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.MentorProgramsFragmentLayo
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ProgramsListItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
 
+/**
+ * Programs adapter
+ *
+ * @property programsList
+ * @property listener
+ * @constructor Create empty Programs adapter
+ */
 class ProgramsAdapter(
     private val programsList : List<ProgramItem>,
     private val listener: OnClickListener
 ) : RecyclerView.Adapter<ProgramsAdapter.ProgramsViewHolder>()  {
-
+    /**
+     * Programs view holder
+     *
+     * @property binding
+     * @constructor Create empty Programs view holder
+     */
     inner class ProgramsViewHolder(val binding: ProgramsListItemBinding) : RecyclerView.ViewHolder(binding.root){
-
+        /**
+         * Bind item
+         *
+         * @param programItem
+         */
         fun bindItem(programItem: ProgramItem){
             binding.tvProgramTitle.text = programItem.title
             binding.tvProgramDate.text = programItem.date

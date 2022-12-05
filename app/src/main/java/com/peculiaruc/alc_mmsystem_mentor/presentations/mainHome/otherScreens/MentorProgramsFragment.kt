@@ -15,6 +15,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
+/**
+ * Mentor programs fragment
+ *
+ * @constructor Create empty Mentor programs fragment
+ */
 class MentorProgramsFragment : Fragment(), ProgramsAdapter.OnClickListener {
 
 

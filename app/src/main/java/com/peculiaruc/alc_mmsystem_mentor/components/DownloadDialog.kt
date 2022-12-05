@@ -10,6 +10,11 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.DownloadCustomDialogBinding
 
+/**
+ * Download dialog
+ *
+ * @constructor Create empty Download dialog
+ */
 class DownloadDialog(
 ) : DialogFragment() {
 
