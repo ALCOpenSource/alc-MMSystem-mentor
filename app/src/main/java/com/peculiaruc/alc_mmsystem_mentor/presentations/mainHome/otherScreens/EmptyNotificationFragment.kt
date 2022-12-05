@@ -16,6 +16,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
+/**
+ * Empty notification fragment
+ *
+ * @constructor Create empty Empty notification fragment
+ */
 class EmptyNotificationFragment : Fragment() {
 
 

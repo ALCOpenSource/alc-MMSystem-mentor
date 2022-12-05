@@ -14,6 +14,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.Commen
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.ProgramsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 
+/**
+ * Comments fragment
+ *
+ * @constructor Create empty Comments fragment
+ */
 class CommentsFragment : Fragment() {
     private var _binding: FragmentCommentsBinding? = null
     private val binding

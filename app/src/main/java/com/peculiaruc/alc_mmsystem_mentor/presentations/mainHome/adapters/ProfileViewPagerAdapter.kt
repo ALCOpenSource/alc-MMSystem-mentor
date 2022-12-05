@@ -4,6 +4,13 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.otherScreens.*
 
+/**
+ * Profile view pager adapter
+ *
+ * @constructor
+ *
+ * @param fragment
+ */
 class ProfileViewPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int = 5
 

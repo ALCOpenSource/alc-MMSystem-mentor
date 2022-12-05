@@ -11,6 +11,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MainHomeFragmentDrawerListItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.NavItems
 
+/**
+ * Main home fragment drawer items adapter
+ *
+ * @property onItemClick
+ * @constructor
+ *
+ * @param context
+ */
 class MainHomeFragmentDrawerItemsAdapter(context: Context, val onItemClick: (NavItems?) -> Unit) :
     ArrayAdapter<NavItems>(context, 0) {
 
@@ -28,10 +36,22 @@ class MainHomeFragmentDrawerItemsAdapter(context: Context, val onItemClick: (Nav
         return convertView ?: binding.root
     }
 
-
+    /**
+     * Drawer list view holder
+     *
+     * @property binding
+     * @constructor Create empty Drawer list view holder
+     */
     internal class DrawerListViewHolder(private val binding: MainHomeFragmentDrawerListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        /**
+         * Bind
+         *
+         * @param context
+         * @param _drawerItem
+         * @return
+         */
         fun bind(context: Context, _drawerItem: NavItems?): View {
             _drawerItem?.let { drawerItem ->
                 binding.apply {

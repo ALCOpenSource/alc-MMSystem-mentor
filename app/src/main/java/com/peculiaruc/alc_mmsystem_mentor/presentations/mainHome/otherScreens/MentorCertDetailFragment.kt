@@ -9,6 +9,11 @@ import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.components.CertificateDownloadDialog
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MentorCertDetailFragmentLayoutBinding
 
+/**
+ * Mentor cert detail fragment
+ *
+ * @constructor Create empty Mentor cert detail fragment
+ */
 class MentorCertDetailFragment : Fragment() {
     private var _binding: MentorCertDetailFragmentLayoutBinding? = null
     private val binding

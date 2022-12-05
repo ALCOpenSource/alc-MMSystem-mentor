@@ -10,6 +10,11 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ShareCustomDialogBinding
 
+/**
+ * Share dialog
+ *
+ * @constructor Create empty Share dialog
+ */
 class ShareDialog : DialogFragment() {
 
     private lateinit var binding: ShareCustomDialogBinding

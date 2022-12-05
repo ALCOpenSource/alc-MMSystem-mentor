@@ -8,12 +8,28 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.ProgramsListItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.domain.NotificationItem
 import com.peculiaruc.alc_mmsystem_mentor.domain.ProgramItem
 
+/**
+ * Notifications adapter
+ *
+ * @property notificationsList
+ * @constructor Create empty Notifications adapter
+ */
 class NotificationsAdapter(
     private val notificationsList: List<NotificationItem>
 ) : RecyclerView.Adapter<NotificationsAdapter.NotificationsViewHolder>(){
 
-
+    /**
+     * Notifications view holder
+     *
+     * @property binding
+     * @constructor Create empty Notifications view holder
+     */
     inner class NotificationsViewHolder(val binding: NotificationsListItemBinding)  : RecyclerView.ViewHolder(binding.root){
+        /**
+         * Bind item
+         *
+         * @param notificationItem
+         */
         fun bindItem(notificationItem: NotificationItem){
             binding.tvNotificationsTitle.text = notificationItem.title
             binding.tvNotificationsTime.text = notificationItem.time

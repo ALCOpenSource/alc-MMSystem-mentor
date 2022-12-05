@@ -11,6 +11,11 @@ import androidx.fragment.app.DialogFragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.CertDownloadDialogBinding
 import com.peculiaruc.alc_mmsystem_mentor.databinding.ShareCustomDialogBinding
 
+/**
+ * Certificate download dialog
+ *
+ * @constructor Create empty Certificate download dialog
+ */
 class CertificateDownloadDialog : DialogFragment() {
 
     private lateinit var binding: CertDownloadDialogBinding

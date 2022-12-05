@@ -9,8 +9,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmHomeQuickActionsListItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.NavItems
 
+/**
+ * Home quick actions adapter
+ *
+ * @constructor Create empty Home quick actions adapter
+ */
 class HomeQuickActionsAdapter {
-
+    /**
+     * Adapter
+     *
+     * @property onItemClick
+     * @constructor Create empty Adapter
+     */
     class Adapter(private val onItemClick: (NavItems) -> Unit) :
         RecyclerView.Adapter<ViewHolder>() {
 
@@ -31,6 +41,11 @@ class HomeQuickActionsAdapter {
 
         override fun getItemCount(): Int = quickActions.size
 
+        /**
+         * Add
+         *
+         * @param _navItem
+         */
         fun add(_navItem: MutableList<NavItems>) {
             androidx.recyclerview.widget.DiffUtil.calculateDiff(
                 DiffUtil(_navItem, quickActions),
@@ -42,6 +57,13 @@ class HomeQuickActionsAdapter {
 
     }
 
+    /**
+     * Diff util
+     *
+     * @property _new
+     * @property _old
+     * @constructor Create empty Diff util
+     */
     internal class DiffUtil(
         private val _new: MutableList<NavItems>,
         private val _old: MutableList<NavItems>
@@ -57,9 +79,23 @@ class HomeQuickActionsAdapter {
             _old[oldItemPosition] == _new[newItemPosition]
     }
 
+    /**
+     * View holder
+     *
+     * @property binding
+     * @constructor Create empty View holder
+     */
     class ViewHolder(private val binding: BtmHomeQuickActionsListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-
+        /**
+         * Bind
+         *
+         * @param context
+         * @param _actions
+         * @param onItemClick
+         * @receiver
+         * @return
+         */
         fun bind(context: Context, _actions: NavItems, onItemClick: (NavItems) -> Unit): View {
             binding.apply {
                 itemView.setOnClickListener { onItemClick(_actions) }

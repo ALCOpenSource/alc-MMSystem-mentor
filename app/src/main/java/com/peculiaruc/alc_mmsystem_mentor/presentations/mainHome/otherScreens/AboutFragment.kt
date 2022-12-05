@@ -18,6 +18,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.Navigator
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
 
+/**
+ * About fragment
+ *
+ * @constructor Create empty About fragment
+ */
 class AboutFragment : Fragment() {
 
     private var _binding: FragmentAboutBinding? = null

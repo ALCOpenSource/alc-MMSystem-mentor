@@ -6,12 +6,24 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.CertificateListItemBinding
 import com.peculiaruc.alc_mmsystem_mentor.domain.CertificateItem
 
+/**
+ * Certificates adapter
+ *
+ * @property certificatesList
+ * @property listener
+ * @constructor Create empty Certificates adapter
+ */
 class CertificatesAdapter(
     private val certificatesList : List<CertificateItem>,
     private val listener: OnClickListener
 
 )  : RecyclerView.Adapter<CertificatesAdapter.CertificateViewHolder>()  {
-
+    /**
+     * Certificate view holder
+     *
+     * @property binding
+     * @constructor Create empty Certificate view holder
+     */
     inner class CertificateViewHolder(val binding : CertificateListItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun bindItem(certificateItem: CertificateItem){
             binding.tvCertTitle.text = certificateItem.title
@@ -24,6 +36,11 @@ class CertificatesAdapter(
 
     }
 
+    /**
+     * On click listener
+     *
+     * @constructor Create empty On click listener
+     */
     interface OnClickListener{
         fun onClick(certificateItem: CertificateItem)
     }

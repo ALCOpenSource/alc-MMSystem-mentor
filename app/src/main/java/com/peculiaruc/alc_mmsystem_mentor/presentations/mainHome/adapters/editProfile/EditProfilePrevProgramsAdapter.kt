@@ -8,9 +8,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.EditProfilePrevProgramsListItemLayoutBinding
 
+/**
+ * Edit profile prev programs adapter
+ *
+ * @constructor Create empty Edit profile prev programs adapter
+ */
 object EditProfilePrevProgramsAdapter {
 
-
+    /**
+     * Adapter
+     *
+     * @property onRemove
+     * @constructor Create empty Adapter
+     */
     class Adapter(private val onRemove: (String) -> Unit) :
         RecyclerView.Adapter<ViewHolder>() {
 
@@ -37,12 +47,23 @@ object EditProfilePrevProgramsAdapter {
 
         override fun getItemCount(): Int = recyclingItems.size
 
+        /**
+         * Add -> new items to list of views
+         * @param _newItems
+         */
         fun add(_newItems: MutableList<String>) {
             calculateDiff(DiffUtil(_newItems, recyclingItems)).dispatchUpdatesTo(this)
             recyclingItems.clear()
             recyclingItems.addAll(_newItems)
         }
 
+        /**
+         * Diff util -> finds the difference between old contents and new contents
+         *
+         * @property _new
+         * @property _old
+         * @constructor Create empty Diff util
+         */
         private inner class DiffUtil(private val _new: MutableList<String>, private val _old: MutableList<String>) :
             Callback() {
             override fun getOldListSize(): Int = _old.size
@@ -58,9 +79,22 @@ object EditProfilePrevProgramsAdapter {
 
     }
 
+    /**
+     * View holder
+     *
+     * @property binding
+     * @constructor Create empty View holder
+     */
     class ViewHolder(private val binding: EditProfilePrevProgramsListItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        /**
+         * Bind -> items to views
+         *
+         * @param item
+         * @param onRemove
+         * @receiver
+         */
         fun bind(item: String, onRemove: (String) -> Unit) {
 
             binding.editProfilePrevProgramsInput.text = item

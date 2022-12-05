@@ -19,6 +19,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmBtmCont
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.vms.MainDrawerVM
 
+/**
+ * Main home fragment
+ *
+ * @constructor Create empty Main home fragment
+ */
 class MainHomeFragment : Fragment() {
 
     private var _binding: MainHomeFragmentDrawerLayoutBinding? =

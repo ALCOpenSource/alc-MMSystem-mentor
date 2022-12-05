@@ -8,9 +8,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.databinding.EditProfileChipListItemLayoutBinding
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 
+/**
+ * Edit profile chips adapter
+ *
+ * @constructor Create empty Edit profile chips adapter
+ */
 object EditProfileChipsAdapter {
 
-
+    /**
+     * Adapter
+     *
+     * @property onItemClick
+     * @constructor Create empty Adapter
+     */
     class Adapter(private val onItemClick: (String) -> Unit) : RecyclerView.Adapter<ViewHolder>() {
 
         private val recyclingItems: MutableList<String> = mutableListOf()
@@ -52,6 +62,12 @@ object EditProfileChipsAdapter {
 
     }
 
+    /**
+     * View holder
+     *
+     * @property binding
+     * @constructor Create empty View holder
+     */
     class ViewHolder(private val binding: EditProfileChipListItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
 

@@ -18,6 +18,11 @@ import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.mmController
 
 
+/**
+ * Discussion fragment
+ *
+ * @constructor Create empty Discussion fragment
+ */
 class DiscussionFragment : Fragment(), DiscussionsAdapter.OnDiscussionsClickListener,
     DiscussionsAdapter.OnCommentDiscussionsClickListener {
     private var _binding: FragmentDiscussionBinding? = null

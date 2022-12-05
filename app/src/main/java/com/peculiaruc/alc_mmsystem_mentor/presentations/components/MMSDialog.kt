@@ -10,6 +10,12 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MmsDialogLayoutBinding
 
+/**
+ * Main MMS dialog
+ *
+ * @property context
+ * @constructor Create empty M m s dialog
+ */
 class MMSDialog(private val context: Context) {
 
     var binding: MmsDialogLayoutBinding = MmsDialogLayoutBinding.bind(
@@ -24,6 +30,11 @@ class MMSDialog(private val context: Context) {
         dialog = alertDialog.create()
     }
 
+    /**
+     * Show
+     *
+     * @param dialogProperties
+     */
     fun show(
         dialogProperties: MMSDialogProperties
     ) {
@@ -54,14 +65,29 @@ class MMSDialog(private val context: Context) {
         dialog.show()
     }
 
-    private fun visibleIf(condition: Boolean) = if (condition) View.VISIBLE else View.GONE
 
+    /**
+     * Visible if
+     * Controls if a view is visible or not base on its condition
+     * @param condition
+     * @return Int
+     */
+    private fun visibleIf(condition: Boolean): Int = if (condition) View.VISIBLE else View.GONE
+
+    /**
+     * Hide
+     *
+     */
     fun hide() {
         dialog.dismiss()
     }
 
 }
 
+/**
+ * Main MMS dialog properties
+ * Used to control the functionality MMSDialog
+ */
 class MMSDialogProperties {
     var msg: String? = null
 
@@ -76,17 +102,66 @@ class MMSDialogProperties {
     var posAction: () -> Unit = {}
     var negAction: () -> Unit = {}
 
+    /**
+     * Set msg
+     *
+     * @param msg
+     */
     fun setMsg(msg: String) = apply { this.msg = msg }
+
+    /**
+     * Set illustration
+     *
+     * @param illustration
+     */
     fun setIllustration(@DrawableRes illustration: Int) =
         apply { this.illustration = illustration }
 
+    /**
+     * Set cancelable on touch outside
+     *
+     * @param cancelable
+     */
     fun setCancelableOnTouchOutside(cancelable: Boolean) =
         apply { this.cancelableOnTouchOutside = cancelable }
 
+    /**
+     * Set cancelable
+     *
+     * @param cancelable
+     */
     fun setCancelable(cancelable: Boolean) = apply { this.cancelable = cancelable }
+
+    /**
+     * Set pos enabled
+     *
+     * @param enabled
+     * @param label
+     */
     fun setPosEnabled(enabled: Boolean, label: String) = apply { this.posEnabled = enabled; posLabel = label}
+
+    /**
+     * Set neg enabled
+     *
+     * @param enabled
+     * @param label
+     */
     fun setNegEnabled(enabled: Boolean, label: String) = apply { this.negEnabled = enabled; negLabel = label }
+
+    /**
+     * Set pos action
+     *
+     * @param action
+     * @receiver
+     */
     fun setPosAction(action: () -> Unit) = apply { this.posAction = action }
+
+    /**
+     * Set neg action
+     *
+     * @param action
+     * @receiver
+     */
     fun setNegAction(action: () -> Unit) = apply { this.negAction = action }
 
 

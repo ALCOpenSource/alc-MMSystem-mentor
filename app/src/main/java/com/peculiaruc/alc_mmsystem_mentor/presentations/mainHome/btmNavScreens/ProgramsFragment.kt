@@ -7,6 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmProgramsFragmentLayoutBinding
 
+/**
+ * Programs fragment
+ *
+ * @constructor Create empty Programs fragment
+ */
 class ProgramsFragment : Fragment() {
     private var _binding: BtmProgramsFragmentLayoutBinding? = null
     private val binding

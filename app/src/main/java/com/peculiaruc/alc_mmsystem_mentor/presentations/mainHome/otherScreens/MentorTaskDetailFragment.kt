@@ -9,6 +9,11 @@ import androidx.navigation.fragment.findNavController
 import com.peculiaruc.alc_mmsystem_mentor.databinding.MentorTaskDetailFragmentLayoutBinding
 import com.peculiaruc.alc_mmsystem_mentor.domain.TaskItem
 
+/**
+ * Mentor task detail fragment
+ *
+ * @constructor Create empty Mentor task detail fragment
+ */
 class MentorTaskDetailFragment : Fragment() {
     private var _binding: MentorTaskDetailFragmentLayoutBinding? = null
 

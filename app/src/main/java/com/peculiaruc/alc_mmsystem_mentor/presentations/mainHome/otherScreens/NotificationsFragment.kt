@@ -11,7 +11,11 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentNotificationsBindi
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.NotificationsAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 
-
+/**
+ * Notifications fragment
+ *
+ * @constructor Create empty Notifications fragment
+ */
 class NotificationsFragment : Fragment() {
     private var _binding: FragmentNotificationsBinding? = null
     private val binding

@@ -12,6 +12,11 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.FragmentEditDiscussionBind
 import com.peculiaruc.alc_mmsystem_mentor.databinding.SettingsFragmentLayoutBinding
 
 
+/**
+ * Edit discussion fragment
+ *
+ * @constructor Create empty Edit discussion fragment
+ */
 class EditDiscussionFragment : Fragment() {
     private var _binding: FragmentEditDiscussionBinding? = null
     private val binding

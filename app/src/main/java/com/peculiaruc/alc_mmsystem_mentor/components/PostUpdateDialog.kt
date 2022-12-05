@@ -10,6 +10,11 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.PostSaveDialogBinding
 
+/**
+ * Post update dialog
+ *
+ * @constructor Create empty Post update dialog
+ */
 class PostUpdateDialog : DialogFragment() {
 
     private lateinit var binding: PostSaveDialogBinding
