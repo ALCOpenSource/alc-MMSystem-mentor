@@ -9,6 +9,11 @@ import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategories
 import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategoriesTypes
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
 
+/**
+ * Ui data
+ *
+ * @constructor Create empty Ui data
+ */
 object UiData {
 
     val drawerNavItemLogout = NavItems(R.drawable.ic_logout_bckward, R.string.logout)

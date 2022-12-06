@@ -41,7 +41,17 @@ class ReportsAdapter(
         }
     }
 
+    /**
+     * On click listener
+     *
+     * @constructor Create empty On click listener
+     */
     interface OnClickListener{
+        /**
+         * On click
+         *
+         * @param reportItem
+         */
         fun onClick(reportItem: ReportItem)
     }
 

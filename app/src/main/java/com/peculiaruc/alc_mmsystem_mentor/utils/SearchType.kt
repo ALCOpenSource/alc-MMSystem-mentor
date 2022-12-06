@@ -35,12 +35,21 @@ enum class EventCategories(val _readableValue: String) {
 }
 
 
-
+/**
+ * Search types
+ *
+ * @constructor Create empty Search types
+ */
 @Target(
     AnnotationTarget.FIELD, AnnotationTarget.CLASS
 )
 annotation class SearchTypes
 
+/**
+ * Event categories types
+ *
+ * @constructor Create empty Event categories types
+ */
 @Target(
     AnnotationTarget.FIELD, AnnotationTarget.CLASS
 )

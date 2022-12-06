@@ -22,6 +22,11 @@ class CommentsAdapter(
      * @constructor Create empty Comment view holder
      */
     inner class CommentViewHolder(val binding: CommentsListItemBinding) : RecyclerView.ViewHolder(binding.root){
+        /**
+         * Bind item
+         *
+         * @param commentItem
+         */
         fun bindItem(commentItem: CommentItem){
             binding.tvCommentOwner.text = commentItem.owner
             binding.tvCommentDescription.text =commentItem.description

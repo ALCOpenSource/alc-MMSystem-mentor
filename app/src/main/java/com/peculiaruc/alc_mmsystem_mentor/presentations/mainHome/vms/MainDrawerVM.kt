@@ -16,11 +16,20 @@ class MainDrawerVM : ViewModel() {
         MutableStateFlow(DrawerRequestState.Close)
     val drawerState = _drawerState.asStateFlow().asLiveData()
 
-
+    /**
+     * Change drawer state
+     *
+     * @param newDrawerState
+     */
     fun changeDrawerState(newDrawerState: DrawerRequestState) {
         _drawerState.tryEmit(newDrawerState)
     }
 
+    /**
+     * Drawer request state
+     *
+     * @constructor Create empty Drawer request state
+     */
     enum class DrawerRequestState {
         Open, Close
     }

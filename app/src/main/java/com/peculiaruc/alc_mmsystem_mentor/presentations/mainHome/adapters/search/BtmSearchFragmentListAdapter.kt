@@ -171,6 +171,17 @@ class BtmSearchFragmentListAdapter(context: Context, val onItemClick: (SearchIte
     }
 }
 
+/**
+ * Search item
+ *
+ * @property img
+ * @property title
+ * @property taskDueDate
+ * @property reportAuthor
+ * @property reportFinishedDate
+ * @property sourceLocation
+ * @constructor Create empty Search item
+ */
 data class SearchItem(
     @DrawableRes
     val img: Int? = null,

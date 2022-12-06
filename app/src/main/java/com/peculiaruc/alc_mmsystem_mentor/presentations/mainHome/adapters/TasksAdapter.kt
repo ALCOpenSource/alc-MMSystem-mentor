@@ -42,7 +42,17 @@ class TasksAdapter(
         }
     }
 
+    /**
+     * On task click listener
+     *
+     * @constructor Create empty On task click listener
+     */
     interface OnTaskClickListener{
+        /**
+         * On click
+         *
+         * @param taskItem
+         */
         fun onClick(taskItem: TaskItem)
 
     }
