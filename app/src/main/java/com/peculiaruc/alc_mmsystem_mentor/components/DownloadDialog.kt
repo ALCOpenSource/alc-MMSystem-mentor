@@ -15,8 +15,7 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.DownloadCustomDialogBindin
  *
  * @constructor Create empty Download dialog
  */
-class DownloadDialog(
-) : DialogFragment() {
+class DownloadDialog: DialogFragment() {
 
     private lateinit var binding: DownloadCustomDialogBinding
 

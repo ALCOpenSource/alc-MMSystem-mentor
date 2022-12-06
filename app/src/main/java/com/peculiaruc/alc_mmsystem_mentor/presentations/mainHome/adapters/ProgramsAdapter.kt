@@ -56,7 +56,17 @@ class ProgramsAdapter(
         return programsList.size
     }
 
+    /**
+     * On click listener
+     *
+     * @constructor Create empty On click listener
+     */
     interface OnClickListener{
+        /**
+         * On click
+         *
+         * @param programItem
+         */
         fun onClick(programItem: ProgramItem)
     }
 

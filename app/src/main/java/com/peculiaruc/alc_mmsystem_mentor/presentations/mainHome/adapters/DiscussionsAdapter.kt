@@ -28,6 +28,11 @@ class DiscussionsAdapter(
      */
     inner class DiscussionsViewHolder(val binding: DiscussionsListItemBinding) : RecyclerView.ViewHolder(binding.root){
 
+        /**
+         * Bind item
+         *
+         * @param discussionItem
+         */
         fun bindItem(discussionItem: DiscussionItem){
             binding.tvDiscussionTime.text = discussionItem.time
             binding.tvDiscussionTitle.text = discussionItem.title
@@ -42,11 +47,31 @@ class DiscussionsAdapter(
         }
     }
 
+    /**
+     * On discussions click listener
+     *
+     * @constructor Create empty On discussions click listener
+     */
     interface OnDiscussionsClickListener{
+        /**
+         * On click
+         *
+         * @param discussionItem
+         */
         fun onClick(discussionItem: DiscussionItem)
     }
 
+    /**
+     * On comment discussions click listener
+     *
+     * @constructor Create empty On comment discussions click listener
+     */
     interface OnCommentDiscussionsClickListener{
+        /**
+         * On comment click
+         *
+         * @param discussionItem
+         */
         fun onCommentClick(discussionItem: DiscussionItem)
     }
 

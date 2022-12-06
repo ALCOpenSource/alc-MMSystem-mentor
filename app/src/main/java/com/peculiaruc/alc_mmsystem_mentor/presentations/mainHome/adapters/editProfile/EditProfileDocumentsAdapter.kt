@@ -49,6 +49,11 @@ object EditProfileDocumentsAdapter {
 
         override fun getItemCount(): Int = recyclingItems.size
 
+        /**
+         * Add
+         *
+         * @param _newItems
+         */
         fun add(_newItems: MutableList<String>) {
             calculateDiff(DiffUtil(_newItems, recyclingItems)).dispatchUpdatesTo(this)
             recyclingItems.clear()

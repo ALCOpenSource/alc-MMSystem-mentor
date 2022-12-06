@@ -25,6 +25,11 @@ class CertificatesAdapter(
      * @constructor Create empty Certificate view holder
      */
     inner class CertificateViewHolder(val binding : CertificateListItemBinding) : RecyclerView.ViewHolder(binding.root){
+        /**
+         * Bind item
+         *
+         * @param certificateItem
+         */
         fun bindItem(certificateItem: CertificateItem){
             binding.tvCertTitle.text = certificateItem.title
             binding.ivCertLogo.setImageResource(certificateItem.certImage)
@@ -42,6 +47,11 @@ class CertificatesAdapter(
      * @constructor Create empty On click listener
      */
     interface OnClickListener{
+        /**
+         * On click
+         *
+         * @param certificateItem
+         */
         fun onClick(certificateItem: CertificateItem)
     }
 

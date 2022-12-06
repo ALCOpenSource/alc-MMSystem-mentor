@@ -41,6 +41,11 @@ object EditProfileChipsAdapter {
 
         override fun getItemCount(): Int = recyclingItems.size
 
+        /**
+         * Add
+         *
+         * @param _newItems
+         */
         fun add(_newItems: MutableList<String>) {
             calculateDiff(DiffUtil(_newItems, recyclingItems)).dispatchUpdatesTo(this)
             recyclingItems.clear()
@@ -71,6 +76,13 @@ object EditProfileChipsAdapter {
     class ViewHolder(private val binding: EditProfileChipListItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
+        /**
+         * Bind
+         *
+         * @param item
+         * @param onItemClick
+         * @receiver
+         */
         fun bind(item: String, onItemClick: (String) -> Unit) {
 
             binding.root.setOnClickListener { onItemClick(item) }
