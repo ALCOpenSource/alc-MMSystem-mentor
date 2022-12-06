@@ -48,12 +48,12 @@ object UiData {
     val searchItems = mutableListOf(
         SearchItem(
             R.drawable.ic_launcher_background,
-            title = "Google Africa Scholarship",
+            title = "Google Africa Scholarship 2022",
             sourceLocation = SearchType.Programs,
         ),
         SearchItem(
             R.drawable.ic_launcher_background,
-            title = "Google Africa Scholarship",
+            title = "Google Africa Scholarship 2021",
             sourceLocation = SearchType.Programs,
         ),
         SearchItem(
@@ -104,8 +104,8 @@ object UiData {
     )
 
     val availablePreviewPrograms = mutableListOf(
-        "Input previous held programs",
-        "Input previous held programs",
+        "Input previous held programs 1",
+        "Input previous held programs 2",
     )
 
     val programItems = listOf(
@@ -129,7 +129,7 @@ object UiData {
             id = 3,
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
 
-            title = "GADS Program 2022",
+            title = "GADS Program 2021",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
@@ -138,7 +138,7 @@ object UiData {
         ProgramItem(
             id = 4,
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
-            title = "GADS Program 2022",
+            title = "GADS Program 2020",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
@@ -147,7 +147,7 @@ object UiData {
         ProgramItem(
             id = 5,
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
-            title = "GADS Program 2022",
+            title = "GADS Program 2019",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_done_all_24,
@@ -156,7 +156,7 @@ object UiData {
             id = 6,
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
 
-            title = "GADS Program 2022",
+            title = "GADS Program 2018",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
@@ -165,7 +165,7 @@ object UiData {
             id = 7,
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
 
-            title = "GADS Program 2022",
+            title = "GADS Program 2025",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_done_all_24,
@@ -174,7 +174,7 @@ object UiData {
             id = 8,
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
 
-            title = "GADS Program 2022",
+            title = "GADS Program 2024",
             date = "Dec 12 2022",
             programImage = R.drawable.google_logo,
             onDoneDrawable = R.drawable.ic_baseline_check_24,
@@ -185,7 +185,7 @@ object UiData {
         TaskItem(
             id = 1,
             title = "Room library write article write",
-            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            description = "Fixed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             progress = "Assigned",
             onComplete = true,
             time = "2 days ago from now"
@@ -193,7 +193,7 @@ object UiData {
         TaskItem(
             id = 2,
             title = "Debugging in Vs Code",
-            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            description = "Current Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             progress = "Completed",
             onStart = false,
             time = "2 days ago from now"
@@ -201,7 +201,7 @@ object UiData {
         TaskItem(
             id = 3,
             title = "Room library write article write",
-            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            description = "Pre Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             progress = "Assigned",
             onComplete = true,
             time = "3 days ago from now"
@@ -209,7 +209,7 @@ object UiData {
         TaskItem(
             id = 4,
             title = "Room library write article write",
-            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            description = "Post Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             progress = "In progress",
             onComplete = true,
             time = "3 days ago from now"
@@ -217,7 +217,7 @@ object UiData {
         TaskItem(
             id = 5,
             title = "Debugging in Vs Code",
-            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            description = "Old Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             progress = "Assigned",
             onComplete = true,
             time = "2 days ago from now"
@@ -225,7 +225,7 @@ object UiData {
         TaskItem(
             id = 6,
             title = "Debugging in Vs Code",
-            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            description = "Ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             progress = "Completed",
             onStart = true,
             time = "2 days ago from now"
@@ -233,7 +233,7 @@ object UiData {
         TaskItem(
             id = 7,
             title = "Debugging in Vs Code",
-            description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
+            description = "New Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
             progress = "Completed",
             onStart = true,
             time = "2 days ago from now"
@@ -243,7 +243,7 @@ object UiData {
     val reportsList = listOf(
         ReportItem(
             id = 1,
-            title = "Google Africa Scholarship Report",
+            title = "Google Africa Scholarship Report 1",
             owner = "Ibrahim Kabir",
             time = "19th-25th Oct 2022",
             achievements = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",
@@ -252,7 +252,7 @@ object UiData {
         ),
         ReportItem(
             id = 2,
-            title = "Google Africa Scholarship Report",
+            title = "Google Africa Scholarship Report 2",
             owner = "Ibrahim Kabir",
             time = "19th-25th Oct 2022",
             achievements = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus",

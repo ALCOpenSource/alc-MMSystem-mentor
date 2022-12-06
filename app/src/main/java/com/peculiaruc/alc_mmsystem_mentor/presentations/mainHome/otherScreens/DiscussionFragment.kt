@@ -53,9 +53,7 @@ class DiscussionFragment : Fragment(), DiscussionsAdapter.OnDiscussionsClickList
             adapter = DiscussionsAdapter(
                 UiData.discussionList,
                 object : DiscussionsAdapter.OnDiscussionsClickListener {
-                    override fun onClick(discussionItem: DiscussionItem) {
-                        TODO("Not yet implemented")
-                    }
+                    override fun onClick(discussionItem: DiscussionItem) = Unit
                 },
                 object : DiscussionsAdapter.OnCommentDiscussionsClickListener {
                     override fun onCommentClick(discussionItem: DiscussionItem) {

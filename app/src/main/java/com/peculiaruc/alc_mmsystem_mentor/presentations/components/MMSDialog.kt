@@ -51,12 +51,12 @@ class MMSDialog(private val context: Context) {
                 )
             }
             mmsDialogPosBtn.apply {
-                visibility = viewVisibleIf(dialogProperties.posEnabled)
+                visibility = showViewIf(dialogProperties.posEnabled)
                 setOnClickListener { dialogProperties.posAction() }
                 text = dialogProperties.posLabel
             }
             mmsDialogNegBtn.apply {
-                visibility = viewVisibleIf(dialogProperties.negEnabled)
+                visibility = showViewIf(dialogProperties.negEnabled)
                 setOnClickListener { dialogProperties.negAction() }
                 text = dialogProperties.negLabel
             }
@@ -72,7 +72,7 @@ class MMSDialog(private val context: Context) {
      * @param condition
      * @return Int
      */
-    private fun viewVisibleIf(condition: Boolean): Int = if (condition) View.VISIBLE else View.GONE
+    private fun showViewIf(condition: Boolean): Int = if (condition) View.VISIBLE else View.GONE
 
     /**
      * Hide
