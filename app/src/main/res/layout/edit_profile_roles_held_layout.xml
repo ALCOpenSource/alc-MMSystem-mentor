@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/mms_prev_roles_held"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textStyle="bold" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:flow_wrapMode="chain2"
+                app:flow_horizontalAlign="start"
+                app:flow_horizontalGap="16dp"
+                app:flow_verticalGap="16dp"
+                app:constraint_referenced_ids="learner,mentor,prog_assistant,prog_assistant_lead,ment_manager"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/MMChip"
+                android:text="Learner"
+                android:layout_width="wrap_content"
+                android:id="@+id/learner"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/MMChip"
+                android:text="Mentor"
+                android:layout_width="wrap_content"
+                android:id="@+id/mentor"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/MMChip"
+                android:text="Program Assistant"
+                android:layout_width="wrap_content"
+                android:id="@+id/prog_assistant"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/MMChip"
+                android:text="Program Assistant Lead"
+                android:layout_width="wrap_content"
+                android:id="@+id/prog_assistant_lead"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/MMChip"
+                android:text="Mentor Manager"
+                android:layout_width="wrap_content"
+                android:id="@+id/ment_manager"
+                android:layout_height="wrap_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

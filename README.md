@@ -61,7 +61,7 @@ and your certification will be on them. You can read about them [here](https://d
 - Dagger Hilt
 - Retrofit
 - ViewModel
-- LiveData
+- LiveData 
 - Coroutines
 - ViewBinding
 - Navigation Components

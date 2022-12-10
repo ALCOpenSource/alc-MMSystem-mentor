@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="label,edit_profile_social_website,edit_profile_social_github,edit_profile_social_insta,edit_profile_social_linkedin,edit_profile_social_twitter"
+        app:flow_verticalGap="10dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/mms_social"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_profile_social_website"
+        style="@style/MMEditTextLayout"
+        android:hint="@string/website"
+        app:startIconDrawable="@drawable/ic_globe">
+
+        <com.google.android.material.textfield.TextInputEditText style="@style/MMEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_profile_social_github"
+        style="@style/MMEditTextLayout"
+        android:hint="@string/github"
+        app:startIconDrawable="@drawable/git_icon">
+
+        <com.google.android.material.textfield.TextInputEditText style="@style/MMEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_profile_social_insta"
+        style="@style/MMEditTextLayout"
+        android:hint="@string/instagram"
+        app:startIconDrawable="@drawable/insta_icon">
+
+        <com.google.android.material.textfield.TextInputEditText style="@style/MMEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_profile_social_linkedin"
+        style="@style/MMEditTextLayout"
+        android:hint="@string/linkedin"
+        app:startIconDrawable="@drawable/linkedin_icon">
+
+        <com.google.android.material.textfield.TextInputEditText style="@style/MMEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_profile_social_twitter"
+        style="@style/MMEditTextLayout"
+        android:hint="@string/twitter"
+        app:startIconDrawable="@drawable/ic_twitter">
+
+        <com.google.android.material.textfield.TextInputEditText style="@style/MMEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

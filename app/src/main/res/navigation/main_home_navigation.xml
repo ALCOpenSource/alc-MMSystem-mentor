@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainHomeFragmentNavigation"
+    app:startDestination="@id/homeFragmentNavigation">
+
+        <fragment
+            android:id="@+id/homeFragmentNavigation"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.btmNavScreens.HomeFragment"
+            android:label="home_fragment_layout"
+            tools:layout="@layout/btm_home_fragment_layout" />
+        <fragment
+            android:id="@+id/messagesFragmentNavigation"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.btmNavScreens.MessagesFragment"
+            android:label="messages_fragment_layout"
+            tools:layout="@layout/btm_messages_fragment_layout" />
+        <fragment
+            android:id="@+id/programsFragmentNavigation"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.btmNavScreens.ProgramsFragment"
+            android:label="programs_fragment_layout"
+            tools:layout="@layout/btm_programs_fragment_layout" />
+        <fragment
+            android:id="@+id/profileFragmentNavigation"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.btmNavScreens.ProfileFragment"
+            android:label="profile_fragment_layout"
+            tools:layout="@layout/btm_profile_fragment_layout" />
+
+        <fragment
+            android:id="@+id/searchFragmentNavigation"
+            android:name="com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.btmNavScreens.SearchFragment"
+            android:label="search_fragment_layout"
+            tools:layout="@layout/btm_search_fragment_layout" />
+    </navigation>

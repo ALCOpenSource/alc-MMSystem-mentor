@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:showIn="@layout/edit_profile_fragment_layout">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/MMEditTextLayout"
+        android:layout_marginTop="0dp"
+        android:hint="@string/mms_full_name_input_label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_profile_fullName_input"
+            style="@style/MMEditText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/MMEditTextLayout"
+        android:hint="@string/mms_input_headline_label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_profile_headline_input"
+            style="@style/MMEditText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/MMEditTextLayout"
+        android:hint="@string/mms_input_about_label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_profile_about_input"
+            style="@style/MMEditText"
+            android:gravity="top|start"
+            android:minHeight="200dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+<!--    -->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width=""-->
+<!--        android:layout_height=""-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentations.mainHome.MainHomeFragment">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/mainHomeFragmentDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/mainHomeContentLayout"
+            layout="@layout/main_home_fragment_content_layout" />
+
+        <include
+
+            android:id="@+id/mainHomeDrawerContentLayout"
+            layout="@layout/main_home_fragment_drawer_content_layout" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

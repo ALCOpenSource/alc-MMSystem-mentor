@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentations.mainHome.btmNavScreens.SearchFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/searchSearchOptions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/endGuideLine"
+        app:layout_constraintStart_toStartOf="@id/startGuideLine"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
+        app:strokeColor="@color/mm_outline"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/searchBackBtnView"
+                style="@style/MMIconBtn"
+                app:icon="@drawable/ic_arrow_left"
+                app:iconTint="@color/mm_default_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="@android:color/transparent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/searchInputView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:hint="Search anything..."
+                app:layout_constraintBottom_toBottomOf="@id/searchBackBtnView"
+                app:layout_constraintEnd_toStartOf="@id/searchFilterView"
+                app:layout_constraintStart_toEndOf="@id/searchBackBtnView"
+                app:layout_constraintTop_toTopOf="@id/searchBackBtnView" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/searchFilterView"
+                style="@style/MMIconBtn"
+                android:checkable="true"
+                app:icon="@drawable/ic_filter_alt"
+                app:iconTint="@color/mm_default_grey"
+                app:layout_constraintBottom_toBottomOf="@id/searchBackBtnView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/searchBackBtnView"
+                app:rippleColor="@android:color/transparent" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:dividerColor="@color/mm_outline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/searchBackBtnView" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_search_options"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/searchFilterView"
+                app:layout_constraintStart_toStartOf="@id/searchBackBtnView"
+                app:layout_constraintTop_toBottomOf="@id/divider">
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/btn_search_options_handler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:constraint_referenced_ids="btn_search_type_all,btn_search_type_cert,btn_search_type_mentManagers,btn_search_type_ments,btn_search_type_reports,,btn_search_type_tasks,btn_search_type_progams"
+                    app:flow_firstHorizontalStyle="spread_inside"
+                    app:flow_verticalAlign="bottom"
+                    app:flow_wrapMode="chain2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/btn_search_type_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="All"
+                    app:useMaterialThemeColors="true" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/btn_search_type_cert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Certificates"
+                    app:useMaterialThemeColors="true" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/btn_search_type_mentManagers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mentor Managers"
+                    app:useMaterialThemeColors="true" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/btn_search_type_ments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mentors"
+                    app:useMaterialThemeColors="true" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/btn_search_type_reports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reports"
+                    app:useMaterialThemeColors="true" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/btn_search_type_tasks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tasks"
+                    app:useMaterialThemeColors="true" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/btn_search_type_progams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Programs"
+                    app:useMaterialThemeColors="true" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ListView
+        android:id="@+id/btmSearchLists"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0dp"
+        android:paddingHorizontal="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchSearchOptions" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/activity_horizontal_margin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/activity_horizontal_margin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
