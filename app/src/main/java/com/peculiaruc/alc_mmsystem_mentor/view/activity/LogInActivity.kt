@@ -38,7 +38,9 @@ class LogInActivity : AppCompatActivity() {
         }
 
         val googleTextView: TextView = binding.googleSignIn.getChildAt(0) as TextView
-        googleTextView.text = getString(R.string.sign_in_with_google)
+        googleTextView.text = "Sign In with Google"
+
+
 
     }
 

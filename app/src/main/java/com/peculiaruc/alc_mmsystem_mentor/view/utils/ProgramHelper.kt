@@ -26,34 +26,27 @@ class ProgramHelper {
             programList.add(
                 ProgramModel(
                     R.drawable.img_program_one,
-                    R.string.program_title
+                    R.string.title_program
                 )
             )
             programList.add(
                 ProgramModel(
                     R.drawable.img_program_two,
-                    R.string.program_title
+                    R.string.program_Title_2
                 )
             )
             programList.add(
                 ProgramModel(
                     R.drawable.img_program_three,
-                    R.string.program_title
+                    R.string.program_title_1
                 )
             )
             programList.add(
                 ProgramModel(
                     R.drawable.img_program_one,
-                    R.string.program_title
+                    R.string.programs_title_3
                 )
             )
-            programList.add(
-                ProgramModel(
-                    R.drawable.img_program_two,
-                    R.string.program_title
-                )
-            )
-
 
             return programList as ArrayList
         }
@@ -105,13 +98,13 @@ class ProgramHelper {
             programList.add(
                 ProgramModel(
                     R.drawable.img_program_one,
-                    R.string.program_title
+                    R.string.other_programs
                 )
             )
             programList.add(
                 ProgramModel(
                     R.drawable.img_google,
-                    R.string.program_title
+                    R.string.programs_learning
                 )
             )
             programList.add(

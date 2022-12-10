@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.R
-import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityMainBinding
+import com.peculiaruc.alc_mmsystem_mentor.databinding.ActivityDashboardBinding
 import com.peculiaruc.alc_mmsystem_mentor.view.fragment.ProfileFragment
 import com.peculiaruc.alc_mmsystem_mentor.view.fragment.ProgramsFragment
 
@@ -15,13 +15,14 @@ import com.peculiaruc.alc_mmsystem_mentor.view.fragment.ProgramsFragment
  * This class is the mentor's dashboard or landing page
  */
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+
+    private lateinit var binding: ActivityDashboardBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dashboard)
+//        setContentView(R.layout.activity_dashboard)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setBottomNavigation()

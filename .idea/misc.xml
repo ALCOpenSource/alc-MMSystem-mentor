@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/font/mukta.xml" value="0.1875" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_applicant_edit_profile.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_criteria_form.xml" value="0.10430839002267574" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_dashboard.xml" value="0.233502538071066" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/fragment_compose_report_program.xml" value="0.65" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/fragment_notification.xml" value="0.65" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/notif_date_view.xml" value="0.25" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/notif_message_view.xml" value="0.65" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/share_report_dialog.xml" value="0.65" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

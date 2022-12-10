@@ -133,5 +133,153 @@
     <string name="major_recommendations">Major Recommendations</string>
     <string name="aisha_phiri">Aisha Phiri</string>
 
+<!--    System-->
+<string name="splash_screen_logo_desc">Brand Logo</string>
+<string name="lorem_ipsums">Get real-time updates from Mentor Managers</string>
+<string name="notification1">Your Application to be a mentor is in \n processing. You will get notification \n about the process upade.</string>
+<string name="notification2">Please update your experience information for the interview.</string>
+<string name="notification3">Congratulations!! You have been \n accepted as a mentor. Click on continue \n at the bottom to go to your dashboard.</string>
+<string name="forgot_pwd_instruction">An email has been sent to your \n registered email. \n Follow the link to reset your password</string>
+
+<string name="forgot_password">Forgot Password</string>
+<string name="set_new_password">Set New Password</string>
+<string name="pwd_helper_text">*Your new password must be different from previously used password.</string>
+<string name="password">Password</string>
+<string name="reset_password">Reset Password</string>
+<string name="bio_sdetail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.</string>
+<string name="tech_proficiency">Java Script, Django, Mysql, Android</string>
+<string name="prev_program_detail">GADS 2022, Google I/O Extended 2021</string>
+<string name="prev_program">Previous Programs</string>
+<string name="prev_role_detail">Learner, Mentor, Program Assistant, Program Assistant Lead</string>
+<string name="previous_roles">Previous Roles Held:</string>
+<string name="about_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</string>
+<string name="leadership_skills">Leadership skills from the previous mentoring program?</string>
+<string name="link_to_project">Provide a link of project built with the preferred language.</string>
+<string name="past_experience">Are you experienced being a past mentor in the same Program in Andela?</string>
+<string name="recommendation_letter">Uplod a recommendation letter for the selected program.</string>
+
+<string-array name="on_boarding_texts">
+<item> Get real-time updates from Mentor Managers</item>
+<item> Join programs, collaborate effectively and efficiently.</item>
+<item> Improved data security with end-to-end encryption technology</item>
+</string-array>
+
+<string-array name="country_list">
+<item>Nigeria</item>
+<item>Ghana</item>
+<item>Ethiopia</item>
+<item>Kenya</item>
+<item>Gabon</item>
+<item>Burkina Faso</item>
+<item>Senegal</item>
+<item>Cameroon</item>
+<item>Mali</item>
+<item>Congo</item>
+</string-array>
+
+<string-array name="city_list">
+<item>Lagos</item>
+<item>Accra</item>
+<item>Addis Ababa</item>
+</string-array>
+
+<string name="Python">Python</string>
+<string name="Java">Java</string>
+<string name="kotlin">kotlin</string>
+<string name="Django">Django</string>
+<string name="JavaScript">JavaScript</string>
+<string name="MySQL">MySQL</string>
+<string name="Android">Android</string>
+<string name="Swift">Swift</string>
+<string name="CPlus">C++</string>
+
+
+<string name="Learner">Learner</string>
+<string name="Mentor">Mentor</string>
+<string name="PA">Program Assistant</string>
+<string name="MM">Mentor Manager</string>
+<string name="PALead">Program Assistant Lead</string>
+<string name="edit_profile">Edit Profile</string>
+<string name="mentor_applicant">Mentor Applicant</string>
+<string name="program_name">Program Name</string>
+<string name="request_to_join_program">Request to join program</string>
+<string name="notification">Notification</string>
+<string name="admin">Admin</string>
+<string name="oct_15">Oct 15</string>
+<string name="btn_txt">Continue</string>
+<string name="peculiar_umeh">\@peculiar.umeh</string>
+<string name="on_boarding_btn_prev">Previous</string>
+<string name="on_boarding_btn_next">Next</string>
+<string name="desc_on_boarding">OnBoarding Image</string>
+<string name="login_forgot_password">Forgot password?</string>
+<string name="sign_in_to_continue">Sign in to continue</string>
+<string name="sign_up">Sign up</string>
+<string name="hint_login_email">Email</string>
+<string name="login">Login</string>
+<string name="hint_login_password">Password</string>
+<string name="new_user">New User?</string>
+<string name="login_title">Welcome</string>
+<string name="registration_success_title">Registration Successful</string>
+<string name="registration_success_message">A verification mail has been sent to your registered email, please click the link to confirm your account.</string>
+<string name="password_reset_successful">Password Reset Successful</string>
+<string name="become_a_mentor">Become a mentor</string>
+<string name="page_1_of_4">Page 1 of 4</string>
+<string name="set_a_profile_picture">Set a profile picture</string>
+<string name="select_file">Select file</string>
+<string name="full_name">Full Name</string>
+<string name="hint_sign_up_about">About</string>
+<string name="hint_sign_up_country">Country</string>
+<string name="hint_sign_up_city">City</string>
+<string name="fill_in_the_form_below">Fill in the form below</string>
+<string name="page_3_of_4">Page 3 of 4</string>
+<string name="program_title">Andela Google Africa Scholarship Program</string>
+<string name="previous_roles_held">Previous Roles Held</string>
+<string name="years_of_technical_experience">Years of technical experience *</string>
+<string name="program_of_interest">Program of Interest *</string>
+<string name="page_2_of_4">Page 2 of 4</string>
+<string name="been_a_mentor_before">Been a mentor before? *</string>
+<string name="page_4_of_4">Page 4 of 4</string>
+<string name="documents">Documents</string>
+<string name="choose">Choose</string>
+<string name="delete">Delete</string>
+<string name="upload_documents">Upload Documents</string>
+<string name="website">Website</string>
+<string name="github">GitHub</string>
+<string name="select_a_profile_picture">Select a profile picture</string>
+<string name="headline">Headline</string>
+<string name="input_previous_held_programs">Input previous held programs</string>
+<string name="add_program">Add program</string>
+<string name="save">Save</string>
+<string name="back_arrow">Back arrow</string>
+<string name="delete_document">delete document</string>
+<string name="my_resume_doc">My resume.doc</string>
+<string name="document_icon">document icon</string>
+<string name="user_profile_image">user profile image</string>
+<string name="francess_roseline">Francess Roseline</string>
+<string name="logout">Logout</string>
+<string name="bio">Bio</string>
+<string name="program_of_interest_profile">Program of interest:</string>
+<string name="years_of_technical_experience_profile">Years of Technical Experience:</string>
+<string name="_3_years">3 years</string>
+<string name="www_andela_com">www.andela.com</string>
+<string name="yes">Yes</string>
+<string name="globe">globe</string>
+<string name="continue_to_login">Continue</string>
+<string name="continue_one">Continue</string>
+<string name="been_mentor_before_one">Been mentor before:</string>
+    <string name="splash_screen_app_name">Mentor Management System</string>
+    <string name="program_title_1">Meta Learning Program</string>
+    <string name="program_Title_2">Andela Learning Program</string>
+    <string name="programs_title_3">Google Learning Program</string>
+    <string name="title_program">Pluralsight Learning Program</string>
+    <string name="other_programs">Amazon Learning Program</string>
+    <string name="programs_learning">Cloud Learning Program</string>
 
 </resources>
+
+<!--<string name="technical_proficiency">Technical Proficiency</string>-->
+<!--<string name="social">Social</string>-->
+<!--<string name="instagram">Instagram</string>-->
+<!--<string name="linkedin">LinkedIn</string>-->
+<!--<string name="twitter">Twitter</string>-->
+<!--<string name="about">About</string>-->

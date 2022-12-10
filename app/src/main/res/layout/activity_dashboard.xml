@@ -34,19 +34,20 @@
         app:strokeColor="@color/mms_black_9"
         app:strokeWidth="1dp" />
 
+
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="3dp"
-        android:fontFamily="@font/mukta_semibold"
+
         android:text="Hello Kabir"
         android:textColor="@color/mms_black_2"
         android:textSize="16sp"
+        app:fontFamily="@font/mukta_semibold"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImg"
         app:layout_constraintTop_toTopOf="@+id/ivProfileImg" />
-
 
     <TextView
         android:id="@+id/tvUserType"
@@ -87,4 +88,6 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    android:fontFamily="@font/mukta_semibold"-->
 

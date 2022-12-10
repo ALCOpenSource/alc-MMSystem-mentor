@@ -17,60 +17,59 @@
 
         <activity
             android:name=".view.activity.SignUpActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" -->
 
         <activity
             android:name=".view.activity.CriteriaActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false"/>
+<!--            android:theme="@style/splashScreenTheme" />-->
 
 
         <activity
             android:name=".view.activity.ProgramDetailActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
 
         <activity
             android:name=".view.activity.ProfileActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
 
         <activity
             android:name=".view.activity.EditProfileActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
 
         <activity
             android:name=".view.activity.PasswordActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
 
         <activity
             android:name=".view.activity.NewPasswordActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
 
         <activity
             android:name=".view.activity.RegisterActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
         <activity
             android:name=".view.activity.LogInActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
         <activity
             android:name=".view.activity.OnBoardingActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
         <activity
             android:name=".view.activity.MainActivity"
-            android:exported="false"
-            android:theme="@style/splashScreenTheme" />
+            android:exported="false" />
+<!--            android:theme="@style/splashScreenTheme" />-->
         <activity
             android:name=".view.activity.SplashActivity"
-            android:exported="true"
-            android:theme="@style/splashScreenTheme">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -82,3 +81,4 @@
     </application>
 
 </manifest>
+    <!--            android:theme="@style/splashScreenTheme">-->
