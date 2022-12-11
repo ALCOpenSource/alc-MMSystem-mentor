@@ -275,6 +275,78 @@
     <string name="other_programs">Amazon Learning Program</string>
     <string name="programs_learning">Cloud Learning Program</string>
 
+    <string name="mms_quick_actions">Quick Actions</string>
+    <string name="mms_tasks_in_progress">Tasks In-progress</string>
+    <string name="mms_chat_mentor_manager">Chat Mentor Manager</string>
+    <string name="mm_edit_profile">Edit Profile</string>
+    <string name="mm_screen_title_ph">Screen Title</string>
+    <string name="mms_set_a_profile_picture">Set a profile picture</string>
+    <string name="mms_select_file">Select file</string>
+    <string name="mms_save">Save</string>
+    <string name="mms_full_name_input_label">Full Name *</string>
+    <string name="mms_input_headline_label">Headline</string>
+    <string name="mms_input_about_label">About</string>
+    <string name="mms_technical_proficiency">Techinal Proficiency</string>
+    <string name="mms_prev_roles_held">Previous Roles Held</string>
+    <string name="mms_prev_program">Previous Programs</string>
+    <string name="mms_choose">Choose</string>
+    <string name="mms_documents">Documenets</string>
+    <string name="mms_social">Social</string>
+    <string name="mms_add_program">Add Program</string>
+    <string name="mms_view">View</string>
+
+
+    <string name="ui_ph_accout_type">Mentor</string>
+    <string name="ui_ph_account_username">Peculiah C. Umeh</string>
+    <string name="profile_image_description">User Profile Image</string>
+    <string name="draweer_item_ph">Drawer Item</string>
+    <string name="discussion">Discussion</string>
+    <string name="mms_new_topic">New Topic</string>
+
+    <string name="home_fragment_label">Home</string>
+    <string name="search_fragment_label">Search</string>
+    <string name="programs_fragment_label">Programs</string>
+    <string name="messages_fragment_label">Messages</string>
+    <string name="profile_fragment_label">Profile</string>
+    <string name="settings_fragment_label">Settings</string>
+    <string name="certificate_fragment_label">Certificate</string>
+    <string name="discussion_forum_fragment_label">Discussion Forum</string>
+    <string name="reports_fragment_label">Reports</string>
+    <string name="tasks_fragment_label">Tasks</string>
+    <string name="my_managers_fragment_label">My Managers</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
+    <string name="in_certificates">in Certificates</string>
+    <string name="in_programs">in Programs</string>
+    <string name="in_reports">in Reports</string>
+    <string name="in_tasks">in Tasks</string>
+    <string name="settings">Settings</string>
+    <string name="profile_settings">Profile Settings</string>
+    <string name="change_password">Change Password</string>
+    <string name="notifications">Notifications</string>
+    <string name="preferences">Preferences</string>
+    <string name="clear_app_data">Clear App Data</string>
+    <string name="version_1_0_35">Version 1.0.35</string>
+    <string name="about_app">About App</string>
+    <string name="support">Support</string>
+    <string name="faq">FAQ</string>
+    <string name="log_out">Logout</string>
+    <string name="delete_icon">delete_icon</string>
+    <string name="navigate_up">navigate_up</string>
+
+    <string name="mentor">Mentor</string>
+    <string name="bio_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim ut cursus purus efficitur et. Duis ac enim tellus. Phasellus pharetra metus, ut cursus purus efficitur et. Duis ac enim tellus. Phasellus eget tortor dapibus, laoreet mauris sed, dignissim lectus.</string>
+    <string name="proficiency_description">Java Script, Django, Mysql, Android</string>
+    <string name="previous_programs">Previous Programs</string>
+    <string name="previous_programs_description">GADS 2022, Google I/O Extended 2021</string>
+    <string name="previous_roles_held_description">Learner, Mentor, Program Assistant, Program Assistant Lead</string>
+    <string name="program_of_interest_desc">Google Africa Scholarship Program</string>
+
+
+
 </resources>
 
 <!--<string name="technical_proficiency">Technical Proficiency</string>-->
@@ -283,3 +355,10 @@
 <!--<string name="linkedin">LinkedIn</string>-->
 <!--<string name="twitter">Twitter</string>-->
 <!--<string name="about">About</string>-->
+
+<!--<string name="twitter">Twitter</string>-->
+<!--<string name="linkedin">LinkedIn</string>-->
+<!--<string name="instagram">Instagram</string>-->
+<!--<string name="github">Github</string>-->
+<!--<string name="website">Website</string>-->
+

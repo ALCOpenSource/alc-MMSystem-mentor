@@ -10,7 +10,7 @@
     android:layout_marginHorizontal="16dp"
     app:cardElevation="0dp"
     app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
-    app:strokeColor="@color/mm_outline">
+    app:strokeColor="@color/outline">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
             android:maxLines="2"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-            android:textColor="@color/mm_search_title_color"
+            android:textColor="@color/mms_black_2"
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/iv_cert_logo"

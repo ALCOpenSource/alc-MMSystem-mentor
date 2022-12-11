@@ -1,79 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/task_item"
     android:layout_height="wrap_content"
-    android:background="@drawable/item_border"
-    android:layout_margin="4dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="8dp"
-    app:cardMaxElevation="8dp">
+    app:cardElevation="0dp"
+    android:elevation="0dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginHorizontal="8dp"
+    app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
+    app:strokeColor="@color/mm_outline">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingVertical="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="10dp">
 
-        <ImageView
-            android:contentDescription="@string/back_button"
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="24dp"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/search_list_item_img"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/square_task" />
+            app:srcCompat="@drawable/ic_task" />
 
-        <TextView
-            android:id="@+id/textView"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_task_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:gravity="center|start"
+            android:textColor="@color/mm_search_title_color"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            app:layout_constraintBottom_toTopOf="@id/tv_task_time"
+            app:layout_constraintEnd_toStartOf="@id/tv_task_progress"
+            app:layout_constraintStart_toEndOf="@id/search_list_item_img"
+            app:layout_constraintTop_toTopOf="@id/search_list_item_img"
+            tools:text="Room library article write" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_task_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:gravity="center|start"
+            android:maxLines="1"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@id/tv_task_title"
+            app:layout_constraintStart_toEndOf="@id/search_list_item_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_task_title"
+            app:layout_constraintBottom_toBottomOf="@id/search_list_item_img"
+            tools:text="3 days from now" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/search_list_item_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/room_library_article_writing"
-            android:textColor="#333333"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@id/tv_task_time"
+            app:layout_constraintStart_toStartOf="@id/tv_task_title"
+            app:layout_constraintTop_toTopOf="@id/tv_task_time"
+            app:srcCompat="@drawable/ic_baseline_calendar_24" />
 
-        <TextView
-            android:id="@+id/textView2"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_task_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
-            android:text="@string/assign_task"
-            android:textColor="#06B9C6"
-            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="?colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/search_list_item_img"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@id/tv_task_title"
+            android:text="Completeed" />
 
-        <ImageView
-            android:contentDescription="@string/a_calendar"
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@drawable/calenda" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/_3_days"
-            android:textSize="12sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

@@ -27,4 +27,8 @@
         <item name="colorControlHighlight">@color/textcolorPrimary</item>
     </style>
 
+    <style name="circleImageShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

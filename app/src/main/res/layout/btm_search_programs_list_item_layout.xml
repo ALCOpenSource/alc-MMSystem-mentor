@@ -8,7 +8,7 @@
     android:id="@+id/btn_search_list_item_container"
     android:layout_marginHorizontal="16dp"
     app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
-    app:strokeColor="@color/mm_outline"
+    app:strokeColor="@color/outline"
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +29,7 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/search_list_item_title"
-            android:textColor="@color/mm_search_title_color"
+            android:textColor="@color/mms_black_2"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="10dp"

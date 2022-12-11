@@ -1,7 +1,7 @@
 package com.peculiaruc.alc_mmsystem_mentor.domain
 
 import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
+import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class ProgramItem(

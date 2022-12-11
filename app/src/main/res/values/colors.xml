@@ -65,4 +65,16 @@
     <color name="mms_sec_8">#FFCCCF</color>
     <color name="mms_sec_9">#FFE5E7</color>
 
+    <color name="outline">#FFCCCCCC </color>
+    <color name="dark_white">#9A5C5B5B</color>
+    <color name="red">#E91E63</color>
+    <color name="text_color">#808080</color>
+
+    <color name="mm_teal_900">#FF035D63</color>
+    <color name="mm_default_grey">#FF808080</color>
+    <color name="mm_outline">#FFCCCCCC</color>
+    <color name="mms_pry_11">#F7FEFF</color>
+    <color name="mm_search_title_color">#FF333333</color>
+
+
 </resources>

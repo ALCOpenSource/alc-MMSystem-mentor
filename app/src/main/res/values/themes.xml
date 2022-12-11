@@ -86,4 +86,89 @@
         <item name="fontFamily">@font/mukta_regular</item>
 
     </style>
+
+<style name="MMCircleProfileView">
+<item name="shapeAppearance">@style/circleImageShape</item>
+<item name="android:layout_width">64dp</item>
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">50%</item>
+
+    <item name="android:layout_height">wrap_content</item>
+</style>
+
+<style name="MMButton" parent="Widget.Material3.Button">
+<item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.Corner.Medium</item>
+<item name="android:insetTop">0dp</item>
+<item name="android:insetBottom">0dp</item>
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+</style>
+
+<style name="MMButtonOutlined" parent="Widget.Material3.Button.OutlinedButton">
+<item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.Corner.Medium</item>
+<item name="android:insetTop">0dp</item>
+<item name="android:insetBottom">0dp</item>
+<item name="iconPadding">0dp</item>
+<item name="android:padding">0dp</item>
+<item name="android:layout_height">wrap_content</item>
+</style>
+
+<style name="MMEditTextLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+<item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material3.Corner.Small</item>
+<item name="hintEnabled">true</item>
+<item name="boxStrokeWidth">1dp</item>
+<item name="boxStrokeWidthFocused">1dp</item>
+<item name="android:layout_marginTop">10dp</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_width">match_parent</item>
+</style>
+
+<style name="MMEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+<item name="android:layout_height">wrap_content</item>
+<item name="android:layout_width">match_parent</item>
+</style>
+
+<style name="chip" parent="Widget.MaterialComponents.Chip.Choice">
+<item name="chipBackgroundColor">@color/chip_background_selector</item>
+<item name="chipStrokeColor">@color/chip_stroke_selector</item>
+<item name="chipCornerRadius">5dp</item>
+</style>
+
+<style name="MMChip" parent="Widget.Material3.Chip.Filter">
+<item name="chipBackgroundColor">@color/edit_profile_chip_background_selector</item>
+<item name="chipStrokeColor">@color/edit_profile_chip_background_selector</item>
+<item name="chipStrokeWidth">1dp</item>
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+<item name="chipMinTouchTargetSize">0dp</item>
+<item name="android:textAlignment">center</item>
+<item name="android:textSize">16sp</item>
+<item name="chipIconTint">@color/mms_black_10</item>
+<item name="chipIcon">@drawable/ic_close</item>
+<item name="android:textColor">@color/chip_text_selector</item>
+<item name="chipCornerRadius">5dp</item>
+</style>
+
+    <style name="MMIconBtn" parent="Widget.Material3.Button.IconButton">
+        <item name="iconSize">24dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+<style name="circleImageShape" parent="">
+<item name="cornerFamily">rounded</item>
+<item name="cornerSize">50%</item>
+</style>
+<style name="retangleShape" parent="">
+<item name="cornerFamily">rounded</item>
+<item name="cornerSize">0%</item>
+<item name="background">?backgroundColor</item>
+</style>
+
+<style name="MMSDialogTheme" parent="ThemeOverlay.Material3.Dialog.Alert">
+<item name="shapeAppearanceOverlay">@style/retangleShape</item>
+</style>
+
 </resources>
+

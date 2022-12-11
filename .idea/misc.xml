@@ -3,16 +3,45 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/drawable/mm_outline_edges.xml" value="0.1" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/font/mukta.xml" value="0.1875" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_applicant_edit_profile.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_criteria_form.xml" value="0.10430839002267574" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_dashboard.xml" value="0.233502538071066" />
-        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_new_password.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_on_boarding.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_program_details.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_programs.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/appbar_title_back_view.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_home_activity_overview_list_item.xml" value="0.5" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_home_fragment_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_home_quick_actions_list_item.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_messages_fragment_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_profile_fragment_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_programs_fragment_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_search_cert_list_item_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_search_fragment_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_search_programs_list_item_layout.xml" value="0.22" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_search_report_list_item_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/btm_search_task_assigned_list_item_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/card_view_program.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/cert_download_dialog.xml" value="0.1" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/certificate_list_item.xml" value="0.1" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/fragment_compose_report_program.xml" value="0.65" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/fragment_notification.xml" value="0.65" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/notif_date_view.xml" value="0.25" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/notif_message_view.xml" value="0.65" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/reports_list_item.xml" value="0.1" />
         <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/share_report_dialog.xml" value="0.65" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/layout/task_list_item.xml" value="0.18" />
+        <entry key="..\:/Users/Peculiaruc/AndroidStudioProjects/alcMMSystemmentor/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

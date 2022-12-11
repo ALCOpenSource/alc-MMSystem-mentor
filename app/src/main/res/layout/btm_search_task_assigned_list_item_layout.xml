@@ -9,7 +9,7 @@
     android:elevation="0dp"
     android:layout_marginHorizontal="16dp"
     app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
-    app:strokeColor="@color/mm_outline">
+    app:strokeColor="@color/outline">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:layout_marginStart="10dp"
             android:ellipsize="end"
             android:gravity="center|start"
-            android:textColor="@color/mm_search_title_color"
+            android:textColor="@color/mms_black_2"
             android:maxLines="1"
             android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
             app:layout_constraintBottom_toTopOf="@id/search_list_item_due_date"

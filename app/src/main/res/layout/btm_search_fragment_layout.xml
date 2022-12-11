@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="@id/startGuideLine"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small"
-        app:strokeColor="@color/mm_outline"
+        app:strokeColor="@color/outline"
         app:strokeWidth="1dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,7 +26,7 @@
                 android:id="@+id/searchBackBtnView"
                 style="@style/MMIconBtn"
                 app:icon="@drawable/ic_arrow_left"
-                app:iconTint="@color/mm_default_grey"
+                app:iconTint="@color/title_grey_color"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:rippleColor="@android:color/transparent" />
@@ -47,7 +47,7 @@
                 style="@style/MMIconBtn"
                 android:checkable="true"
                 app:icon="@drawable/ic_filter_alt"
-                app:iconTint="@color/mm_default_grey"
+                app:iconTint="@color/title_grey_color"
                 app:layout_constraintBottom_toBottomOf="@id/searchBackBtnView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/searchBackBtnView"
@@ -57,7 +57,7 @@
                 android:id="@+id/divider"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:dividerColor="@color/mm_outline"
+                app:dividerColor="@color/outline"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/searchBackBtnView" />
