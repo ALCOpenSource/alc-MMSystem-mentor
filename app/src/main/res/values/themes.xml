@@ -92,8 +92,8 @@
 <item name="android:layout_width">64dp</item>
     <item name="cornerFamily">rounded</item>
     <item name="cornerSize">50%</item>
-
-    <item name="android:layout_height">wrap_content</item>
+    <item name="color">@color/mms_black_9</item>
+    <item name="android:layout_height">50dp</item>
 </style>
 
 <style name="MMButton" parent="Widget.Material3.Button">

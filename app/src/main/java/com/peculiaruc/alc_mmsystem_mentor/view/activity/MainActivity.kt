@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
 
         setBottomNavigation()
 
-        binding.ivProfileImg.setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
-        }
+//        binding.ivProfileImg.setOnClickListener {
+//            startActivity(Intent(this, ProfileActivity::class.java))
+//        }
     }
 
     private fun setBottomNavigation() {

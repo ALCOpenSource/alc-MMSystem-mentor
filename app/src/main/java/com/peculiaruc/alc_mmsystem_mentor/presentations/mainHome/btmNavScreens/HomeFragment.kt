@@ -8,10 +8,12 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
+import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmHomeFragmentLayoutBinding
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.home.HomeActivitiesOverviewAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.home.HomeQuickActionsAdapter
@@ -63,12 +65,13 @@ class HomeFragment : Fragment() {
 
     private fun initRecyclerViews() {
         quickActionsAdapter = HomeQuickActionsAdapter.Adapter {
-            Toast.makeText(
-                requireActivity(),
-                "Navigate to -> ${getString(it.label)}",
-                Toast.LENGTH_SHORT
-            )
-                .show()
+        findNavController().navigate(R.id.action_homeFragment_to_tasks_navigation)
+        //            Toast.makeText(
+//                requireActivity(),
+//                "Navigate to -> ${getString(it.label)}",
+//                Toast.LENGTH_SHORT
+//            )
+//                .show()
         }
         homeActivitiesOverviewAdapter = HomeActivitiesOverviewAdapter.Adapter {
             Toast.makeText(

@@ -125,4 +125,5 @@
         app:menu="@menu/bottom_navigation_menu"
         app:labelVisibilityMode="labeled"/>
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
