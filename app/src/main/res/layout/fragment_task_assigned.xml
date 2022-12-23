@@ -65,7 +65,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
-            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            style="@style/MMIconBtn"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -86,7 +86,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button3"
-            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            style="@style/MMIconBtn"
             android:layout_width="136dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"

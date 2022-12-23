@@ -32,7 +32,7 @@
             android:id="@+id/tv_task_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginHorizontal="10dp"
             android:ellipsize="end"
             android:gravity="center|start"
             android:textColor="@color/mm_search_title_color"
@@ -72,12 +72,10 @@
             android:id="@+id/tv_task_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="1dp"
             android:textColor="?colorPrimary"
             app:layout_constraintBottom_toBottomOf="@id/search_list_item_img"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tv_task_title"
             android:text="Completeed" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
