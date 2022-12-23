@@ -118,7 +118,7 @@ class TaskObjectFragment(position: Int) : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val view = inflater.inflate(R.layout.fragment_task_object, container, false)
-        recyclerView = view.findViewById<RecyclerView>(R.id.recycle)
+        recyclerView = view.findViewById(R.id.recycle)
         adapter = TaskListAdapter()
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())

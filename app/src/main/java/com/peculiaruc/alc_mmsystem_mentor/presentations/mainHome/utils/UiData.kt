@@ -4,7 +4,7 @@ import com.peculiaruc.alc_mmsystem_mentor.R
 
 import com.peculiaruc.alc_mmsystem_mentor.domain.*
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.search.SearchItem
 import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategories
 import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategoriesTypes
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType

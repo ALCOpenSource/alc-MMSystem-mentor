@@ -78,8 +78,10 @@ class TaskListAdapter :
              */
             fun create(parent: ViewGroup): TaskViewHolder {
                 return TaskViewHolder(
-                    TaskListItemBinding.inflate(
-                        LayoutInflater.from(parent.context)
+                    TaskListItemBinding.bind(
+                        LayoutInflater.from(parent.context).inflate(R.layout.task_list_item, parent, false).apply {
+
+                        }
                     )
                 )
             }
