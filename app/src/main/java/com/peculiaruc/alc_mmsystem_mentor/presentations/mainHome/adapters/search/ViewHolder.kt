@@ -8,6 +8,7 @@ import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchCertListItemLayou
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchProgramsListItemLayoutBinding
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchReportListItemLayoutBinding
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchTaskAssignedListItemLayoutBinding
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.search.SearchItem
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
 
 interface ViewHolder {

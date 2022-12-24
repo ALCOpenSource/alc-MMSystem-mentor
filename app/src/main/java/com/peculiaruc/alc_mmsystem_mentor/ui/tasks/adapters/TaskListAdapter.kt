@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.peculiaruc.alc_mmsystem_mentor.R
 import com.peculiaruc.alc_mmsystem_mentor.data.local.models.Task
+import com.peculiaruc.alc_mmsystem_mentor.databinding.TaskListItemBinding
 
 /**
  * A [TaskListAdapter] that manages the recyclerView for the selectProgramFragment.
@@ -54,20 +55,20 @@ class TaskListAdapter :
     /**
      * Holds the views for the adapter
      */
-    class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class TaskViewHolder(private val binding: TaskListItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        private val taskItemView: TextView = itemView.findViewById<TextView>(R.id.textView)
-        private val taskItemView2: TextView = itemView.findViewById<TextView>(R.id.textView2)
 
         /**
          * Binds the chats views to the data
          */
         fun bind(title: String, assigned: Boolean, completed: Boolean) {
-            taskItemView.text = title
+            binding.tvTaskTitle.text = title
             if (completed) {
-                taskItemView2.text = "Completed"
-            } else if (assigned) {
-                taskItemView2.text = "Assigned"
+                binding.tvTaskProgress.text = "Completed"
+            }
+
+            if (assigned) {
+                binding.tvTaskProgress.text = "Assigned"
             }
         }
 
@@ -76,9 +77,13 @@ class TaskListAdapter :
              * Inflates the task_list_item layout at runtime
              */
             fun create(parent: ViewGroup): TaskViewHolder {
-                val view: View = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.task_list_item, parent, false)
-                return TaskViewHolder(view)
+                return TaskViewHolder(
+                    TaskListItemBinding.bind(
+                        LayoutInflater.from(parent.context).inflate(R.layout.task_list_item, parent, false).apply {
+
+                        }
+                    )
+                )
             }
         }
     }

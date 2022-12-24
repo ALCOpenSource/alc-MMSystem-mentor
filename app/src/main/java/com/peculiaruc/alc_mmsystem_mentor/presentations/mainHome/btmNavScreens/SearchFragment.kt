@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.peculiaruc.alc_mmsystem_mentor.databinding.BtmSearchFragmentLayoutBinding
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.BtmSearchFragmentListAdapter
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.search.BtmSearchFragmentListAdapter
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.utils.UiData
 
 class SearchFragment : Fragment(), View.OnClickListener {

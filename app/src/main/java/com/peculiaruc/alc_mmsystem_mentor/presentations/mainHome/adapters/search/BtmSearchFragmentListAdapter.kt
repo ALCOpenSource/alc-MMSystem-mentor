@@ -1,4 +1,4 @@
-package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters
+package com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.search
 
 import android.annotation.SuppressLint
 import android.content.Context

@@ -4,7 +4,7 @@ import com.peculiaruc.alc_mmsystem_mentor.R
 
 import com.peculiaruc.alc_mmsystem_mentor.domain.*
 import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.MainHomeFragmentDirections
-import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.SearchItem
+import com.peculiaruc.alc_mmsystem_mentor.presentations.mainHome.adapters.search.SearchItem
 import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategories
 import com.peculiaruc.alc_mmsystem_mentor.utils.EventCategoriesTypes
 import com.peculiaruc.alc_mmsystem_mentor.utils.SearchType
@@ -29,17 +29,34 @@ object UiData {
         ),
     )
 
-    val homeNavItems = mutableListOf(
-        NavItems(R.drawable.ic_task, R.string.mms_tasks_in_progress),
-        NavItems(R.drawable.ic_comment_circle_chat_message, R.string.mms_chat_mentor_manager),
-        NavItems(R.drawable.ic_reports, R.string.reports_fragment_label),
-        NavItems(R.drawable.ic_discussion_forum, R.string.discussion_forum_fragment_label),
+    val homeQuickActionsNavItems = mutableListOf(
+        NavItems(
+            R.drawable.ic_task,
+            R.string.mms_tasks_in_progress,
+            routes = MainHomeFragmentDirections.actionMainHomeFragmentToTasksNavigation()
+        ),
+        NavItems(
+            R.drawable.ic_comment_circle_chat_message,
+            R.string.mms_chat_mentor_manager,
+            routes = MainHomeFragmentDirections.actionMainHomeFragmentToMessages()
+        ),
+        NavItems(
+            R.drawable.ic_reports,
+            R.string.reports_fragment_label,
+            routes = MainHomeFragmentDirections.actionMainHomeFragmentToReportsNavigation()
+        ),
+        NavItems(
+            R.drawable.ic_discussion_forum,
+            R.string.discussion_forum_fragment_label,
+            routes = MainHomeFragmentDirections.actionMainHomeFragmentToDiscussionFragment()
+        ),
     )
     val homeActivityOverview = mutableListOf(
         ActivityOverview(20, EventCategories.Mentors),
         ActivityOverview(5, EventCategories.Programs),
         ActivityOverview(10, EventCategories.Tasks),
     )
+
     val searchItems = mutableListOf(
         SearchItem(
             R.drawable.ic_launcher_background,
