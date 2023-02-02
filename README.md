@@ -86,5 +86,4 @@ eg new feature or bug but follow this pattern `type/branch-description` eg `feat
 - NOTE: Stickly adhere to the style guide on the design, buttons, texts etc. 
 
 # Creating issue for your Teams
-- Your Issues should take this simple pattern for easy identification by your team members: feature or bug name-mmm-team-9
-- Find a sample [here](https://github.com/ALCOpenSource/alc-MMSystem-mentor/issues/4) 
+- Flag issues found in the app. The admin will look into it and give guide on how to creat the issue.
